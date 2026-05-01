@@ -76,6 +76,11 @@ const els = {
   leaderboardMyScore:    $("leaderboardMyScore"),
   leaderboardMyRank:     $("leaderboardMyRank"),
   screenLeaderboard:     $("screenLeaderboard"),
+
+  screenSummary:         $("screenSummary"),
+  summaryBackButton:     $("summaryBackButton"),
+  summaryArea:           $("summaryArea"),
+  summaryHeaderTitle:    $("summaryHeaderTitle"),
 };
 
 const letters = ["A","B","C","D","E"];
@@ -99,6 +104,7 @@ function bindEvents() {
   els.profileBackButton.addEventListener("click", () => navigate("home"));
   els.coursesBackButton.addEventListener("click", () => navigate("home"));
   els.questionsBackButton.addEventListener("click", () => navigate("courses"));
+  els.summaryBackButton.addEventListener("click", () => navigate("courses"));
   els.leaderboardButton?.addEventListener("click", () => navigate("leaderboard"));
   els.leaderboardBackButton?.addEventListener("click", () => navigate("home"));
 }
@@ -107,7 +113,8 @@ function bindEvents() {
 function navigate(screen) {
   const all = [
     els.screenAuth, els.screenHome, els.screenCourses,
-    els.screenQuestions, els.screenProfile, els.screenLeaderboard
+    els.screenQuestions, els.screenProfile, els.screenLeaderboard,
+    els.screenSummary
   ];
   all.forEach(s => s?.classList.add("hidden"));
   const map = {
@@ -117,6 +124,7 @@ function navigate(screen) {
     questions:   els.screenQuestions,
     profile:     els.screenProfile,
     leaderboard: els.screenLeaderboard,
+    summary:     els.screenSummary,
   };
   map[screen]?.classList.remove("hidden");
   if (screen === "profile") renderProfile();
@@ -407,20 +415,51 @@ function renderCourseCards(session) {
     const answered = course.questions?.filter(q => state.answers[q.id]).length || 0;
     const correct  = course.questions?.filter(q => state.answers[q.id]?.isCorrect).length || 0;
 
-    const card = document.createElement("button");
-    card.type = "button";
-    card.className = "course-card-mobile";
+    const card = document.createElement("div");
+    card.className = "course-card-mobile-wrap";
     card.innerHTML = `
-      <div class="course-card-icon">${icons[idx % icons.length]}</div>
-      <div class="course-card-body">
-        <div class="course-card-name">${escapeHtml(course.title)}</div>
-        <div class="course-card-info">${course.expectedQuestionCount ? `Sınavda ${course.expectedQuestionCount} soru · ` : ""}${qCount} soru${answered ? ` · ${correct}/${answered} doğru` : ""}</div>
-      </div>
-      <div class="course-card-chevron"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></div>
+      <button type="button" class="course-card-mobile">
+        <div class="course-card-icon">${icons[idx % icons.length]}</div>
+        <div class="course-card-body">
+          <div class="course-card-name">${escapeHtml(course.title)}</div>
+          <div class="course-card-info">${course.expectedQuestionCount ? `Sınavda ${course.expectedQuestionCount} soru · ` : ""}${qCount} soru${answered ? ` · ${correct}/${answered} doğru` : ""}</div>
+        </div>
+        <div class="course-card-chevron"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></div>
+      </button>
+      <button type="button" class="course-summary-btn" data-id="${course.id}">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+        Ders Özeti
+      </button>
     `;
-    card.addEventListener("click", () => openCourse(session.id, course.id));
+    card.querySelector(".course-card-mobile").addEventListener("click", () => openCourse(session.id, course.id));
+    card.querySelector(".course-summary-btn").addEventListener("click", (e) => {
+      e.stopPropagation();
+      openSummary(session.id, course.id);
+    });
     els.courseListMobile.append(card);
   });
+}
+
+function openSummary(sessionId, courseId) {
+  state.activeSessionId = sessionId;
+  state.activeCourseId = courseId;
+  const course = getActiveCourse();
+  if (!course) return;
+
+  els.summaryHeaderTitle.textContent = course.title;
+  
+  if (course.summary) {
+    els.summaryArea.innerHTML = course.summary;
+  } else {
+    els.summaryArea.innerHTML = `
+      <div class="summary-empty">
+        <div class="summary-empty-icon">📝</div>
+        <p>Bu ders için henüz özet eklenmedi.</p>
+        <span class="summary-empty-sub">Yakında burada olacak!</span>
+      </div>
+    `;
+  }
+  navigate("summary");
 }
 
 function openCourse(sessionId, courseId) {
