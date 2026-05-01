@@ -296,17 +296,30 @@ async function handleSignupForm(e) {
 
 async function handleGoogleLogin() {
   if (!Firebase.ready || !Firebase.modules) {
-    setAuthMsg("Firebase henzü hazır değil, lütfen bekleyin.");
+    setAuthMsg("Firebase henüz hazır değil, lütfen bekleyin.");
     return;
   }
   setLoading(true, "google");
   try {
     const provider = new Firebase.modules.GoogleAuthProvider();
     provider.setCustomParameters({ prompt: "select_account" });
-    // Always use redirect (avoids COOP/popup issues)
-    await Firebase.modules.signInWithRedirect(Firebase.auth, provider);
+    const result = await Firebase.modules.signInWithPopup(Firebase.auth, provider);
+    await openMainForUser(result.user);
   } catch (err) {
-    setAuthMsg(firebaseErrorMessage(err));
+    if (err.code === "auth/popup-blocked") {
+      try {
+        const p2 = new Firebase.modules.GoogleAuthProvider();
+        p2.setCustomParameters({ prompt: "select_account" });
+        await Firebase.modules.signInWithRedirect(Firebase.auth, p2);
+      } catch (e2) {
+        setAuthMsg(firebaseErrorMessage(e2));
+        setLoading(false, "google");
+      }
+      return;
+    }
+    if (err.code !== "auth/popup-closed-by-user") {
+      setAuthMsg(firebaseErrorMessage(err));
+    }
     setLoading(false, "google");
   }
 }
