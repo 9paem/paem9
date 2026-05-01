@@ -596,8 +596,9 @@ async function loadLeaderboard() {
       const medal = medalMap[i] || "";
       const name = u.displayName || u.email?.split("@")[0] || "Anonim";
       const pts = u.totalPoints || 0;
+      const rowClass = isMe ? "lb-row lb-row-me" : "lb-row";
       return `
-        <div class="lb-row ${isMe ? "lb-row-me" : "}">
+        <div class="${rowClass}">
           <div class="lb-rank">${medal || (i + 1)}</div>
           <div class="lb-info">
             <span class="lb-name">${escapeHtml(name)}</span>
