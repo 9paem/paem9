@@ -1,0 +1,39 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    match /metadata/{metadataId} {
+      allow read: if true;
+    }
+
+    match /sessions/{sessionId} {
+      allow read: if signedIn();
+      allow write: if false;
+
+      match /courses/{courseId} {
+        allow read: if signedIn();
+        allow write: if false;
+
+        match /questions/{questionId} {
+          allow read: if signedIn();
+          allow write: if false;
+        }
+      }
+    }
+
+    match /users/{userId}/answers/{answerId} {
+      allow read, write: if signedIn() && request.auth.uid == userId;
+    }
+
+    match /leaderboards/{leaderboardId}/entries/{userId} {
+      allow read: if signedIn();
+      allow create: if signedIn()
+        && request.auth.uid == userId
+        && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if false;
+    }
+  }
+}

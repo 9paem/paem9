@@ -1,0 +1,2261 @@
+{
+  "metadata": {
+    "questionBankVersion": "2026-05-01-turkce-1"
+  },
+  "sessions": [
+    {
+      "id": "oturum-1",
+      "title": "1. Oturum",
+      "order": 1,
+      "examDate": "2026-05-04",
+      "startsAt": "09:30",
+      "totalQuestions": 40,
+      "durationMinutes": 60,
+      "pointPerQuestion": 1.25,
+      "courses": [
+        {
+          "id": "olay-yeri-inceleme-ilk-ekip",
+          "title": "Olay Yeri",
+          "order": 1,
+          "questions": []
+        },
+        {
+          "id": "narkotik-maddeler",
+          "title": "Narkotik",
+          "order": 2,
+          "questions": []
+        },
+        {
+          "id": "tesis-koruma",
+          "title": "Terörizme Karşı Koyma",
+          "order": 3,
+          "questions": []
+        },
+        {
+          "id": "kom-suc-turleri",
+          "title": "KOM Başkanlığı",
+          "order": 4,
+          "questions": []
+        },
+        {
+          "id": "polis-merkezi",
+          "title": "Polis Merkezi Amirliği",
+          "order": 5,
+          "questions": []
+        },
+        {
+          "id": "ceza-hukuku-genel",
+          "title": "Ceza Hukuku",
+          "order": 6,
+          "questionShare": "30 soru",
+          "expectedQuestionCount": 30,
+          "questions": [
+            {
+              "id": "cmk-ceza-001",
+              "order": 1,
+              "topic": "Suçun Objektif Unsurları",
+              "difficulty": "Orta",
+              "text": "Suçun objektif unsurları bakımından aşağıdakilerden hangisi kural olarak maddi unsur kapsamında değerlendirilmez?",
+              "correctOptionId": "d",
+              "explanation": "Ders notlarına göre tipikliğin objektif unsurları fiilin dış görüntüsünü belirler: fail, mağdur, suçun konusu, fiil, netice, nedensellik ve objektif isnadiyet. Kusur yeteneği ise tipiklikten sonra incelenen kusurluluk alanına ilişkindir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Fiil"
+                },
+                {
+                  "id": "b",
+                  "text": "Netice"
+                },
+                {
+                  "id": "c",
+                  "text": "Nedensellik bağı"
+                },
+                {
+                  "id": "d",
+                  "text": "Kusur yeteneği"
+                },
+                {
+                  "id": "e",
+                  "text": "Suçun konusu"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-002",
+              "order": 2,
+              "topic": "Suçun Objektif Unsurları",
+              "difficulty": "Kolay",
+              "text": "Bir suç tipinde kanunun yasakladığı davranışın dış dünyaya yansıyan hareket kısmı aşağıdaki kavramlardan hangisiyle ifade edilir?",
+              "correctOptionId": "a",
+              "explanation": "Fiil, suç tipinin dış dünyaya yansıyan hareket unsurudur.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Fiil"
+                },
+                {
+                  "id": "b",
+                  "text": "Kast"
+                },
+                {
+                  "id": "c",
+                  "text": "Taksir"
+                },
+                {
+                  "id": "d",
+                  "text": "Haksızlık yanılgısı"
+                },
+                {
+                  "id": "e",
+                  "text": "Kusurluluk"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-003",
+              "order": 3,
+              "topic": "Suçun Objektif Unsurları",
+              "difficulty": "Orta",
+              "text": "Neticeli suçlarda failin hareketi ile meydana gelen sonuç arasında bulunması gereken bağ aşağıdakilerden hangisidir?",
+              "correctOptionId": "c",
+              "explanation": "Neticeli suçlarda hareket ile netice arasında nedensellik bağı kurulmalıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kusur bağı"
+                },
+                {
+                  "id": "b",
+                  "text": "Hukuka uygunluk bağı"
+                },
+                {
+                  "id": "c",
+                  "text": "Nedensellik bağı"
+                },
+                {
+                  "id": "d",
+                  "text": "İsnat bağı"
+                },
+                {
+                  "id": "e",
+                  "text": "Şikayet bağı"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-004",
+              "order": 4,
+              "topic": "Suçun Objektif Unsurları",
+              "difficulty": "Orta",
+              "text": "Ders notlarına göre suçun faili bakımından aşağıdakilerden hangisi doğrudur?",
+              "correctOptionId": "a",
+              "explanation": "Notlarda fail, hareketi gerçekleştiren kişi olarak açıklanmış; her suçun mutlaka faili bulunduğu, failin ancak gerçek kişi olabileceği ve ceza sorumluluğunun şahsi olduğu belirtilmiştir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Fail ancak gerçek kişi olabilir."
+                },
+                {
+                  "id": "b",
+                  "text": "Tüzel kişiler bütün suçların faili olabilir."
+                },
+                {
+                  "id": "c",
+                  "text": "Fail bulunmayan suçlar kural olarak mümkündür."
+                },
+                {
+                  "id": "d",
+                  "text": "Ceza hukukunda kolektif sorumluluk esastır."
+                },
+                {
+                  "id": "e",
+                  "text": "Fail yalnız mağdurun şikayetiyle belirlenir."
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-005",
+              "order": 5,
+              "topic": "Suçun Objektif Unsurları",
+              "difficulty": "Zor",
+              "text": "A, B'yi hafifçe yaralar. B hastaneye giderken ambulansın kusurlu şekilde kaza yapması sonucu ölür. A'nın hareketi ile ölüm neticesi arasındaki ceza sorumluluğu değerlendirilirken öncelikle hangi sorun tartışılır?",
+              "correctOptionId": "e",
+              "explanation": "Araya giren bağımsız ve olağan dışı neden, neticenin faile objektif isnadı ve nedensellik değerlendirmesi bakımından tartışılır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Şikayetten vazgeçme"
+                },
+                {
+                  "id": "b",
+                  "text": "Meşru savunma"
+                },
+                {
+                  "id": "c",
+                  "text": "Yaş küçüklüğü"
+                },
+                {
+                  "id": "d",
+                  "text": "Haksız tahrik"
+                },
+                {
+                  "id": "e",
+                  "text": "Nedensellik ve objektif isnadiyet"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-006",
+              "order": 6,
+              "topic": "Suçun Subjektif Unsurları",
+              "difficulty": "Kolay",
+              "text": "Suçun subjektif unsurları denildiğinde öncelikle aşağıdakilerden hangisi anlaşılır?",
+              "correctOptionId": "b",
+              "explanation": "Subjektif unsurlar failin iç dünyasına ilişkin kast, taksir, amaç veya saik gibi unsurlardır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Suçun işlendiği yer"
+                },
+                {
+                  "id": "b",
+                  "text": "Failin manevi bağlantısı"
+                },
+                {
+                  "id": "c",
+                  "text": "Suçun mağduru"
+                },
+                {
+                  "id": "d",
+                  "text": "Neticenin gerçekleştiği zaman"
+                },
+                {
+                  "id": "e",
+                  "text": "Fiilin konusu"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-007",
+              "order": 7,
+              "topic": "Suçun Subjektif Unsurları",
+              "difficulty": "Orta",
+              "text": "Kastın bilme unsuru bakımından failin neyi bilmesi gerekir?",
+              "correctOptionId": "a",
+              "explanation": "Kast, suçun kanuni tanımındaki maddi unsurların bilinmesini ve istenmesini gerektirir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Suçun kanuni tanımındaki maddi unsurları"
+                },
+                {
+                  "id": "b",
+                  "text": "Cezanın tam miktarını"
+                },
+                {
+                  "id": "c",
+                  "text": "Mahkemenin görevli olup olmadığını"
+                },
+                {
+                  "id": "d",
+                  "text": "Savcının iddianame düzenleyeceğini"
+                },
+                {
+                  "id": "e",
+                  "text": "Ceza infaz kurumunun koşullarını"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-008",
+              "order": 8,
+              "topic": "Suçun Subjektif Unsurları",
+              "difficulty": "Orta",
+              "text": "Kanunda bazı suçlarda aranan özel amaç veya saikin bulunmaması halinde aşağıdakilerden hangisi söylenebilir?",
+              "correctOptionId": "c",
+              "explanation": "Ders notlarında kural olarak saik veya maksadın aranmadığı, ancak bazı suçlarda kanunun özel amaç arayabileceği belirtilir. Bu durumda özel amaç yoksa ilgili suç tipi bakımından manevi unsur gerçekleşmeyebilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Her durumda ceza artırılır."
+                },
+                {
+                  "id": "b",
+                  "text": "Fiil mutlaka hukuka uygun hale gelir."
+                },
+                {
+                  "id": "c",
+                  "text": "İlgili suç tipi bakımından manevi unsur gerçekleşmeyebilir."
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece infaz aşaması etkilenir."
+                },
+                {
+                  "id": "e",
+                  "text": "Dava şartı ortadan kalkar."
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-009",
+              "order": 9,
+              "topic": "Doğrudan Kast",
+              "difficulty": "Orta",
+              "text": "A, B'yi öldürmek amacıyla yakın mesafeden B'nin başına ateş eder ve B ölür. A'nın manevi unsuru aşağıdakilerden hangisidir?",
+              "correctOptionId": "d",
+              "explanation": "Fail neticeyi bilmekte ve istemektedir; bu doğrudan kasttır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Bilinçsiz taksir"
+                },
+                {
+                  "id": "b",
+                  "text": "Bilinçli taksir"
+                },
+                {
+                  "id": "c",
+                  "text": "Olası kast"
+                },
+                {
+                  "id": "d",
+                  "text": "Doğrudan kast"
+                },
+                {
+                  "id": "e",
+                  "text": "Kusurluluğu kaldıran hata"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-010",
+              "order": 10,
+              "topic": "Olası Kast",
+              "difficulty": "Zor",
+              "text": "A, kalabalık bir kafeye rastgele ateş eder. Birinin ölebileceğini öngörür; buna rağmen 'olursa olsun' diyerek ateş etmeye devam eder ve B ölür. A'nın manevi unsuru en doğru nasıl nitelendirilir?",
+              "correctOptionId": "c",
+              "explanation": "Fail neticeyi kesin olarak amaçlamasa da gerçekleşmesini kabullenmiştir; bu olası kasttır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Bilinçsiz taksir"
+                },
+                {
+                  "id": "b",
+                  "text": "Bilinçli taksir"
+                },
+                {
+                  "id": "c",
+                  "text": "Olası kast"
+                },
+                {
+                  "id": "d",
+                  "text": "Haksız tahrik"
+                },
+                {
+                  "id": "e",
+                  "text": "Zorunluluk hali"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-011",
+              "order": 11,
+              "topic": "Bilinçli Taksir",
+              "difficulty": "Zor",
+              "text": "A, okul çıkış saatinde hız sınırının çok üzerinde araç kullanır. Bir çocuğa çarpabileceğini öngörür ancak 'ben iyi şoförüm, bir şey olmaz' diye düşünür. Çocuğa çarparak yaralanmasına neden olur. A'nın manevi unsuru nedir?",
+              "correctOptionId": "b",
+              "explanation": "Fail neticeyi öngörmüş fakat istememiş, gerçekleşmeyeceğine güvenmiştir. Bu bilinçli taksirdir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Doğrudan kast"
+                },
+                {
+                  "id": "b",
+                  "text": "Bilinçli taksir"
+                },
+                {
+                  "id": "c",
+                  "text": "Olası kast"
+                },
+                {
+                  "id": "d",
+                  "text": "Bilinçsiz taksir"
+                },
+                {
+                  "id": "e",
+                  "text": "Meşru savunma"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-012",
+              "order": 12,
+              "topic": "Bilinçsiz Taksir",
+              "difficulty": "Orta",
+              "text": "A, telefonuna bakarak araç kullanırken kırmızı ışığı fark etmez ve yayaya çarpar. A, neticeyi öngörmemiştir; ancak dikkat ve özen yükümlülüğüne aykırı davranmıştır. Bu durumda manevi unsur nedir?",
+              "correctOptionId": "e",
+              "explanation": "Fail neticeyi öngörmemiş, fakat gerekli dikkat ve özeni göstermiş olsaydı öngörebilecekti. Bu bilinçsiz taksirdir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Doğrudan kast"
+                },
+                {
+                  "id": "b",
+                  "text": "Olası kast"
+                },
+                {
+                  "id": "c",
+                  "text": "Bilinçli taksir"
+                },
+                {
+                  "id": "d",
+                  "text": "Haksız tahrik"
+                },
+                {
+                  "id": "e",
+                  "text": "Bilinçsiz taksir"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-013",
+              "order": 13,
+              "topic": "Kast ve Taksir Ayrımı",
+              "difficulty": "Zor",
+              "text": "Olası kast ile bilinçli taksir arasındaki temel fark aşağıdakilerden hangisidir?",
+              "correctOptionId": "a",
+              "explanation": "Ders notlarındaki ölçüt şudur: Fail neticeyi öngörüp 'olursa olsun' diyerek kayıtsız kalıyorsa olası kast; öngörüp hayat tecrübesine veya becerisine güvenerek gerçekleşmeyeceğini düşünüyorsa bilinçli taksir vardır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Olası kastta netice kabullenilir, bilinçli taksirde gerçekleşmeyeceğine güvenilir."
+                },
+                {
+                  "id": "b",
+                  "text": "Olası kastta netice hiç öngörülmez, bilinçli taksirde öngörülür."
+                },
+                {
+                  "id": "c",
+                  "text": "Olası kast yalnız kabahatlerde, bilinçli taksir yalnız suçlarda uygulanır."
+                },
+                {
+                  "id": "d",
+                  "text": "Olası kastta hukuka uygunluk nedeni, bilinçli taksirde kusurluluk nedeni vardır."
+                },
+                {
+                  "id": "e",
+                  "text": "Aralarında ceza hukuku bakımından fark yoktur."
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-014",
+              "order": 14,
+              "topic": "Kast ve Taksir Ayrımı",
+              "difficulty": "Orta",
+              "text": "Bilinçli taksir ile bilinçsiz taksir arasındaki temel fark aşağıdakilerden hangisidir?",
+              "correctOptionId": "d",
+              "explanation": "Bilinçli taksirde fail neticeyi öngörür; bilinçsiz taksirde netice öngörülmez ancak öngörülebilir niteliktedir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Bilinçli taksirde netice istenir, bilinçsiz taksirde kabullenilir."
+                },
+                {
+                  "id": "b",
+                  "text": "Bilinçli taksirde hukuka uygunluk nedeni vardır."
+                },
+                {
+                  "id": "c",
+                  "text": "Bilinçsiz taksir yalnız kasten işlenen suçlarda görülür."
+                },
+                {
+                  "id": "d",
+                  "text": "Bilinçli taksirde öngörme vardır, bilinçsiz taksirde öngörme yoktur."
+                },
+                {
+                  "id": "e",
+                  "text": "Bilinçli taksirde kusur yoktur, bilinçsiz taksirde kusur vardır."
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-015",
+              "order": 15,
+              "topic": "Kast ve Taksir Ayrımı",
+              "difficulty": "Zor",
+              "text": "A, B'yi korkutmak için B'nin ayaklarının yanına doğru ateş eder. Kurşunun sekip B'ye isabet edebileceğini öngörür; ancak 'isabet etse de umurumda değil' diyerek ateş eder ve B yaralanır. A'nın manevi unsuru nedir?",
+              "correctOptionId": "c",
+              "explanation": "Fail neticenin gerçekleşme ihtimalini öngörüp kabullenmiştir. Bu olası kasttır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Bilinçsiz taksir"
+                },
+                {
+                  "id": "b",
+                  "text": "Bilinçli taksir"
+                },
+                {
+                  "id": "c",
+                  "text": "Olası kast"
+                },
+                {
+                  "id": "d",
+                  "text": "Zorunluluk hali"
+                },
+                {
+                  "id": "e",
+                  "text": "Yaş küçüklüğü"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-016",
+              "order": 16,
+              "topic": "Kast ve Taksir Ayrımı",
+              "difficulty": "Zor",
+              "text": "A, gece boş olduğunu sandığı bir depoya hırsızlık için girer ve kapıyı kırar. İçeride güvenlik görevlisi olduğunu hiç düşünmemiştir; fakat koşullar gereği bunu araştırması beklenirdi. Güvenlik görevlisi kapı parçasıyla yaralanır. A'nın yaralama neticesi bakımından durumu en uygun hangi kavramla açıklanır?",
+              "correctOptionId": "e",
+              "explanation": "Netice öngörülmemiştir; ancak dikkat ve özen gösterilseydi öngörülebilirdi. Bu bilinçsiz taksir örneğidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Doğrudan kast"
+                },
+                {
+                  "id": "b",
+                  "text": "Olası kast"
+                },
+                {
+                  "id": "c",
+                  "text": "Meşru savunma"
+                },
+                {
+                  "id": "d",
+                  "text": "Bilinçli taksir"
+                },
+                {
+                  "id": "e",
+                  "text": "Bilinçsiz taksir"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-017",
+              "order": 17,
+              "topic": "Hukuka Uygunluk Nedenleri",
+              "difficulty": "Kolay",
+              "text": "Aşağıdakilerden hangisi Türk ceza hukuku bakımından hukuka uygunluk nedenlerinden biri değildir?",
+              "correctOptionId": "e",
+              "explanation": "Ders notlarında genel hukuka uygunluk nedenleri TCK 24-26 kapsamında kanunun hükmünü yerine getirme, meşru savunma, hakkın kullanılması ve ilgilinin rızası olarak sayılmıştır. Haksız tahrik kusurluluğu azaltır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Meşru savunma"
+                },
+                {
+                  "id": "b",
+                  "text": "Hakkın kullanılması"
+                },
+                {
+                  "id": "c",
+                  "text": "İlgilinin rızası"
+                },
+                {
+                  "id": "d",
+                  "text": "Kanunun hükmünü yerine getirme"
+                },
+                {
+                  "id": "e",
+                  "text": "Haksız tahrik"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-018",
+              "order": 18,
+              "topic": "Meşru Savunma",
+              "difficulty": "Orta",
+              "text": "Meşru savunmanın kabulü için aşağıdakilerden hangisi aranmaz?",
+              "correctOptionId": "b",
+              "explanation": "Meşru savunmada saldırının haksız, gerçekleşen veya muhakkak olması ve savunmanın saldırıyla orantılı olması aranır. Saldırganın cezalandırılmış olması şart değildir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Haksız bir saldırı bulunması"
+                },
+                {
+                  "id": "b",
+                  "text": "Saldırganın daha önce mahkum edilmiş olması"
+                },
+                {
+                  "id": "c",
+                  "text": "Savunmanın saldırıya karşı yapılması"
+                },
+                {
+                  "id": "d",
+                  "text": "Savunma ile saldırı arasında orantı bulunması"
+                },
+                {
+                  "id": "e",
+                  "text": "Saldırının mevcut veya gerçekleşmesi muhakkak olması"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-019",
+              "order": 19,
+              "topic": "Meşru Savunma",
+              "difficulty": "Zor",
+              "text": "B, elindeki bıçakla A'ya saldırır. A, saldırıyı durdurmak için B'nin koluna sopa ile vurur ve B'nin kolu kırılır. Olayda koşulları varsa A bakımından hangi kurum gündeme gelir?",
+              "correctOptionId": "a",
+              "explanation": "Haksız saldırıya karşı saldırıyı defetmek amacıyla orantılı savunma meşru savunma kapsamında değerlendirilebilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Meşru savunma"
+                },
+                {
+                  "id": "b",
+                  "text": "Haksız tahrik"
+                },
+                {
+                  "id": "c",
+                  "text": "Etkin pişmanlık"
+                },
+                {
+                  "id": "d",
+                  "text": "Bilinçli taksir"
+                },
+                {
+                  "id": "e",
+                  "text": "Şikayetten vazgeçme"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-020",
+              "order": 20,
+              "topic": "Zorunluluk Hali",
+              "difficulty": "Orta",
+              "text": "Ders notlarına göre zorunluluk hali bakımından aşağıdakilerden hangisi doğrudur?",
+              "correctOptionId": "c",
+              "explanation": "Notlarda zorunluluk hali kusurluluğu kaldıran veya azaltan nedenler arasında ele alınır. Mevcut, ağır ve muhakkak tehlike; son çare olma; tehlike ile korunma arasında orantı ve tehlikeye bilerek sebep olmama aranır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Her zaman saldırgana karşı uygulanır."
+                },
+                {
+                  "id": "b",
+                  "text": "Mutlaka mahkeme kararı gerektirir."
+                },
+                {
+                  "id": "c",
+                  "text": "Ağır ve muhakkak bir tehlikeden başka türlü kurtulma imkanı bulunmamalıdır."
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece malvarlığına karşı suçlarda uygulanır."
+                },
+                {
+                  "id": "e",
+                  "text": "Failin neticeyi istemesi şarttır."
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-021",
+              "order": 21,
+              "topic": "İlgilinin Rızası",
+              "difficulty": "Orta",
+              "text": "İlgilinin rızasının hukuka uygunluk nedeni olabilmesi için aşağıdakilerden hangisi gereklidir?",
+              "correctOptionId": "d",
+              "explanation": "Rıza, kişinin üzerinde tasarruf edebileceği bir hakka ilişkin olmalı ve geçerli şekilde açıklanmalıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Rızanın suçtan sonra verilmesi yeterlidir."
+                },
+                {
+                  "id": "b",
+                  "text": "Rıza her suç bakımından geçerlidir."
+                },
+                {
+                  "id": "c",
+                  "text": "Rıza mutlaka noter huzurunda verilmelidir."
+                },
+                {
+                  "id": "d",
+                  "text": "Rıza, üzerinde tasarruf edilebilir bir hakka ilişkin olmalıdır."
+                },
+                {
+                  "id": "e",
+                  "text": "Rıza yalnız kamu görevlilerine karşı ileri sürülebilir."
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-022",
+              "order": 22,
+              "topic": "Hukuka Uygunluk Nedenleri",
+              "difficulty": "Orta",
+              "text": "Failin bir hukuka uygunluk nedeninden yararlanabilmesi için, ders notlarında özellikle vurgulanan şart aşağıdakilerden hangisidir?",
+              "correctOptionId": "b",
+              "explanation": "Notlarda failin, fiili icra ederken hukuka uygunluk nedeninin maddi şartlarının varlığı bilinciyle hareket etmesi gerektiği vurgulanır; şartlar objektif olarak gerçekleşse bile fail bunu bilmiyorsa yararlanamayabilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Haksız tahrik"
+                },
+                {
+                  "id": "b",
+                  "text": "Hukuka uygunluk nedeninin maddi şartlarının varlığını bilerek hareket etmesi"
+                },
+                {
+                  "id": "c",
+                  "text": "Fiilden sonra mağdurdan mutlaka yazılı onay alması"
+                },
+                {
+                  "id": "d",
+                  "text": "Suçun yalnız taksirli bir suç olması"
+                },
+                {
+                  "id": "e",
+                  "text": "Failin daha önce mahkum edilmemiş olması"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-023",
+              "order": 23,
+              "topic": "Kusurluluğu Kaldıran veya Azaltan Nedenler",
+              "difficulty": "Kolay",
+              "text": "Aşağıdakilerden hangisi kural olarak kusurluluğu azaltan nedenlerden biridir?",
+              "correctOptionId": "c",
+              "explanation": "Haksız tahrik kusurluluğu azaltan nedendir. Hukuka uygunluk nedeninden farklı olarak suç oluşur; fakat haksız fiilin doğurduğu hiddet veya şiddetli elem nedeniyle cezada indirim yapılabilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kanunun hükmünü yerine getirme"
+                },
+                {
+                  "id": "b",
+                  "text": "İlgilinin rızası"
+                },
+                {
+                  "id": "c",
+                  "text": "Haksız tahrik"
+                },
+                {
+                  "id": "d",
+                  "text": "Hakkın kullanılması"
+                },
+                {
+                  "id": "e",
+                  "text": "Meşru savunma"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-024",
+              "order": 24,
+              "topic": "Haksız Tahrik",
+              "difficulty": "Orta",
+              "text": "Haksız tahrikin uygulanabilmesi için aşağıdakilerden hangisi aranır?",
+              "correctOptionId": "a",
+              "explanation": "Haksız tahrikte fail, haksız bir fiilin meydana getirdiği hiddet veya şiddetli elemin etkisi altında suç işler.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Failin haksız bir fiilin etkisiyle hiddet veya şiddetli elem altında hareket etmesi"
+                },
+                {
+                  "id": "b",
+                  "text": "Failin her durumda kamu görevlisi olması"
+                },
+                {
+                  "id": "c",
+                  "text": "Mağdurun rızasının bulunması"
+                },
+                {
+                  "id": "d",
+                  "text": "Suçun yalnız taksirle işlenmesi"
+                },
+                {
+                  "id": "e",
+                  "text": "Fiilin mutlaka malvarlığına karşı olması"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-025",
+              "order": 25,
+              "topic": "Cebir ve Tehdit",
+              "difficulty": "Orta",
+              "text": "A, kendisine ve ailesine yönelik ağır ve ciddi bir tehdidin etkisiyle suç teşkil eden bir belgeyi imzalamaya zorlanır. Koşulları varsa A bakımından hangi neden gündeme gelebilir?",
+              "correctOptionId": "e",
+              "explanation": "Karşı koyamayacağı veya kurtulamayacağı cebir ya da ağır ve muhakkak tehdit altında hareket eden kişinin kusurluluğu etkilenebilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Doğrudan kast"
+                },
+                {
+                  "id": "b",
+                  "text": "İlgilinin rızası"
+                },
+                {
+                  "id": "c",
+                  "text": "Hakkın kullanılması"
+                },
+                {
+                  "id": "d",
+                  "text": "Bilinçsiz taksir"
+                },
+                {
+                  "id": "e",
+                  "text": "Cebir veya tehdit nedeniyle kusurluluğun kalkması"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-026",
+              "order": 26,
+              "topic": "Yaş Küçüklüğü",
+              "difficulty": "Kolay",
+              "text": "Yaş küçüklüğü ceza hukuku bakımından hangi alanda değerlendirilir?",
+              "correctOptionId": "b",
+              "explanation": "Yaş küçüklüğü failin kusur yeteneğini ve ceza sorumluluğunu etkileyen bir nedendir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Suçun konusu"
+                },
+                {
+                  "id": "b",
+                  "text": "Kusur yeteneği ve ceza sorumluluğu"
+                },
+                {
+                  "id": "c",
+                  "text": "Nedensellik bağı"
+                },
+                {
+                  "id": "d",
+                  "text": "Dava zamanaşımı"
+                },
+                {
+                  "id": "e",
+                  "text": "Görevli mahkeme"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-027",
+              "order": 27,
+              "topic": "Akıl Hastalığı",
+              "difficulty": "Orta",
+              "text": "Fiilin hukuki anlam ve sonuçlarını algılama veya davranışlarını yönlendirme yeteneğini önemli derecede etkileyen akıl hastalığı hangi sonucu doğurabilir?",
+              "correctOptionId": "d",
+              "explanation": "Akıl hastalığı kusur yeteneğini kaldırabilir veya azaltabilir; ayrıca güvenlik tedbirleri gündeme gelebilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Fiili her durumda hukuka uygun hale getirir."
+                },
+                {
+                  "id": "b",
+                  "text": "Nedensellik bağını her zaman keser."
+                },
+                {
+                  "id": "c",
+                  "text": "Şikayet şartını ortadan kaldırır."
+                },
+                {
+                  "id": "d",
+                  "text": "Kusur yeteneğini kaldırabilir veya azaltabilir."
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece para cezası verilmesine neden olur."
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-028",
+              "order": 28,
+              "topic": "Hata",
+              "difficulty": "Zor",
+              "text": "A, gece kendi bisıkletiyle aynı marka ve renkte olan B'ye ait bisıkleti kendisinin sanarak alır. Olayda koşulları varsa hangi hata türü özellikle tartışılır?",
+              "correctOptionId": "a",
+              "explanation": "Fail suçun maddi unsurunda yanılmaktadır; başkasına ait malı aldığını bilmemesi kastı etkileyebilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Maddi unsurda hata"
+                },
+                {
+                  "id": "b",
+                  "text": "Haksız tahrik"
+                },
+                {
+                  "id": "c",
+                  "text": "Meşru savunmada sınırın aşılması"
+                },
+                {
+                  "id": "d",
+                  "text": "Bilinçli taksir"
+                },
+                {
+                  "id": "e",
+                  "text": "Etkin pişmanlık"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-029",
+              "order": 29,
+              "topic": "Hukuka Uygunluk Nedenlerinde Hata",
+              "difficulty": "Zor",
+              "text": "A, karanlıkta kendisine silah çekildiğini sanarak B'ye karşı savunma hareketinde bulunur; oysa B'nin elindeki nesne telefondur. Olayda koşulları varsa öncelikle hangi kurum tartışılır?",
+              "correctOptionId": "c",
+              "explanation": "Fail, meşru savunma koşullarının varlığında yanılmaktadır. Bu hukuka uygunluk nedenlerinin maddi şartlarında hata olarak değerlendirilebilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Doğrudan kast"
+                },
+                {
+                  "id": "b",
+                  "text": "Haksız tahrik"
+                },
+                {
+                  "id": "c",
+                  "text": "Hukuka uygunluk nedenlerinin maddi şartlarında hata"
+                },
+                {
+                  "id": "d",
+                  "text": "Şikayetten vazgeçme"
+                },
+                {
+                  "id": "e",
+                  "text": "Dava zamanaşımı"
+                }
+              ]
+            },
+            {
+              "id": "cmk-ceza-030",
+              "order": 30,
+              "topic": "Genel Değerlendirme",
+              "difficulty": "Zor",
+              "text": "A, dar bir sokakta kavga sırasında kendisine bıçakla yönelen B'yi uzaklaştırmak için tekme atar. B yere düşüp hafif yaralanır. Olayda A'nın ceza sorumluluğu bakımından en isabetli ilk değerlendirme aşağıdakilerden hangisidir?",
+              "correctOptionId": "b",
+              "explanation": "Somut olayda haksız ve mevcut saldırıya karşı savunma hareketi bulunduğundan önce meşru savunmanın saldırı ve savunmaya ilişkin şartları ile orantı incelenir. Hukuka uygunluk nedeni varsa suç oluşmaz; CMK m.223/2-d kapsamında beraat gündeme gelir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "A doğrudan kastla yaralamadan her durumda sorumludur."
+                },
+                {
+                  "id": "b",
+                  "text": "Meşru savunma koşulları ve orantı değerlendirilmelidir."
+                },
+                {
+                  "id": "c",
+                  "text": "A'nın fiili yalnız bilinçsiz taksir oluşturur."
+                },
+                {
+                  "id": "d",
+                  "text": "A ancak şikayet varsa hukuka uygun davranmış sayılır."
+                },
+                {
+                  "id": "e",
+                  "text": "B'nin rızası bulunduğu kabul edilmelidir."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iletişim",
+          "title": "İletişim",
+          "order": 7,
+          "questionShare": "40 soru",
+          "expectedQuestionCount": 40,
+          "questions": [
+            {
+              "id": "iletişim-001",
+              "order": 1,
+              "topic": "İletişim Nedir",
+              "difficulty": "Kolay",
+              "text": "Sunudaki tanıma göre iletişim en doğru biçimde nasıl tanımlanır?",
+              "correctOptionId": "c",
+              "explanation": "İletişim; duygu, düşünce, bilgi ve deneyimlerin çeşitli yollarla başkalarına aktarılması, paylaşılması ve geri bildirim alınması sürecidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece resmi yazıların aktarılmasıdır."
+                },
+                {
+                  "id": "b",
+                  "text": "Yalnızca konuşma yoluyla bilgi vermektir."
+                },
+                {
+                  "id": "c",
+                  "text": "Duygu, düşünce, bilgi ve deneyimlerin paylaşılması sürecidir."
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece teknolojik araçlarla haberleşmedir."
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece mesaj gönderme işlemidir."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-002",
+              "order": 2,
+              "topic": "Temel Özellikler",
+              "difficulty": "Kolay",
+              "text": "Aşağıdakilerden hangisi iletişimin temel özelliklerinden biridir?",
+              "correctOptionId": "a",
+              "explanation": "Sunuda iletişimin iki tarafın da aktif olduğu bir alışveriş olduğu vurgulanır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "İletişim iki tarafın da aktif olduğu bir alışveriştir."
+                },
+                {
+                  "id": "b",
+                  "text": "İletişim sadece kaynağın etkin olduğu bir süreçtir."
+                },
+                {
+                  "id": "c",
+                  "text": "İletişim yalnızca resmi ortamlarda kurulur."
+                },
+                {
+                  "id": "d",
+                  "text": "İletişimde beden dili önemsizdir."
+                },
+                {
+                  "id": "e",
+                  "text": "İletişim sadece bilinçli davranışlarla olur."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-003",
+              "order": 3,
+              "topic": "Temel Özellikler",
+              "difficulty": "Orta",
+              "text": "Sunuda yer alan 'İletişim kişiye değil kişiyle yapılır' ifadesi aşağıdakilerden hangisini vurgular?",
+              "correctOptionId": "d",
+              "explanation": "Bu ifade iletişimin tek yönlü değil, karşılıklı bir etkileşim olduğunu anlatır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "İletişimde sadece verici önemlidir."
+                },
+                {
+                  "id": "b",
+                  "text": "İletişimde mesajın uzun olması gerekir."
+                },
+                {
+                  "id": "c",
+                  "text": "İletişim yalnızca resmi kanallarla kurulabilir."
+                },
+                {
+                  "id": "d",
+                  "text": "İletişim karşılıklı etkileşim ve paylaşım sürecidir."
+                },
+                {
+                  "id": "e",
+                  "text": "İletişimde geri bildirim gereksizdir."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-004",
+              "order": 4,
+              "topic": "Etkili İletişim Amacı",
+              "difficulty": "Orta",
+              "text": "Etkili iletişimin amacı aşağıdakilerden hangisidir?",
+              "correctOptionId": "b",
+              "explanation": "Sunuda etkili iletişimin amacı, iletilmek isteneni amaçlanan biçimde aktarmak ve beklenen tepkiyi uyandırmak olarak açıklanır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece uzun konuşmalar yapabilmektir."
+                },
+                {
+                  "id": "b",
+                  "text": "İsteneni amaçlanan biçimde iletip beklenen tepkiyi uyandırmaktır."
+                },
+                {
+                  "id": "c",
+                  "text": "Karşı tarafı sürekli susturmaktır."
+                },
+                {
+                  "id": "d",
+                  "text": "Her durumda haklı çıkmaktır."
+                },
+                {
+                  "id": "e",
+                  "text": "Yalnızca yazılı mesaj kullanmaktır."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-005",
+              "order": 5,
+              "topic": "İletişim Türleri",
+              "difficulty": "Kolay",
+              "text": "Kullanılan simge bakımından iletişim türleri arasında aşağıdakilerden hangisi yer alır?",
+              "correctOptionId": "e",
+              "explanation": "Sunuda simge bakımından iletişimin sözsüz, sözlü, yazılı ve görsel olarak sınıflandırılabileceği belirtilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Yalnızca kişilerarası iletişim"
+                },
+                {
+                  "id": "b",
+                  "text": "Yalnızca grup iletişimi"
+                },
+                {
+                  "id": "c",
+                  "text": "Yalnızca örgüt iletişimi"
+                },
+                {
+                  "id": "d",
+                  "text": "Yalnızca kitle iletişimi"
+                },
+                {
+                  "id": "e",
+                  "text": "Sözsüz, sözlü, yazılı ve görsel iletişim"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-006",
+              "order": 6,
+              "topic": "Sözsüz İletişim",
+              "difficulty": "Kolay",
+              "text": "Aşağıdakilerden hangisi sözsüz iletişime girer?",
+              "correctOptionId": "a",
+              "explanation": "Yüz ifadeleri, jest, mimik, bakış, giyim, renk ve mekan seçimleri sözsüz iletişime dahildir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Jest, mimik, bakış ve beden duruşu"
+                },
+                {
+                  "id": "b",
+                  "text": "Sadece resmi konuşma metni"
+                },
+                {
+                  "id": "c",
+                  "text": "Yalnızca telefon görüşmesi"
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece e-posta yazımı"
+                },
+                {
+                  "id": "e",
+                  "text": "Yalnızca kanuni yazı"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-007",
+              "order": 7,
+              "topic": "İletişimi Yapılandırma",
+              "difficulty": "Kolay",
+              "text": "Sunuda iletişimi yapılandırmada kelimeler, ses ve beden dilinin rol dağılımı nasıl verilmiştir?",
+              "correctOptionId": "d",
+              "explanation": "Sunuda kelimeler %10, ses %30, beden dili %60 olarak belirtilmiştir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kelimeler %60, ses %30, beden dili %10"
+                },
+                {
+                  "id": "b",
+                  "text": "Kelimeler %30, ses %10, beden dili %60"
+                },
+                {
+                  "id": "c",
+                  "text": "Kelimeler %20, ses %40, beden dili %40"
+                },
+                {
+                  "id": "d",
+                  "text": "Kelimeler %10, ses %30, beden dili %60"
+                },
+                {
+                  "id": "e",
+                  "text": "Kelimeler %50, ses %25, beden dili %25"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-008",
+              "order": 8,
+              "topic": "Sözlü ve Sözsüz İletişim",
+              "difficulty": "Orta",
+              "text": "Sunuda sözlü ve sözsüz iletişim arasındaki ilişki nasıl açıklanmıştır?",
+              "correctOptionId": "c",
+              "explanation": "Bu iki becerinin çoğu zaman el ele kullanıldığı, birbirini desteklediği veya bazen çeliştiği belirtilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Birbirinden tamamen bağımsızdır."
+                },
+                {
+                  "id": "b",
+                  "text": "Sadece resmi görüşmelerde birlikte kullanılır."
+                },
+                {
+                  "id": "c",
+                  "text": "Çoğu zaman birlikte kullanılır ve birbirini destekler."
+                },
+                {
+                  "id": "d",
+                  "text": "Sözsüz iletişim her zaman gereksizdir."
+                },
+                {
+                  "id": "e",
+                  "text": "Sözlü iletişim daima daha güvenilirdir."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-009",
+              "order": 9,
+              "topic": "Sözlü ve Sözsüz İletişim",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi sözlü ve sözsüz iletişimin benzer yönlerinden biridir?",
+              "correctOptionId": "b",
+              "explanation": "Her iki iletişim biçimi de kişinin kendini ifade etmesini ve ilişki kurmasını sağlayan iletişimsel araçlardır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "İkisi de sadece yazılı belgelerde kullanılır."
+                },
+                {
+                  "id": "b",
+                  "text": "İkisi de duygu ve düşüncelerin aktarılmasında kullanılır."
+                },
+                {
+                  "id": "c",
+                  "text": "İkisi de sadece fikirleri aktarır, duyguları aktarmaz."
+                },
+                {
+                  "id": "d",
+                  "text": "İkisi de kültürden etkilenmez."
+                },
+                {
+                  "id": "e",
+                  "text": "İkisi de her zaman aynı anlama gelir."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-010",
+              "order": 10,
+              "topic": "Sözlü ve Sözsüz İletişim",
+              "difficulty": "Orta",
+              "text": "Sunudaki bilgiye göre sözlü ve sözsüz iletişimin farklarından biri aşağıdakilerden hangisidir?",
+              "correctOptionId": "e",
+              "explanation": "Sözel beceriler daha çok fikirlerle, sözsüz beceriler ise daha çok duygularla ilintilidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "İkisi de sadece duygularla ilgilidir."
+                },
+                {
+                  "id": "b",
+                  "text": "İkisi de sadece fikirlerle ilgilidir."
+                },
+                {
+                  "id": "c",
+                  "text": "Sözsüz iletişimde beden dili bulunmaz."
+                },
+                {
+                  "id": "d",
+                  "text": "Sözlü iletişimde tonlama kullanılmaz."
+                },
+                {
+                  "id": "e",
+                  "text": "Sözlü beceriler daha çok fikirlerle, sözsüz beceriler daha çok duygularla ilgilidir."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-011",
+              "order": 11,
+              "topic": "İletişimin Temel Öğeleri",
+              "difficulty": "Kolay",
+              "text": "İletişimin temel öğeleri arasında aşağıdakilerden hangisi yer alır?",
+              "correctOptionId": "a",
+              "explanation": "Kaynak, mesaj, kanal, alıcı ve geri bildirim iletişimin temel öğeleridir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kaynak"
+                },
+                {
+                  "id": "b",
+                  "text": "Mahkeme kararı"
+                },
+                {
+                  "id": "c",
+                  "text": "Ceza miktarı"
+                },
+                {
+                  "id": "d",
+                  "text": "Disiplin cezası"
+                },
+                {
+                  "id": "e",
+                  "text": "Resmi tatil"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-012",
+              "order": 12,
+              "topic": "İletişimin Temel Öğeleri",
+              "difficulty": "Kolay",
+              "text": "Aşağıdakilerden hangisi iletişimin temel öğelerinden biri değildir?",
+              "correctOptionId": "d",
+              "explanation": "Sunuda kaynak, alıcı, mesaj, kanal ve geri bildirim temel öge olarak ele alınmaktadır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Mesaj"
+                },
+                {
+                  "id": "b",
+                  "text": "Alıcı"
+                },
+                {
+                  "id": "c",
+                  "text": "Kanal"
+                },
+                {
+                  "id": "d",
+                  "text": "Cezalandırma"
+                },
+                {
+                  "id": "e",
+                  "text": "Geri bildirim"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-013",
+              "order": 13,
+              "topic": "Mesajın Etkililiği",
+              "difficulty": "Orta",
+              "text": "Mesajın iletişimde istenilen etkiyi yapması için aşağıdakilerden hangisi gereklidir?",
+              "correctOptionId": "b",
+              "explanation": "Mesaj açık, net, anlaşılır olmalı; gerekirse özetleme ve yazılı aktarma gibi yöntemlerle anlayış güçlendirilmelidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Oldukça teknik ve karmaşık olması"
+                },
+                {
+                  "id": "b",
+                  "text": "Açık, net ve alıcının anlayacağı biçimde olması"
+                },
+                {
+                  "id": "c",
+                  "text": "Mutlaka çok uzun olması"
+                },
+                {
+                  "id": "d",
+                  "text": "Yalnızca tek yönlü aktarılması"
+                },
+                {
+                  "id": "e",
+                  "text": "Geri bildirim almaması"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-014",
+              "order": 14,
+              "topic": "Mesajın Etkililiği",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi etkili bir mesajın özelliklerinden biridir?",
+              "correctOptionId": "e",
+              "explanation": "Mesajın doğru zamanda, doğru sözcüklerle ve uygun iletişim tarzıyla aktarılması etkililiği artırır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Alıcının anlamayacağı sembollerle kurulması"
+                },
+                {
+                  "id": "b",
+                  "text": "Zamansız gönderilmesi"
+                },
+                {
+                  "id": "c",
+                  "text": "Bilerek belirsiz bırakılması"
+                },
+                {
+                  "id": "d",
+                  "text": "Alıcının tepkisinden bağımsız olması"
+                },
+                {
+                  "id": "e",
+                  "text": "Doğru zamanda ve uygun tarzla iletilmesi"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-015",
+              "order": 15,
+              "topic": "Gürültü",
+              "difficulty": "Kolay",
+              "text": "İletişimde gürültünün olumsuz etkisi aşağıdakilerden hangisidir?",
+              "correctOptionId": "c",
+              "explanation": "Gürültü mesajın bozulmasına, eksik anlaşılmasına veya hiç algılanmamasına yol açabilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Mesajın daha hızlı anlaşılmasını sağlar."
+                },
+                {
+                  "id": "b",
+                  "text": "Geri bildirimi güçlendirir."
+                },
+                {
+                  "id": "c",
+                  "text": "Mesajın doğru alınamaması ve yanlış anlaşılmasına yol açar."
+                },
+                {
+                  "id": "d",
+                  "text": "Empatiyi otomatik olarak artırır."
+                },
+                {
+                  "id": "e",
+                  "text": "Beden dilini gereksiz hale getirir."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-016",
+              "order": 16,
+              "topic": "Sözlü İletişim Temelleri",
+              "difficulty": "Kolay",
+              "text": "Aşağıdakilerden hangisi sözlü iletişimin dil ötesi unsurlarındandır?",
+              "correctOptionId": "d",
+              "explanation": "Dil ötesi iletişim; ses tonu, şiddeti, vurgu ve tonlama gibi konuşmanın nasıl yapıldığıyla ilgilidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece yazım kuralları"
+                },
+                {
+                  "id": "b",
+                  "text": "Yalnızca alfabenin dizilişi"
+                },
+                {
+                  "id": "c",
+                  "text": "Sadece resmi terimler"
+                },
+                {
+                  "id": "d",
+                  "text": "Ses tonu, vurgu ve tonlama"
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece giyim seçimi"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-017",
+              "order": 17,
+              "topic": "Sözlü İletişim Temelleri",
+              "difficulty": "Orta",
+              "text": "Sözlü iletişimde tonlama, diksiyon ve vurgunun önemi aşağıdakilerden hangisiyle en iyi açıklanır?",
+              "correctOptionId": "a",
+              "explanation": "Bu unsurlar mesajın nasıl algılanacağını belirler ve anlaşılmayı doğrudan etkiler.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Mesajın nasıl söylendiğini belirleyerek algıyı etkiler."
+                },
+                {
+                  "id": "b",
+                  "text": "Sadece resmi yazışmalarda önemlidir."
+                },
+                {
+                  "id": "c",
+                  "text": "Beden dili yerine geçer."
+                },
+                {
+                  "id": "d",
+                  "text": "Mesajın içeriğiyle hiç ilgisi yoktur."
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece hitabet yarışmalarında gerekir."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-018",
+              "order": 18,
+              "topic": "Empatili İletişim",
+              "difficulty": "Kolay",
+              "text": "Empatili bir iletişimde aşağıdakilerden hangisi bulunmalıdır?",
+              "correctOptionId": "b",
+              "explanation": "Empatide karşı tarafın duygularını anlamaya çalışmak ve yargılamadan yaklaşmak esastır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Karşı tarafı sürekli kesmek"
+                },
+                {
+                  "id": "b",
+                  "text": "Karşı tarafın duygularını anlamaya çalışmak"
+                },
+                {
+                  "id": "c",
+                  "text": "Mutlaka üstten konuşmak"
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece kendi bakış açısını savunmak"
+                },
+                {
+                  "id": "e",
+                  "text": "Yargılayıcı dil kullanmak"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-019",
+              "order": 19,
+              "topic": "Empatinin Önemi",
+              "difficulty": "Kolay",
+              "text": "Empatinin iletişimdeki önemi aşağıdakilerden hangisidir?",
+              "correctOptionId": "c",
+              "explanation": "Empati anlaşılma hissini güçlendirir, gerilimi azaltır ve yapıcı iletişime zemin hazırlar.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Çatışmayı büyütmek"
+                },
+                {
+                  "id": "b",
+                  "text": "Mesajı karmaşıklaştırmak"
+                },
+                {
+                  "id": "c",
+                  "text": "Anlayışı ve yapıcı etkileşimi güçlendirmek"
+                },
+                {
+                  "id": "d",
+                  "text": "Geri bildirimi ortadan kaldırmak"
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece resmi ilişkilerde kullanılmak"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-020",
+              "order": 20,
+              "topic": "İletişim Engelleri",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi etkili iletişimin önündeki engellerden biridir?",
+              "correctOptionId": "e",
+              "explanation": "Sunuda süzme, seçici algılama, duygusal durum, önyargı, mesaj, zaman baskısı ve yetersiz geri bildirim gibi engeller vurgulanır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Açık mesaj kullanımı"
+                },
+                {
+                  "id": "b",
+                  "text": "Etkin dinleme"
+                },
+                {
+                  "id": "c",
+                  "text": "Uygun zaman seçimi"
+                },
+                {
+                  "id": "d",
+                  "text": "Net geri bildirim"
+                },
+                {
+                  "id": "e",
+                  "text": "Seçici algılama"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-021",
+              "order": 21,
+              "topic": "İletişim Engelleri",
+              "difficulty": "Orta",
+              "text": "Sunuda iletişimi engelleyen kişinin duygusal durumuna örnek olarak aşağıdakilerden hangisi verilebilir?",
+              "correctOptionId": "a",
+              "explanation": "Savunma modunda olmak, ilgi duymamak, önyargı ve koşullanmışlık gibi durumlar mesajın alınmasını zorlaştırır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Savunma modunda olmak"
+                },
+                {
+                  "id": "b",
+                  "text": "Açıklık ve netlik göstermek"
+                },
+                {
+                  "id": "c",
+                  "text": "Etkin dinlemek"
+                },
+                {
+                  "id": "d",
+                  "text": "Göz teması kurmak"
+                },
+                {
+                  "id": "e",
+                  "text": "Mesajı özetlemek"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-022",
+              "order": 22,
+              "topic": "İletişim Engelleri",
+              "difficulty": "Orta",
+              "text": "Mesajın aşırı teknik terimlerle dolu olması neye yol açar?",
+              "correctOptionId": "d",
+              "explanation": "Alıcı mesajı anlamakta zorlanır; mesaj itici hale gelir ve iletişim zayıflar.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Empatiyi güçlendirir."
+                },
+                {
+                  "id": "b",
+                  "text": "Beden dilini daha etkili kılar."
+                },
+                {
+                  "id": "c",
+                  "text": "Her durumda anlaşılmayı artırır."
+                },
+                {
+                  "id": "d",
+                  "text": "Mesajın anlaşılmasını zorlaştırır."
+                },
+                {
+                  "id": "e",
+                  "text": "Geri bildirimi gereksiz kılar."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-023",
+              "order": 23,
+              "topic": "Pasif ve Etkin Dinleme",
+              "difficulty": "Orta",
+              "text": "Pasif dinleme engelini aşmanın yolu aşağıdakilerden hangisidir?",
+              "correctOptionId": "b",
+              "explanation": "Sunuda kişinin iletişim kurulan kişiye yönelmesi, eleştirmemesi, yorum yapmaktan kaçınarak yalnızca dinlemesi gerektiği belirtilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sık sık söz kesmek"
+                },
+                {
+                  "id": "b",
+                  "text": "Yalnızca dinlemeye odaklanmak ve yönelmek"
+                },
+                {
+                  "id": "c",
+                  "text": "Hemen yargılamak"
+                },
+                {
+                  "id": "d",
+                  "text": "Sohbeti farklı yöne çekmek"
+                },
+                {
+                  "id": "e",
+                  "text": "Aynı anda başka işle uğraşmak"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-024",
+              "order": 24,
+              "topic": "Geri Bildirim",
+              "difficulty": "Orta",
+              "text": "Yetersiz geri bildirim iletişimde hangi sonuca yol açar?",
+              "correctOptionId": "c",
+              "explanation": "Geri bildirimin zayıf olması anlama düzeyini düşürür ve iletişimi aksatır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Mesajın daha net olmasına"
+                },
+                {
+                  "id": "b",
+                  "text": "Empatinin otomatik artmasına"
+                },
+                {
+                  "id": "c",
+                  "text": "İletişimin aksamasına ve anlaşılmanın zayıflamasına"
+                },
+                {
+                  "id": "d",
+                  "text": "Kanal ihtiyacının ortadan kalkmasına"
+                },
+                {
+                  "id": "e",
+                  "text": "Mesajın her durumda doğru algılanmasına"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-025",
+              "order": 25,
+              "topic": "Duygular ve İletişim",
+              "difficulty": "Orta",
+              "text": "Olumsuz duygular yaşayan bireyin iletişim tarzı aşağıdakilerden hangisine daha yakındır?",
+              "correctOptionId": "d",
+              "explanation": "Sunuda olumsuz duygular içindeki bireyin savunmacı, kırıcı veya içe kapanık bir iletişim tarzı sergileyebileceği belirtilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Daima sakin ve yapıcı"
+                },
+                {
+                  "id": "b",
+                  "text": "Her zaman nesnel ve nötr"
+                },
+                {
+                  "id": "c",
+                  "text": "Mutlaka esprili ve rahat"
+                },
+                {
+                  "id": "d",
+                  "text": "Savunmacı, kırıcı veya içe kapanık"
+                },
+                {
+                  "id": "e",
+                  "text": "Tamamen beden dilinden bağımsız"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-026",
+              "order": 26,
+              "topic": "Stres Altında İletişim",
+              "difficulty": "Orta",
+              "text": "Stres altında iletişim kurarken aşağıdaki davranışlardan hangisi doğrudur?",
+              "correctOptionId": "a",
+              "explanation": "Net, açık ve kısa ifadeler kullanmak; karmaşık ve uzun açıklamalardan kaçınmak gerekir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Net, açık ve kısa ifadeler kullanmak"
+                },
+                {
+                  "id": "b",
+                  "text": "Daha karmaşık ve uzun cümleler kurmak"
+                },
+                {
+                  "id": "c",
+                  "text": "Mutlaka sert ve emredici konuşmak"
+                },
+                {
+                  "id": "d",
+                  "text": "Geri bildirimi tamamen kesmek"
+                },
+                {
+                  "id": "e",
+                  "text": "Karşı tarafı baskı altına almak"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-027",
+              "order": 27,
+              "topic": "Stres Altında İletişim",
+              "difficulty": "Orta",
+              "text": "Stres altında etkili iletişimde en güçlü araç olarak sunuda hangisi vurgulanmıştır?",
+              "correctOptionId": "e",
+              "explanation": "Empati, yargılayıcı dilden kaçınma ve çözüm odaklı yaklaşım stresli iletişim ortamlarında çok önemlidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Baskı kurmak"
+                },
+                {
+                  "id": "b",
+                  "text": "Tehdit etmek"
+                },
+                {
+                  "id": "c",
+                  "text": "Sadece yazılı iletişim kurmak"
+                },
+                {
+                  "id": "d",
+                  "text": "Mesajı uzatmak"
+                },
+                {
+                  "id": "e",
+                  "text": "Empati"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-028",
+              "order": 28,
+              "topic": "Çatışmaya Giriş",
+              "difficulty": "Kolay",
+              "text": "Sunudaki tanıma göre çatışma nedir?",
+              "correctOptionId": "b",
+              "explanation": "Çatışmayı; bireyler ya da gruplar arasında çıkar, değer, ihtiyaç, algı veya beklentilerin uyuşmaması sonucu ortaya çıkan anlaşmazlık durumu olarak tanımlar.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Her zaman fiziksel müdahale gerektiren durumdur."
+                },
+                {
+                  "id": "b",
+                  "text": "Çıkar, değer, ihtiyaç veya beklenti uyuşmazlığından doğan anlaşmazlıktır."
+                },
+                {
+                  "id": "c",
+                  "text": "Sadece iş hayatında yaşanır."
+                },
+                {
+                  "id": "d",
+                  "text": "Yalnızca hukuki süreçtir."
+                },
+                {
+                  "id": "e",
+                  "text": "İletişimden tamamen bağımsızdır."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-029",
+              "order": 29,
+              "topic": "Çatışma Nedenleri",
+              "difficulty": "Kolay",
+              "text": "Aşağıdakilerden hangisi çatışmanın nedenlerinden biridir?",
+              "correctOptionId": "c",
+              "explanation": "İletişim eksikliği, yanlış anlaşılmalar, algı farklılıkları, çıkar çatışmaları, değer farklılıkları, kişilik özellikleri ve stres çatışmaya yol açabilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Açık ve net iletişim"
+                },
+                {
+                  "id": "b",
+                  "text": "Etkin dinleme"
+                },
+                {
+                  "id": "c",
+                  "text": "İletişim eksikliği ve yanlış anlaşılmalar"
+                },
+                {
+                  "id": "d",
+                  "text": "Ortak noktaların vurgulanması"
+                },
+                {
+                  "id": "e",
+                  "text": "Saygılı üslup"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-030",
+              "order": 30,
+              "topic": "Çatışma Nedenleri",
+              "difficulty": "Orta",
+              "text": "Sunuda koyu başlıklar halinde verilen çatışmaya yol açan nedenlerden biri aşağıdakilerden hangisidir?",
+              "correctOptionId": "d",
+              "explanation": "Algı ve bakış açısı farklılıkları, çıkar ve ihtiyaç çatışmaları, değer ve inanç farklılıkları, kişilik özellikleri ve stres başta gelen nedenlerdendir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Ortak amacın açık olması"
+                },
+                {
+                  "id": "b",
+                  "text": "Empati kurulması"
+                },
+                {
+                  "id": "c",
+                  "text": "Ben dili kullanılması"
+                },
+                {
+                  "id": "d",
+                  "text": "Değer ve inanç farklılıkları"
+                },
+                {
+                  "id": "e",
+                  "text": "Saygılı üslup sergilenmesi"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-031",
+              "order": 31,
+              "topic": "Yapıcı ve Uzlaştırıcı İletişim",
+              "difficulty": "Kolay",
+              "text": "Yapıcı ve uzlaştırıcı iletişimin temel amacı nedir?",
+              "correctOptionId": "a",
+              "explanation": "Amaç haklı çıkmak değil, sorunu çözmek; suçlayıcı ve yıkıcı dilden kaçınmaktır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Haklı çıkmak değil, sorunu çözmek"
+                },
+                {
+                  "id": "b",
+                  "text": "Karşı tarafı susturmak"
+                },
+                {
+                  "id": "c",
+                  "text": "Mutlaka tek taraflı karar vermek"
+                },
+                {
+                  "id": "d",
+                  "text": "Tartışmayı büyütmek"
+                },
+                {
+                  "id": "e",
+                  "text": "Gücü kullanarak baskı kurmak"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-032",
+              "order": 32,
+              "topic": "Yapıcı ve Uzlaştırıcı İletişim",
+              "difficulty": "Kolay",
+              "text": "Aşağıdakilerden hangisi yapıcı ve uzlaştırıcı iletişimin temel unsurlarındandır?",
+              "correctOptionId": "e",
+              "explanation": "Etkin dinleme, empati, ben dili, saygılı üslup, açık ifade ve ortak noktaları vurgulama temel unsurlardır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sürekli suçlayıcı dil"
+                },
+                {
+                  "id": "b",
+                  "text": "Tehditkâr üslup"
+                },
+                {
+                  "id": "c",
+                  "text": "Kırıcı ve yıkıcı söylem"
+                },
+                {
+                  "id": "d",
+                  "text": "Karşı tarafı küçümsemek"
+                },
+                {
+                  "id": "e",
+                  "text": "Ben dili kullanmak"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-033",
+              "order": 33,
+              "topic": "Yapıcı İletişim Teknikleri",
+              "difficulty": "Kolay",
+              "text": "Sunudaki örneğe göre ben dili kullanımı aşağıdakilerden hangisidir?",
+              "correctOptionId": "b",
+              "explanation": "Ben dili, suçlayıcı 'sen' dili yerine kişinin kendi duygusunu ifade etmesidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sen hep böylesin."
+                },
+                {
+                  "id": "b",
+                  "text": "Bu durum beni rahatsız ediyor."
+                },
+                {
+                  "id": "c",
+                  "text": "Hata her zaman sende."
+                },
+                {
+                  "id": "d",
+                  "text": "Senin yüzünden böyle oldu."
+                },
+                {
+                  "id": "e",
+                  "text": "Bunu anlamıyorsun."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-034",
+              "order": 34,
+              "topic": "Etkin Dinleme",
+              "difficulty": "Kolay",
+              "text": "Etkin dinlemenin temel özelliği aşağıdakilerden hangisidir?",
+              "correctOptionId": "d",
+              "explanation": "Karşı tarafı sözünü kesmeden dinlemek ve anlaşıldığını hissettirmek etkin dinlemenin temelidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece kendi düşünceni anlatmak"
+                },
+                {
+                  "id": "b",
+                  "text": "Hızlı yargıda bulunmak"
+                },
+                {
+                  "id": "c",
+                  "text": "Karşı taraf konuşurken başka işle ilgilenmek"
+                },
+                {
+                  "id": "d",
+                  "text": "Karşı tarafı sözünü kesmeden dinlemek"
+                },
+                {
+                  "id": "e",
+                  "text": "Mutlaka çözüm dikte etmek"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-035",
+              "order": 35,
+              "topic": "Duyguları Kontrol",
+              "difficulty": "Kolay",
+              "text": "Yapıcı iletişimde duyguları kontrol etmenin en uygun örneği aşağıdakilerden hangisidir?",
+              "correctOptionId": "c",
+              "explanation": "Öfkeyle konuşmamak ve sakin kalmaya özen göstermek yapıcı iletişimin temel davranışlarındandır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Ses tonunu sürekli yükseltmek"
+                },
+                {
+                  "id": "b",
+                  "text": "Karşı tarafı suçlamak"
+                },
+                {
+                  "id": "c",
+                  "text": "Öfkeyle konuşmamak ve sakin kalmak"
+                },
+                {
+                  "id": "d",
+                  "text": "Anında tepki vermek"
+                },
+                {
+                  "id": "e",
+                  "text": "Tartışmayı uzatmak"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-036",
+              "order": 36,
+              "topic": "Etkileyici İletişim",
+              "difficulty": "Orta",
+              "text": "Etkileyici iletişim nedir?",
+              "correctOptionId": "a",
+              "explanation": "Etkileyici iletişim, mesajın karşı taraf üzerinde kalıcı etki bırakması ve davranış değişikliğine yol açmasıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Mesajın ilgi uyandırıp kalıcı etki ve davranış değişikliği oluşturmasıdır."
+                },
+                {
+                  "id": "b",
+                  "text": "Sadece resmi yazıların okunmasıdır."
+                },
+                {
+                  "id": "c",
+                  "text": "Karşı tarafa zor kullanarak söz geçirmektir."
+                },
+                {
+                  "id": "d",
+                  "text": "Yalnızca hitabet yeteneğidir."
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece beden dili kullanmaktır."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-037",
+              "order": 37,
+              "topic": "Etkileyici İletişim Teknikleri",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi etkileyici iletişim tekniklerinden biridir?",
+              "correctOptionId": "e",
+              "explanation": "Açık ve net ifade, beden dilini etkili kullanma, ses tonu-vurgu, hikâyeleştirme ve empati temel tekniklerdir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Belirsiz ve karmaşık mesaj kullanmak"
+                },
+                {
+                  "id": "b",
+                  "text": "Monoton ve tek düze konuşmak"
+                },
+                {
+                  "id": "c",
+                  "text": "Göz temasından kaçınmak"
+                },
+                {
+                  "id": "d",
+                  "text": "Hiç örnek vermemek"
+                },
+                {
+                  "id": "e",
+                  "text": "Hikâyeleştirme ve örnekleme kullanmak"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-038",
+              "order": 38,
+              "topic": "İkna ve Güven",
+              "difficulty": "Orta",
+              "text": "Sunuda güvenin ikna sürecindeki yeri nasıl açıklanmıştır?",
+              "correctOptionId": "b",
+              "explanation": "Güven olmadığı bir ortamda ikna mümkün değildir; karşı taraf güvende hissetmezse direnç gösterir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Güven sadece resmi hiyerarşide önemlidir."
+                },
+                {
+                  "id": "b",
+                  "text": "Güven, ikna sürecinin temelidir."
+                },
+                {
+                  "id": "c",
+                  "text": "Güven yerine baskı daha etkilidir."
+                },
+                {
+                  "id": "d",
+                  "text": "Güven, mesajın içeriğinden tamamen bağımsızdır."
+                },
+                {
+                  "id": "e",
+                  "text": "Güven sadece beden diliyle kurulur."
+                }
+              ]
+            },
+            {
+              "id": "iletişim-039",
+              "order": 39,
+              "topic": "Güven Oluşturma",
+              "difficulty": "Kolay",
+              "text": "Güven oluşturmanın yollarından biri aşağıdakilerden hangisidir?",
+              "correctOptionId": "d",
+              "explanation": "Dürüst ve açık olmak, tutarlı davranmak, sözünü tutmak ve saygılı dil kullanmak güven oluşturur.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Tutarsız davranmak"
+                },
+                {
+                  "id": "b",
+                  "text": "Yargılayıcı konuşmak"
+                },
+                {
+                  "id": "c",
+                  "text": "Karşı tarafı küçümsemek"
+                },
+                {
+                  "id": "d",
+                  "text": "Sözünü tutmak"
+                },
+                {
+                  "id": "e",
+                  "text": "Görüşleri önemsiz görmek"
+                }
+              ]
+            },
+            {
+              "id": "iletişim-040",
+              "order": 40,
+              "topic": "Genel Değerlendirme",
+              "difficulty": "Orta",
+              "text": "Polislik mesleğinde etkili iletişimin genel başarısı için aşağıdakilerden hangisi en kapsayıcı yaklaşımdır?",
+              "correctOptionId": "c",
+              "explanation": "Etkili iletişim; açık mesaj, uygun ses tonu, beden dili, empati, etkin dinleme, güven ve geri bildirim unsurlarının bir arada doğru kullanılmasıyla sağlanır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Yalnızca otoriter ses tonu kullanmak"
+                },
+                {
+                  "id": "b",
+                  "text": "Sadece yazılı mesajla iletişim kurmak"
+                },
+                {
+                  "id": "c",
+                  "text": "Sözlü ve sözsüz unsurları, empatiyi ve güveni birlikte yönetmek"
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece ilk izlenime güvenmek"
+                },
+                {
+                  "id": "e",
+                  "text": "Yalnızca hızlı karar vermeye odaklanmak"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oturum-2",
+      "title": "2. Oturum",
+      "order": 2,
+      "examDate": "2026-05-04",
+      "startsAt": "11:30",
+      "totalQuestions": 40,
+      "durationMinutes": 60,
+      "pointPerQuestion": 1.25,
+      "courses": [
+        {
+          "id": "adli-tip",
+          "title": "Adli Tıp Uygulamaları Eğitimi",
+          "order": 1,
+          "questions": []
+        },
+        {
+          "id": "toplumsal-olay-mudahale",
+          "title": "Toplumsal Olaylara Müdahale Esasları Eğitimi",
+          "order": 2,
+          "questions": []
+        }
+      ]
+    }
+  ]
+}

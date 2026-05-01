@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAEM Sınav Hazırlık</title>
+    <meta
+      name="description"
+      content="PAEM sınavı için oturum, ders ve konu bazlı soru çözme uygulaması."
+    />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=20260501-3" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <section class="auth-view" data-view="auth">
+        <div class="auth-panel">
+          <div>
+            <p class="eyebrow">PAEM Sınav Hazırlık</p>
+            <h1>Pazartesi sınavı için oturum bazlı çalışma</h1>
+            <p class="lead">
+              Oturum 1 ve Oturum 2 derslerini seç, örnek soruları çöz, ilerlemeni
+              takip et.
+            </p>
+          </div>
+
+          <form id="loginForm" class="login-card">
+            <div class="form-head">
+              <h2>Giriş yap</h2>
+              <p>Firebase hesabınla devam et.</p>
+            </div>
+
+            <label>
+              E-posta
+              <input
+                id="email"
+                type="email"
+                autocomplete="email"
+                placeholder="ogrenci@example.com"
+                required
+              />
+            </label>
+
+            <label>
+              Şifre
+              <input
+                id="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="••••••••"
+                required
+                minlength="6"
+              />
+            </label>
+
+            <div style="display: flex; gap: 8px;">
+              <button id="loginButton" type="submit" style="flex: 1;">Giriş Yap</button>
+              <button id="showSignupButton" class="secondary-button" type="button" style="flex: 1;">Kayıt Ol</button>
+            </div>
+            <button id="googleLoginButton" class="google-button" type="button">
+              <span class="google-mark" aria-hidden="true">G</span>
+              Google ile Giriş Yap
+            </button>
+            <p id="authMessage" class="message" role="status"></p>
+          </form>
+        </div>
+
+        <div class="login-box hidden" id="signupBox">
+          <div class="brand">
+            <div class="logo">PAEM9</div>
+            <h1>Kayıt Ol</h1>
+            <p>Yeni bir hesap oluştur</p>
+          </div>
+
+          <form id="signupForm" class="auth-form">
+            <label>
+              <span class="eyebrow">Ad Soyad</span>
+              <input
+                type="text"
+                id="signupName"
+                placeholder="Ad Soyad"
+                required
+              />
+            </label>
+            <label>
+              <span class="eyebrow">E-posta</span>
+              <input
+                type="email"
+                id="signupEmail"
+                placeholder="isim@polis.tr"
+                required
+              />
+            </label>
+            <label>
+              <span class="eyebrow">Şifre</span>
+              <input
+                type="password"
+                id="signupPassword"
+                placeholder="••••••••"
+                required
+                minlength="6"
+              />
+            </label>
+
+            <button id="submitSignupButton" type="submit">Hesap Oluştur</button>
+            <button id="showLoginButton" class="ghost-button" type="button">Giriş Ekranına Dön</button>
+            
+            <p id="signupAuthMessage" class="message" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="main-view hidden" data-view="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Soru paneli</p>
+            <h1>PAEM Sınav Hazırlık</h1>
+          </div>
+          <div class="topbar-actions">
+            <span id="userEmail" class="user-email"></span>
+            <button id="logoutButton" class="ghost-button" type="button">Çıkış</button>
+          </div>
+        </header>
+
+        <main class="workspace">
+          <aside class="sidebar" aria-label="Oturum ve ders seçimi">
+            <div class="session-tabs" id="sessionTabs"></div>
+            <div class="course-list" id="courseList"></div>
+          </aside>
+
+          <div class="main-column">
+            <section class="content-panel">
+              <div class="content-header">
+                <div>
+                  <p id="selectedSession" class="eyebrow"></p>
+                  <h2 id="selectedCourse">Ders seç</h2>
+                  <p id="examInfo" class="exam-info"></p>
+                </div>
+                <div class="stats">
+                  <span id="questionCount">0 soru</span>
+                  <span id="scoreCount">0 doğru</span>
+                </div>
+              </div>
+
+              <div class="topic-bar" id="topicBar"></div>
+              <div id="questionArea" class="question-area"></div>
+            </section>
+
+
+            <section class="profile-panel" id="profilePanel">
+              <div class="profile-header">
+                <div class="profile-avatar" aria-hidden="true">P</div>
+                <div>
+                  <p class="eyebrow">Hesap</p>
+                  <h2>Profil</h2>
+                </div>
+              </div>
+              <dl class="profile-details">
+                <div>
+                  <dt>E-posta</dt>
+                  <dd id="profileEmail">-</dd>
+                </div>
+                <div>
+                  <dt>Kayıt tarihi</dt>
+                  <dd id="profileCreatedAt">-</dd>
+                </div>
+              </dl>
+            </section>
+          </div>
+        </main>
+
+        <nav class="app-navigator" id="appNavigator" aria-label="Alt gezinme">
+          <button class="nav-item active" type="button" data-nav-target="courses">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 5h14M5 12h14M5 19h14" />
+            </svg>
+            <span>Dersler</span>
+          </button>
+          <button class="nav-item" type="button" data-nav-target="questions">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 6h9M8 12h9M8 18h5M5 6h.01M5 12h.01M5 18h.01" />
+            </svg>
+            <span>Sorular</span>
+          </button>
+          <button class="nav-item" type="button" data-nav-target="profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
+            </svg>
+            <span>Profil</span>
+          </button>
+        </nav>
+      </section>
+    </div>
+
+    <script type="module" src="./app.js?v=20260501-3"></script>
+  </body>
+</html>
