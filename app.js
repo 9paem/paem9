@@ -125,6 +125,9 @@ function navigate(screen) {
 
 // ── Firebase ──
 async function initFirebase() {
+  // Show loading overlay until auth state is known
+  showLoadingOverlay(true);
+
   try {
     const [appMod, authMod, dbMod] = await Promise.all([
       import("https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"),
@@ -138,18 +141,28 @@ async function initFirebase() {
     Firebase.db   = Firebase.modules.getFirestore(Firebase.app);
     Firebase.ready = true;
 
-    // Handle redirect result from Google sign-in
+    // First: check if this is a redirect-back from Google sign-in
+    let handledByRedirect = false;
     try {
       const redirectResult = await Firebase.modules.getRedirectResult(Firebase.auth);
       if (redirectResult?.user) {
+        handledByRedirect = true;
         await openMainForUser(redirectResult.user);
+        showLoadingOverlay(false);
         return;
       }
     } catch (e) {
+      // auth/unauthorized-domain or similar — show error on auth screen
+      showLoadingOverlay(false);
+      navigate("auth");
       setAuthMsg(firebaseErrorMessage(e));
+      return;
     }
 
-    if (typeof Firebase.auth.authStateReady === "function") await Firebase.auth.authStateReady();
+    // Second: wait for Firebase to restore existing session
+    if (typeof Firebase.auth.authStateReady === "function") {
+      await Firebase.auth.authStateReady();
+    }
 
     if (Firebase.auth.currentUser) {
       await openMainForUser(Firebase.auth.currentUser);
@@ -159,19 +172,44 @@ async function initFirebase() {
       navigate("auth");
     }
 
+    showLoadingOverlay(false);
+
+    // Ongoing auth state changes (e.g. sign-out from another tab)
     Firebase.modules.onAuthStateChanged(Firebase.auth, async (user) => {
       if (user?.uid && user.uid === state.user?.uid) return;
       if (!user) {
         if (state.rememberedMode || loadRememberedUser()) return;
+        state.user = null;
         navigate("auth");
         return;
       }
       await openMainForUser(user);
     });
   } catch (error) {
+    showLoadingOverlay(false);
     setAuthMsg(`Firebase başlatılamadı: ${error.message}`);
     navigate("auth");
   }
+}
+
+function showLoadingOverlay(show) {
+  let el = document.getElementById("loadingOverlay");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "loadingOverlay";
+    el.style.cssText = `
+      position:fixed;inset:0;z-index:999;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
+      background:linear-gradient(160deg,#08111f,#0d1b2f 55%,#111827);
+    `;
+    el.innerHTML = `
+      <div style="width:48px;height:48px;border-radius:50%;border:3px solid rgba(201,154,46,.2);border-top-color:#c99a2e;animation:spin .8s linear infinite;"></div>
+      <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+      <p style="color:#b7c4d6;font-size:.9rem;font-weight:600;font-family:Inter,sans-serif;">Yükleniyor...</p>
+    `;
+    document.body.appendChild(el);
+  }
+  el.style.display = show ? "flex" : "none";
 }
 
 function createAuth() {
