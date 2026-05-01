@@ -761,7 +761,7 @@ function renderQuestionControls(questions) {
   const controls = document.createElement("div");
   controls.className = "question-controls";
   controls.innerHTML = `
-    <button class="text-button" type="button" data-question-action="reset" style="margin-right: auto; color: var(--color-gray-500); padding-left: 0;">Sıfırla</button>
+    <button class="secondary-button" type="button" data-question-action="reset" style="margin-right: auto;">Sıfırla</button>
     <button class="secondary-button" type="button" data-question-action="prev" ${
       state.activeQuestionIndex === 0 ? "disabled" : ""
     }>Önceki</button>
