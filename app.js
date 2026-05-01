@@ -124,7 +124,16 @@ async function initFirebase() {
     Firebase.db   = Firebase.modules.getFirestore(Firebase.app);
     Firebase.ready = true;
 
-    Firebase.modules.getRedirectResult(Firebase.auth).catch(e => setAuthMsg(firebaseErrorMessage(e)));
+    // Handle redirect result from Google sign-in
+    try {
+      const redirectResult = await Firebase.modules.getRedirectResult(Firebase.auth);
+      if (redirectResult?.user) {
+        await openMainForUser(redirectResult.user);
+        return;
+      }
+    } catch (e) {
+      setAuthMsg(firebaseErrorMessage(e));
+    }
 
     if (typeof Firebase.auth.authStateReady === "function") await Firebase.auth.authStateReady();
 
@@ -234,21 +243,18 @@ async function handleSignupForm(e) {
 }
 
 async function handleGoogleLogin() {
+  if (!Firebase.ready || !Firebase.modules) {
+    setAuthMsg("Firebase henzü hazır değil, lütfen bekleyin.");
+    return;
+  }
   setLoading(true, "google");
   try {
     const provider = new Firebase.modules.GoogleAuthProvider();
     provider.setCustomParameters({ prompt: "select_account" });
-    const r = await Firebase.modules.signInWithPopup(Firebase.auth, provider);
-    await openMainForUser(r.user);
+    // Always use redirect (avoids COOP/popup issues)
+    await Firebase.modules.signInWithRedirect(Firebase.auth, provider);
   } catch (err) {
-    if (err.code === "auth/popup-blocked") {
-      const provider = new Firebase.modules.GoogleAuthProvider();
-      provider.setCustomParameters({ prompt: "select_account" });
-      await Firebase.modules.signInWithRedirect(Firebase.auth, provider);
-      return;
-    }
     setAuthMsg(firebaseErrorMessage(err));
-  } finally {
     setLoading(false, "google");
   }
 }
