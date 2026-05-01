@@ -254,8 +254,28 @@ async function openMainForUser(user) {
     await loadFirestoreData();
     restoreUserStateFromCache();
   } catch (e) {
+    console.warn("loadFirestoreData hatası:", e);
     state.sessions = [];
     state.answers  = {};
+  }
+  // Sync user info to Firestore (ayrı try-catch — veri yüklemesini engellemesin)
+  if (user && Firebase.db) {
+    try {
+      const { doc, getDoc, setDoc, serverTimestamp } = Firebase.modules;
+      const userRef = doc(Firebase.db, "users", user.uid);
+      const snap = await getDoc(userRef);
+      const extra = snap.exists() ? {} : { createdAt: serverTimestamp() };
+      await setDoc(userRef, {
+        uid: user.uid,
+        email: user.email || "",
+        displayName: user.displayName || user.email?.split("@")[0] || "Anonim",
+        lastSeen: serverTimestamp(),
+        ...extra,
+      }, { merge: true });
+      console.log("✅ Kullanıcı Firestore'a yazıldı:", user.uid);
+    } catch (e) {
+      console.error("❌ Firestore kullanıcı yazma hatası:", e.code, e.message);
+    }
   }
   showHome();
   if (!sessionStorage.getItem("promoShown")) {

@@ -5,3 +5,8 @@ serviceAccountKey.json
 service-account.json
 *firebase-adminsdk*.json
 *.pem
+
+*.pptx
+*.docx
+*.pdf
+özet/
