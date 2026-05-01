@@ -5384,7 +5384,7 @@
       "courses": [
         {
           "id": "adli-tip",
-          "title": "Adli Tıp Uygulamaları Eğitimi",
+          "title": "Adli Tıp",
           "order": 1,
           "questions": [],
           "expectedQuestionCount": 10,
@@ -5393,7 +5393,7 @@
         },
         {
           "id": "toplumsal-olay-mudahale",
-          "title": "Toplumsal Olaylara Müdahale Esasları Eğitimi",
+          "title": "Toplumsal Olaylar (Çevik)",
           "order": 2,
           "questions": [],
           "expectedQuestionCount": 30,
