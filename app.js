@@ -249,6 +249,25 @@ async function openMainForUser(user) {
     state.answers  = {};
   }
   showHome();
+  if (!sessionStorage.getItem("promoShown")) {
+    sessionStorage.setItem("promoShown", "1");
+    setTimeout(showPromoToast, 1200);
+  }
+}
+
+function showPromoToast() {
+  const toast = document.getElementById("promoToast");
+  const closeBtn = document.getElementById("promoToastClose");
+  if (!toast) return;
+  toast.classList.remove("hidden");
+  function dismiss() {
+    toast.style.animationName = "toastSlideOut";
+    toast.style.animationDuration = ".25s";
+    toast.style.animationFillMode = "forwards";
+    setTimeout(() => toast.classList.add("hidden"), 260);
+  }
+  closeBtn?.addEventListener("click", dismiss, { once: true });
+  setTimeout(dismiss, 8000);
 }
 
 async function openMainFromRememberedUser(user) {
