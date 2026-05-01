@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "questionBankVersion": "v7"
+    "questionBankVersion": "v8"
   },
   "sessions": [
     {
@@ -2364,155 +2364,155 @@
             {
               "id": "teror-001",
               "order": 1,
-              "topic": "Terörizmin Temel Kavramları",
-              "difficulty": "Kolay",
-              "text": "Bir örgütün ideolojik amaçlarına ulaşmak için planlı ve sistemli bir şekilde, toplumda korku ve dehşet yaratarak devletin veya anayasal düzenin otoritesini zayıflatmayı amaçlayan şiddet eylemlerine ne ad verilir?",
-              "correctOptionId": "b",
-              "explanation": "Terörizm, siyasi, dini veya ideolojik amaçlara ulaşmak için toplumda sistemli bir korku, panik ve yıldırma yaratmayı hedefleyen planlı şiddet eylemleridir.",
+              "topic": "Korumanın Ana Unsurları",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi korumanın ana unsurlarından değildir?",
+              "correctOptionId": "e",
+              "explanation": "Özel Koruma, korumanın genel ve ana unsurlarından (Yaya, Motorize, Bina/Tesis ve Öncü İstihbarat) biri değildir.",
               "options": [
                 {
                   "id": "a",
-                  "text": "Organize Suçlar"
+                  "text": "Yaya Koruma"
                 },
                 {
                   "id": "b",
-                  "text": "Terörizm"
+                  "text": "Motorize Koruma"
                 },
                 {
                   "id": "c",
-                  "text": "Vandalizm"
+                  "text": "Bina Tesis Koruma"
                 },
                 {
                   "id": "d",
-                  "text": "Casusluk"
+                  "text": "Öncü İstihbarat"
                 },
                 {
                   "id": "e",
-                  "text": "Sabotaj"
+                  "text": "Özel Koruma"
                 }
               ]
             },
             {
               "id": "teror-002",
               "order": 2,
-              "topic": "Terör Örgütü Unsurları",
-              "difficulty": "Orta",
-              "text": "3713 sayılı Terörle Mücadele Kanunu'na göre bir yapılanmanın 'Terör Örgütü' sayılabilmesi için bulunması gereken temel unsurlar aşağıdakilerden hangisidir?",
-              "correctOptionId": "c",
-              "explanation": "3713 sayılı kanuna göre terör örgütlerinin temel unsurları; siyasi veya ideolojik bir amaç, cebir ve şiddet kullanımı ve bu amaca yönelik hiyerarşik bir örgütlenmenin varlığıdır.",
+              "topic": "Risk Analizi",
+              "difficulty": "Kolay",
+              "text": "Risk analizinin aşamaları sıralı şekilde doğru verilmiştir.",
+              "correctOptionId": "a",
+              "explanation": "Risk analizi süreci; risklerin tespit edilmesi, bunların önemine göre derecelendirilmesi ve son olarak alınacak önlemlerle örtülmesi (minimize edilmesi) aşamalarından oluşur.",
               "options": [
                 {
                   "id": "a",
-                  "text": "Finansal güç, silah ve medya desteği"
+                  "text": "Risklerin Tespit Edilmesi - Risklerin Derecelendirilmesi - Risklerin Örtülmesi"
                 },
                 {
                   "id": "b",
-                  "text": "Sadece uluslararası bağlantı ve gizlilik"
+                  "text": "Risklerin Derecelendirilmesi - Risklerin Tespit Edilmesi - Risklerin Örtülmesi"
                 },
                 {
                   "id": "c",
-                  "text": "İdeolojik amaç, örgütlenme (hiyerarşi) ve cebir/şiddet kullanımı"
+                  "text": "Risklerin Örtülmesi - Risklerin Derecelendirilmesi - Risklerin Tespit Edilmesi"
                 },
                 {
                   "id": "d",
-                  "text": "Kar amacı gütme ve ticari faaliyetler"
+                  "text": "Risklerin Derecelendirilmesi - Risklerin Örtülmesi - Risklerin Tespit Edilmesi"
                 },
                 {
                   "id": "e",
-                  "text": "Siber saldırı yeteneği ve yabancı dil bilgisi"
+                  "text": "Risklerin Örtülmesi - Risklerin Derecelendirilmesi - Risklerin Tespit Edilmesi"
                 }
               ]
             },
             {
               "id": "teror-003",
               "order": 3,
-              "topic": "Terörizme Karşı Koyma Stratejisi",
+              "topic": "Tesis Koruma Prensipleri",
               "difficulty": "Orta",
-              "text": "Güvenlik güçleri tarafından terör olaylarını ve saldırılarını önlemek amacıyla proaktif (önleyici) olarak yürütülen, istihbarata dayalı tüm operasyonel çalışmalara verilen genel ad nedir?",
-              "correctOptionId": "d",
-              "explanation": "Terörle mücadelede saldırılar gerçekleşmeden önce istihbarat ve operasyonel tedbirlerle terör unsurlarını etkisiz hale getirmeye yönelik çalışmalara 'Önleyici (Proaktif) Mücadele' adı verilir.",
+              "text": "Aşağıdakilerden hangisi tesis korumanın temel prensiplerinden biri değildir?",
+              "correctOptionId": "c",
+              "explanation": "Kişinin itibarı, daha çok VIP korumanın konusu iken tesis koruma ülkenin itibarı, ekonomi, çalışanların güvenliği gibi konulara odaklanır.",
               "options": [
                 {
                   "id": "a",
-                  "text": "Pasif Koruma"
+                  "text": "Ülkenin itibar"
                 },
                 {
                   "id": "b",
-                  "text": "Reaktif Müdahale"
+                  "text": "Ülke Ekonomisine Katkısı"
                 },
                 {
                   "id": "c",
-                  "text": "Adli Soruşturma"
+                  "text": "Kişinin itibarı"
                 },
                 {
                   "id": "d",
-                  "text": "Proaktif (Önleyici) Mücadele"
+                  "text": "Çalışanların faaliyetini güvenli ortamda gerçekleştirilmesi"
                 },
                 {
                   "id": "e",
-                  "text": "Kriz Yönetimi"
+                  "text": "Halkın huzuru ve istirahati"
                 }
               ]
             },
             {
               "id": "teror-004",
               "order": 4,
-              "topic": "Patlayıcılar ve Bombalı Eylemler",
-              "difficulty": "Zor",
-              "text": "Terör örgütlerinin bombalı eylemlerinde sıklıkla başvurdukları 'İkincil Bomba (Secondary Device)' taktiğinin temel amacı aşağıdakilerden hangisidir?",
-              "correctOptionId": "a",
-              "explanation": "İkincil bomba (secondary device) taktiği; ilk patlamanın ardından olay yerine müdahale etmek için gelen sağlık, itfaiye ve güvenlik ekiplerini (ilk müdahale ekiplerini) hedef alarak can kaybını maksimize etmeyi amaçlar.",
+              "topic": "Risk Analizi Tanımı",
+              "difficulty": "Kolay",
+              "text": "Korunacak yerde yapılan incelemeler neticesinde kurumun yaptığı iş, stratejik ve coğrafi konumu göz önünde bulundurularak risklerin tespit edilmesi ve önemine göre derecelendirilmesine .......... denir.",
+              "correctOptionId": "b",
+              "explanation": "Bu süreç, tehlikelerin saptanması ve risk boyutunun değerlendirildiği temel güvenlik prosedürü olan Risk Analizidir.",
               "options": [
                 {
                   "id": "a",
-                  "text": "Olay yerine yardıma gelen ilk müdahale ekiplerini ve güvenlik güçlerini hedef almak"
+                  "text": "VIP Koruma"
                 },
                 {
                   "id": "b",
-                  "text": "Sadece maddi hasarı artırarak bina kolonlarını yıkmak"
+                  "text": "Risk Analiz"
                 },
                 {
                   "id": "c",
-                  "text": "Birinci bombanın patlamama ihtimaline karşı yedek olarak kullanmak"
+                  "text": "Ekonomik maliyet analizi"
                 },
                 {
                   "id": "d",
-                  "text": "Bomba imha uzmanlarının çalışmasını kolaylaştırmak"
+                  "text": "Araştırma Analiz"
                 },
                 {
                   "id": "e",
-                  "text": "Saldırının uluslararası basında duyulmasını sağlamak"
+                  "text": "Güvenlik Analizi"
                 }
               ]
             },
             {
               "id": "teror-005",
               "order": 5,
-              "topic": "Canlı Bomba Profili",
-              "difficulty": "Orta",
-              "text": "Şüpheli bir şahsın 'Canlı Bomba (İntihar Saldırganı)' olabileceğine dair güvenlik güçlerini alarma geçirmesi gereken en kritik davranışsal ve fiziksel belirti aşağıdakilerden hangisidir?",
-              "correctOptionId": "c",
-              "explanation": "Canlı bombaların en belirgin özellikleri arasında mevsime veya hava durumuna uygun olmayan kalın, bol kıyafetler giymeleri, gergin olmaları, aşırı terlemeleri ve odaklanmış, tünel vizyonu (hedefe kilitlenme) sergilemeleridir.",
+              "topic": "Kişisel Güvenlik İlkeleri",
+              "difficulty": "Kolay",
+              "text": "Aşağıdakilerden hangisi kişisel güvenlik ilkelerinden değildir.",
+              "correctOptionId": "d",
+              "explanation": "Kişisel güvenlikte gizliliğe riayet etmemek büyük bir güvenlik zafiyetidir. Dolayısıyla gizliliğe riayet etmek temel bir ilkedir.",
               "options": [
                 {
                   "id": "a",
-                  "text": "Açık renkli ve dar kıyafetler giymesi"
+                  "text": "Rutin işlerden kaçınmak"
                 },
                 {
                   "id": "b",
-                  "text": "Sürekli telefonla yüksek sesle konuşması"
+                  "text": "Uyanık ve şüpheci olmak"
                 },
                 {
                   "id": "c",
-                  "text": "Mevsime uygun olmayan bol, kalın kıyafetler giymesi ve hedefe kilitlenmiş (tünel vizyonu) gergin tavırlar sergilemesi"
+                  "text": "Sistemli olmak"
                 },
                 {
                   "id": "d",
-                  "text": "Çevresindeki insanlarla sürekli sohbet etmeye çalışması"
+                  "text": "Gizliliğe riayet etmemek"
                 },
                 {
                   "id": "e",
-                  "text": "Toplu taşıma araçlarında sadece en arka koltukta oturması"
+                  "text": "Girişimci ve sağduyulu olmak"
                 }
               ]
             }

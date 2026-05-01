@@ -713,6 +713,7 @@ function renderResultScreen(questions) {
       <p class="eyebrow">Test tamamlandı</p>
       <h3>${escapeHtml(getActiveCourse()?.title || "Test sonucu")}</h3>
       <div class="result-actions">
+        <button class="primary-button" type="button" data-result-action="restart">Testi Yeniden Çöz</button>
         <button class="secondary-button" type="button" data-result-action="review">Soruları İncele</button>
       </div>
     </div>
@@ -722,7 +723,18 @@ function renderResultScreen(questions) {
     const button = event.target.closest("[data-result-action]");
     if (!button) return;
 
-    if (button.dataset.resultAction === "review") {
+    if (button.dataset.resultAction === "restart") {
+      if (confirm("Bu testteki tüm cevaplarınız silinecek ve sıfırdan başlayacaksınız. Emin misiniz?")) {
+        const course = getActiveCourse();
+        course?.questions?.forEach(q => {
+          delete state.answers[q.id];
+        });
+        state.showResultScreen = false;
+        state.activeQuestionIndex = 0;
+        persistUserStateToCache();
+        render();
+      }
+    } else if (button.dataset.resultAction === "review") {
       state.showResultScreen = false;
       state.activeQuestionIndex = 0;
       persistUserStateToCache();
@@ -749,6 +761,7 @@ function renderQuestionControls(questions) {
   const controls = document.createElement("div");
   controls.className = "question-controls";
   controls.innerHTML = `
+    <button class="text-button" type="button" data-question-action="reset" style="margin-right: auto; color: var(--color-gray-500); padding-left: 0;">Sıfırla</button>
     <button class="secondary-button" type="button" data-question-action="prev" ${
       state.activeQuestionIndex === 0 ? "disabled" : ""
     }>Önceki</button>
@@ -760,6 +773,20 @@ function renderQuestionControls(questions) {
   controls.addEventListener("click", (event) => {
     const button = event.target.closest("[data-question-action]");
     if (!button) return;
+
+    if (button.dataset.questionAction === "reset") {
+      if (confirm("Bu testteki tüm cevaplarınız silinecek ve sıfırdan başlayacaksınız. Emin misiniz?")) {
+        const course = getActiveCourse();
+        course?.questions?.forEach(q => {
+          delete state.answers[q.id];
+        });
+        state.activeQuestionIndex = 0;
+        state.showResultScreen = false;
+        persistUserStateToCache();
+        render();
+      }
+      return;
+    }
 
     if (button.dataset.questionAction === "finish") {
       state.showResultScreen = true;
