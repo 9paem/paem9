@@ -2,222 +2,166 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PAEM Sınav Hazırlık</title>
-    <meta
-      name="description"
-      content="PAEM sınavı için oturum, ders ve konu bazlı soru çözme uygulaması."
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>PAEM9 – Misyon Akademi</title>
+    <meta name="description" content="9. Dönem PAEM Final Sınavı hazırlık uygulaması. Oturum ve ders bazlı soru çözme." />
     <link rel="icon" href="./favicon.ico" sizes="any" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=20260501-3" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=20260502-1" />
   </head>
   <body>
     <div id="app" class="app-shell">
-      <section class="auth-view" data-view="auth">
-        <div class="auth-panel">
-          <div>
-            <p class="eyebrow">PAEM Sınav Hazırlık</p>
-            <h1>9. Dönem PAEM Final Sınavı Hazırlık</h1>
-            <p class="lead">
-              Oturum 1 ve Oturum 2 derslerini seç, örnek soruları çöz, ilerlemeni takip et.<br><br>
-              <a href="https://t.me/misyon_akademi" target="_blank" style="color: #ffe7a3; text-decoration: none; font-weight: 800; display: inline-flex; align-items: center; gap: 6px;">
-                <span style="font-size: 1.2rem;">📱</span> Telegram Grubumuza Katılın
-              </a>
-            </p>
+
+      <!-- ── SCREEN: AUTH ── -->
+      <div id="screenAuth" class="screen screen-auth">
+        <div class="auth-hero">
+          <div class="auth-logo-bg" aria-hidden="true"></div>
+          <div class="auth-logo-wrap">
+            <img src="./assets/misyon-akademi-logo.jpg" alt="Misyon Akademi" class="auth-logo" onerror="this.style.display='none'" />
           </div>
+          <h1 class="auth-title">9. Dönem PAEM<br>Final Sınavı Hazırlık</h1>
+        </div>
 
-          <form id="loginForm" class="login-card">
-            <div class="form-head">
-              <h2>Giriş yap</h2>
-              <p>Firebase hesabınla devam et.</p>
-            </div>
-
-            <label>
-              E-posta
-              <input
-                id="email"
-                type="email"
-                autocomplete="email"
-                placeholder="ogrenci@example.com"
-                required
-              />
-            </label>
-
-            <label>
-              Şifre
-              <input
-                id="password"
-                type="password"
-                autocomplete="current-password"
-                placeholder="••••••••"
-                required
-                minlength="6"
-              />
-            </label>
-
-            <div style="display: flex; gap: 8px;">
-              <button id="loginButton" type="submit" style="flex: 1;">Giriş Yap</button>
-              <button id="showSignupButton" class="secondary-button" type="button" style="flex: 1;">Kayıt Ol</button>
-            </div>
-            <button id="googleLoginButton" class="google-button" type="button">
-              <span class="google-mark" aria-hidden="true">G</span>
-              Google ile Giriş Yap
+        <!-- Login form -->
+        <div id="loginBox" class="auth-card">
+          <form id="loginForm">
+            <h2>Giriş Yap</h2>
+            <input id="email" type="email" autocomplete="email" placeholder="E-posta" required />
+            <input id="password" type="password" autocomplete="current-password" placeholder="Şifre" required minlength="6" />
+            <button id="loginButton" type="submit" class="btn-primary">Giriş Yap</button>
+            <button id="googleLoginButton" type="button" class="btn-google">
+              <span class="g-mark">G</span> Google ile Giriş Yap
             </button>
-            <p id="authMessage" class="message" role="status"></p>
+            <p id="authMessage" class="auth-msg"></p>
+            <button id="showSignupButton" type="button" class="btn-link">Hesabın yok mu? Kayıt Ol →</button>
           </form>
         </div>
 
-        <div class="login-box hidden" id="signupBox">
-          <div class="brand">
-            <div class="logo">PAEM9</div>
-            <h1>Kayıt Ol</h1>
-            <p>Yeni bir hesap oluştur</p>
-          </div>
-
-          <form id="signupForm" class="auth-form">
-            <label>
-              <span class="eyebrow">Ad Soyad</span>
-              <input
-                type="text"
-                id="signupName"
-                placeholder="Ad Soyad"
-                required
-              />
-            </label>
-            <label>
-              <span class="eyebrow">E-posta</span>
-              <input
-                type="email"
-                id="signupEmail"
-                placeholder="isim@polis.tr"
-                required
-              />
-            </label>
-            <label>
-              <span class="eyebrow">Şifre</span>
-              <input
-                type="password"
-                id="signupPassword"
-                placeholder="••••••••"
-                required
-                minlength="6"
-              />
-            </label>
-
-            <button id="submitSignupButton" type="submit">Hesap Oluştur</button>
-            <button id="showLoginButton" class="ghost-button" type="button">Giriş Ekranına Dön</button>
-            
-            <p id="signupAuthMessage" class="message" role="status"></p>
+        <!-- Signup form -->
+        <div id="signupBox" class="auth-card hidden">
+          <form id="signupForm">
+            <h2>Kayıt Ol</h2>
+            <input type="text" id="signupName" placeholder="Ad Soyad" required />
+            <input type="email" id="signupEmail" placeholder="E-posta" required />
+            <input type="password" id="signupPassword" placeholder="Şifre" required minlength="6" />
+            <button id="submitSignupButton" type="submit" class="btn-primary">Hesap Oluştur</button>
+            <p id="signupAuthMessage" class="auth-msg"></p>
+            <button id="showLoginButton" type="button" class="btn-link">← Giriş ekranına dön</button>
           </form>
         </div>
-      </section>
 
-      <section class="main-view hidden" data-view="main">
-        <header class="topbar">
-          <div>
-            <p class="eyebrow">Soru paneli</p>
-            <h1>PAEM Sınav Hazırlık</h1>
+        <div class="auth-footer">
+          <a href="https://t.me/misyon_akademi" target="_blank" class="tg-link">📱 Telegram Grubumuz</a>
+        </div>
+      </div>
+
+      <!-- ── SCREEN: HOME ── -->
+      <div id="screenHome" class="screen hidden">
+        <header class="mobile-header">
+          <div class="header-brand">
+            <span class="header-logo-text">PAEM9</span>
+            <span class="header-title">Final Hazırlık</span>
           </div>
-          <div class="topbar-actions">
-            <span id="userEmail" class="user-email"></span>
-            <button id="logoutButton" class="ghost-button" type="button">Çıkış</button>
-          </div>
+          <button id="profileButton" type="button" class="icon-btn" aria-label="Profil">
+            <svg viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg>
+          </button>
         </header>
 
-        <main class="workspace">
-          <aside class="sidebar" aria-label="Oturum ve ders seçimi">
-            <div class="session-tabs" id="sessionTabs"></div>
-            <div class="course-list" id="courseList"></div>
-            
-            <div class="app-advertisement">
-              <img src="./assets/misyon-akademi-logo.jpg" alt="Misyon Akademi Logo" class="app-ad-logo" onerror="this.style.display='none'" />
-              <div class="app-ad-content">
-                <h3>Misyon Akademi Yayında! 📱🎉</h3>
-                <p>Komiserlik (PAEM) ve Misyon Koruma sınavlarına hazırlananlar için geliştirdiğim mobil uygulama yayında!</p>
-                <ul>
-                  <li>✅ Güncel sorular & denemeler</li>
-                  <li>✅ Bilgi kartları</li>
-                  <li>✅ Kişisel analiz</li>
-                  <li>✅ Yanlışları yeniden çözme</li>
-                  <li>✅ Türkiye geneli sıralama</li>
-                  <li>✅ Favori soruları kaydetme</li>
-                </ul>
-                <div class="app-ad-buttons">
-                  <a href="https://t.me/misyon_akademi" target="_blank" class="telegram-btn" style="background: linear-gradient(135deg, #2AABEE, #229ED9); border: 1px solid #229ED9; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; padding: 12px; border-radius: 8px; font-weight: 800; font-size: 0.95rem; color: #fff; margin-bottom: 4px; transition: all 0.2s ease;">
-                    <span>📱</span> Telegram Grubu
-                  </a>
-                  <a href="https://apps.apple.com/tr/app/komiserlik-misyon-koruma/id6760534055?l=tr" target="_blank" class="app-store-btn"> iOS İndir</a>
-                  <a href="https://play.google.com/store/apps/details?id=com.misyonakademi.paem" target="_blank" class="play-store-btn">▶ Android İndir</a>
-                </div>
+        <main class="home-content">
+          <div class="home-greeting">
+            <p class="eyebrow">Hoş geldin 👋</p>
+            <h2 id="homeUserName">Öğrenci</h2>
+          </div>
+
+          <section class="home-sessions" id="homeSessionList">
+            <!-- session cards rendered by JS -->
+          </section>
+
+          <section class="home-promo">
+            <img src="./assets/misyon-akademi-logo.jpg" alt="Misyon Akademi" class="promo-logo" onerror="this.style.display='none'" />
+            <div class="promo-body">
+              <h3>Misyon Akademi Uygulaması 📱</h3>
+              <p>Komiserlik ve Misyon Koruma sınavlarına hazırlananlar için mobil uygulama yayında!</p>
+              <div class="promo-badges">
+                <a href="https://t.me/misyon_akademi" target="_blank" class="badge-tg">Telegram</a>
+                <a href="https://apps.apple.com/tr/app/komiserlik-misyon-koruma/id6760534055?l=tr" target="_blank" class="badge-ios">iOS</a>
+                <a href="https://play.google.com/store/apps/details?id=com.misyonakademi.paem" target="_blank" class="badge-android">Android</a>
               </div>
             </div>
-          </aside>
+          </section>
+        </main>
+      </div>
 
-          <div class="main-column">
-            <section class="content-panel">
-              <div class="content-header">
-                <div>
-                  <p id="selectedSession" class="eyebrow"></p>
-                  <h2 id="selectedCourse">Ders seç</h2>
-                  <p id="examInfo" class="exam-info"></p>
-                </div>
-                <div class="stats">
-                  <span id="questionCount">0 soru</span>
-                  <span id="scoreCount">0 doğru</span>
-                </div>
-              </div>
-
-              <div class="topic-bar" id="topicBar"></div>
-              <div id="questionArea" class="question-area"></div>
-            </section>
-
-
-            <section class="profile-panel" id="profilePanel">
-              <div class="profile-header">
-                <div class="profile-avatar" aria-hidden="true">P</div>
-                <div>
-                  <p class="eyebrow">Hesap</p>
-                  <h2>Profil</h2>
-                </div>
-              </div>
-              <dl class="profile-details">
-                <div>
-                  <dt>E-posta</dt>
-                  <dd id="profileEmail">-</dd>
-                </div>
-                <div>
-                  <dt>Kayıt tarihi</dt>
-                  <dd id="profileCreatedAt">-</dd>
-                </div>
-              </dl>
-            </section>
+      <!-- ── SCREEN: COURSES ── -->
+      <div id="screenCourses" class="screen hidden">
+        <header class="mobile-header">
+          <button id="coursesBackButton" type="button" class="icon-btn back-btn" aria-label="Geri">
+            <svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="header-brand">
+            <span id="coursesSessionTitle" class="header-title">Oturum</span>
+          </div>
+          <button id="coursesProfileButton" type="button" class="icon-btn" aria-label="Profil">
+            <svg viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg>
+          </button>
+        </header>
+        <main class="courses-content">
+          <div id="courseListMobile" class="course-list-mobile">
+            <!-- course cards rendered by JS -->
           </div>
         </main>
+      </div>
 
-        <nav class="app-navigator" id="appNavigator" aria-label="Alt gezinme">
-          <button class="nav-item active" type="button" data-nav-target="courses">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M5 5h14M5 12h14M5 19h14" />
-            </svg>
-            <span>Dersler</span>
+      <!-- ── SCREEN: QUESTIONS ── -->
+      <div id="screenQuestions" class="screen hidden">
+        <header class="mobile-header">
+          <button id="questionsBackButton" type="button" class="icon-btn back-btn" aria-label="Geri">
+            <svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
           </button>
-          <button class="nav-item" type="button" data-nav-target="questions">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M8 6h9M8 12h9M8 18h5M5 6h.01M5 12h.01M5 18h.01" />
-            </svg>
-            <span>Sorular</span>
-          </button>
-          <button class="nav-item" type="button" data-nav-target="profile">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
-            </svg>
-            <span>Profil</span>
-          </button>
-        </nav>
-      </section>
-    </div>
+          <div class="header-brand">
+            <span id="questionsCourseName" class="header-title">Ders</span>
+          </div>
+          <div class="header-stats">
+            <span id="qHeaderCount" class="header-stat-pill"></span>
+            <span id="qHeaderScore" class="header-stat-pill accent"></span>
+          </div>
+        </header>
+        <main class="questions-content">
+          <div id="questionProgressWrap" class="question-progress-wrap"></div>
+          <div id="questionAreaMobile" class="question-area-mobile"></div>
+          <div id="questionControlsMobile" class="question-controls-mobile"></div>
+        </main>
+      </div>
 
-    <script type="module" src="./app.js?v=20260501-6"></script>
+      <!-- ── SCREEN: PROFILE ── -->
+      <div id="screenProfile" class="screen hidden">
+        <header class="mobile-header">
+          <button id="profileBackButton" type="button" class="icon-btn back-btn" aria-label="Geri">
+            <svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="header-brand">
+            <span class="header-title">Profil</span>
+          </div>
+          <button id="logoutButton" type="button" class="icon-btn" aria-label="Çıkış">
+            <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+          </button>
+        </header>
+        <main class="profile-content">
+          <div class="profile-avatar-big" id="profileAvatarBig">P</div>
+          <dl class="profile-dl">
+            <div><dt>E-posta</dt><dd id="profileEmail">-</dd></div>
+            <div><dt>Kayıt tarihi</dt><dd id="profileCreatedAt">-</dd></div>
+          </dl>
+        </main>
+      </div>
+
+    </div><!-- /app-shell -->
+
+    <script type="module" src="./app.js?v=20260502-1"></script>
   </body>
 </html>
