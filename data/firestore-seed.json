@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "questionBankVersion": "v5"
+    "questionBankVersion": "v6"
   },
   "sessions": [
     {
@@ -17,7 +17,1868 @@
           "id": "olay-yeri-inceleme-ilk-ekip",
           "title": "Olay Yeri",
           "order": 1,
-          "questions": [],
+          "questions": [
+            {
+              "id": "olayyeri-001",
+              "order": 1,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Fransız Kriminal Uzman Edmund Locard tarafından ortaya konulan ve 'Her temas bir iz bırakır' ilkesine dayanan prensip aşağıdakilerden hangisidir?",
+              "correctOptionId": "b",
+              "explanation": "Değişim Prensibi",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Bütünsellik Prensibi"
+                },
+                {
+                  "id": "b",
+                  "text": "Değişim Prensibi"
+                },
+                {
+                  "id": "c",
+                  "text": "Nedensellik Prensibi"
+                },
+                {
+                  "id": "d",
+                  "text": "Süreklilik Prensibi"
+                },
+                {
+                  "id": "e",
+                  "text": "Belgeleme Prensibi"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-002",
+              "order": 2,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Olay yerinde elde edilen ve henüz hukuki nitelik kazanmamış her türlü maddi ve sözlü unsura ne ad verilir?",
+              "correctOptionId": "c",
+              "explanation": "Bulgu",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Delil"
+                },
+                {
+                  "id": "b",
+                  "text": "Karakteristik"
+                },
+                {
+                  "id": "c",
+                  "text": "Bulgu"
+                },
+                {
+                  "id": "d",
+                  "text": "İspat"
+                },
+                {
+                  "id": "e",
+                  "text": "Veri"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-003",
+              "order": 3,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi olay yerinin belgelenmesinde (tespitinde) kullanılan yöntemlerden biri değildir?",
+              "correctOptionId": "d",
+              "explanation": "Sorgulama",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Adli Görüntüleme"
+                },
+                {
+                  "id": "b",
+                  "text": "Kroki"
+                },
+                {
+                  "id": "c",
+                  "text": "Rapor"
+                },
+                {
+                  "id": "d",
+                  "text": "Sorgulama"
+                },
+                {
+                  "id": "e",
+                  "text": "Kamera çekimi"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-004",
+              "order": 4,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Biyolojik bulguların incelemesinde temel amaç aşağıdakilerden hangisine ulaşmaktır?",
+              "correctOptionId": "b",
+              "explanation": "DNA",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kan grubuna"
+                },
+                {
+                  "id": "b",
+                  "text": "DNA"
+                },
+                {
+                  "id": "c",
+                  "text": "Hastalık geçmişine"
+                },
+                {
+                  "id": "d",
+                  "text": "Beslenme alışkanlıklarına"
+                },
+                {
+                  "id": "e",
+                  "text": "Yaş tespitine"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-005",
+              "order": 5,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Kan lekeleri ile ilgili olarak aşağıda verilen bilgilerden hangisi yanlıştır?",
+              "correctOptionId": "d",
+              "explanation": "Kurumuş kan lekesini transfer etmek için alkol kullanılmalıdır - Yanlış, serum fizyolojik kullanılmalıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "İnsan vücut ağırlığının %8'ini oluşturur."
+                },
+                {
+                  "id": "b",
+                  "text": "Uygun koşullarda yıllar sonra dahi sonuç verebilir."
+                },
+                {
+                  "id": "c",
+                  "text": "Leke şekilleri olayın işleniş tarzı hakkında bilgi verebilir."
+                },
+                {
+                  "id": "d",
+                  "text": "Kurumuş kan lekesini transfer etmek için alkol kullanılmalıdır."
+                },
+                {
+                  "id": "e",
+                  "text": "Toplu iğne başı kadar kan örneği analiz için yeterli olabilir."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-006",
+              "order": 6,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Kıl bulgularının toplanması sırasında aşağıdakilerden hangisinin yapılması hatalıdır?",
+              "correctOptionId": "b",
+              "explanation": "Yapışkan yüzeyli bant kullanılması",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Cımbız yardımıyla toplanması"
+                },
+                {
+                  "id": "b",
+                  "text": "Yapışkan yüzeyli bant kullanılması"
+                },
+                {
+                  "id": "c",
+                  "text": "Koleksiyon yapan kişinin bone takması"
+                },
+                {
+                  "id": "d",
+                  "text": "Her bulgunun ayrı ayrı paketlenmesi"
+                },
+                {
+                  "id": "e",
+                  "text": "Kökü ile birlikte elde edilmesi için çaba sarf edilmesi"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-007",
+              "order": 7,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Sigara izmaritlerinin paketlenmesi süreciyle ilgili aşağıdakilerden hangisi doğrudur?",
+              "correctOptionId": "b",
+              "explanation": "İzmaritler kül ve tütün kısmından arındırılarak paketlenmelidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Aynı küllüktekiler tek bir pakete konmalıdır."
+                },
+                {
+                  "id": "b",
+                  "text": "İzmaritler kül ve tütün kısmından arındırılarak paketlenmelidir."
+                },
+                {
+                  "id": "c",
+                  "text": "Üzerinde ağızlık varsa ağızlık çıkarılmalıdır."
+                },
+                {
+                  "id": "d",
+                  "text": "Isınmaları için plastik poşete konmalıdır."
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece filtreli izmaritler delil niteliği taşır."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-008",
+              "order": 8,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Biyolojik bulguların paketlenmesinde hangi ambalaj malzemesi kesinlikle kullanılmamalıdır?",
+              "correctOptionId": "c",
+              "explanation": "Naylon ambalaj",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kâğıt zarf"
+                },
+                {
+                  "id": "b",
+                  "text": "Karton kutu"
+                },
+                {
+                  "id": "c",
+                  "text": "Naylon ambalaj"
+                },
+                {
+                  "id": "d",
+                  "text": "Steril gazlı bez"
+                },
+                {
+                  "id": "e",
+                  "text": "Kâğıt torba"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-009",
+              "order": 9,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Ateşli silah atışı yapıldığında barut gazı ve artıkları silah çevresindeki yaklaşık ne kadarlık bir alana dağılır?",
+              "correctOptionId": "b",
+              "explanation": "2 metreküp",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "1 metreküp"
+                },
+                {
+                  "id": "b",
+                  "text": "2 metreküp"
+                },
+                {
+                  "id": "c",
+                  "text": "5 metreküp"
+                },
+                {
+                  "id": "d",
+                  "text": "10 metreküp"
+                },
+                {
+                  "id": "e",
+                  "text": "15 metreküp"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-010",
+              "order": 10,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Atış artıklarının içinde bulunan maddelerden hangisi 'ayırıcı özellik' taşıması bakımından en kritiktir?",
+              "correctOptionId": "c",
+              "explanation": "Antimon",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Demir"
+                },
+                {
+                  "id": "b",
+                  "text": "Kurşun"
+                },
+                {
+                  "id": "c",
+                  "text": "Antimon"
+                },
+                {
+                  "id": "d",
+                  "text": "Bakır"
+                },
+                {
+                  "id": "e",
+                  "text": "Alüminyum"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-011",
+              "order": 11,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "El svabı (atış artığı) alma işlemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+              "correctOptionId": "b",
+              "explanation": "Flasterlerin üzerine yazı yazılmamalıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Önce atış yapmayan elden başlanmalıdır."
+                },
+                {
+                  "id": "b",
+                  "text": "Flasterlerin üzerine kimlik bilgileri yazılmalıdır."
+                },
+                {
+                  "id": "c",
+                  "text": "Uzman, svap almadan önce kendi ellerini yıkamalıdır."
+                },
+                {
+                  "id": "d",
+                  "text": "Her yüzey için ayrı eldiven kullanılmalıdır."
+                },
+                {
+                  "id": "e",
+                  "text": "Cesetlerde sağ elini kullandığı varsayılır."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-012",
+              "order": 12,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Toprak bulgularının toplanması ile ilgili aşağıdakilerden hangisi doğrudur?",
+              "correctOptionId": "b",
+              "explanation": "Analiz için en az 0,5 gram toprak gereklidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece olayın tam merkezinden örnek alınır."
+                },
+                {
+                  "id": "b",
+                  "text": "Analiz için en az 0,5 gram toprak gereklidir."
+                },
+                {
+                  "id": "c",
+                  "text": "Islak topraklar hemen naylon torbaya mühürlenmelidir."
+                },
+                {
+                  "id": "d",
+                  "text": "Toprak ve kıyafetler aynı pakete konabilir."
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece 100 metreden sonraki numuneler geçerlidir."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-013",
+              "order": 13,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Hukuki açıdan bir olayın 'Molotof' sayılabilmesi için olay yerinde hangi unsurların bulunması şart değildir?",
+              "correctOptionId": "d",
+              "explanation": "Çelik bilye parçaları",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Cam şişe parçaları"
+                },
+                {
+                  "id": "b",
+                  "text": "Bez fitil parçaları"
+                },
+                {
+                  "id": "c",
+                  "text": "Hızlandırıcı (petrol türevi) maddeler"
+                },
+                {
+                  "id": "d",
+                  "text": "Çelik bilye parçaları"
+                },
+                {
+                  "id": "e",
+                  "text": "Yanmış veya kısmen yanmış bezler"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-014",
+              "order": 14,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Boya numuneleri alınırken izlenmesi gereken doğru yöntem aşağıdakilerden hangisidir?",
+              "correctOptionId": "c",
+              "explanation": "Kat tabakalarını içerecek şekilde parça alınmalıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece en üst tabakadan kazıma yapılmalıdır."
+                },
+                {
+                  "id": "b",
+                  "text": "Yapışkan bant ile yüzeyden çekilmelidir."
+                },
+                {
+                  "id": "c",
+                  "text": "Yüzeyden derine doğru kat tabakalarını içerecek şekilde parça alınmalıdır."
+                },
+                {
+                  "id": "d",
+                  "text": "Asetonlu pamukla silinerek transfer edilmelidir."
+                },
+                {
+                  "id": "e",
+                  "text": "Boya transferi az ise örnek alınmadan bırakılmalıdır."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-015",
+              "order": 15,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Patlayıcı madde bulgularının toplanmasında inorganik patlayıcıların çözülmesini sağlamak için hangi sıvı ile svap alınmalıdır?",
+              "correctOptionId": "d",
+              "explanation": "Saf su",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Alkol"
+                },
+                {
+                  "id": "b",
+                  "text": "Aseton"
+                },
+                {
+                  "id": "c",
+                  "text": "Metanol"
+                },
+                {
+                  "id": "d",
+                  "text": "Saf su"
+                },
+                {
+                  "id": "e",
+                  "text": "Serum fizyolojik"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-016",
+              "order": 16,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Sert zeminlerde (fayans, duvar vb.) kurumuş biyolojik lekelerin toplanmasında hangi yöntem tercih edilir?",
+              "correctOptionId": "c",
+              "explanation": "Kazıma",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Emdirme"
+                },
+                {
+                  "id": "b",
+                  "text": "Kesme"
+                },
+                {
+                  "id": "c",
+                  "text": "Kazıma"
+                },
+                {
+                  "id": "d",
+                  "text": "Yıkama"
+                },
+                {
+                  "id": "e",
+                  "text": "Işıkla yok etme"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-017",
+              "order": 17,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Dışkı (Gaita) bulguları ile ilgili en büyük risk aşağıdakilerden hangisidir?",
+              "correctOptionId": "b",
+              "explanation": "Zamanla bakteri üreterek bozulması",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Genetik bilgi içermemesi"
+                },
+                {
+                  "id": "b",
+                  "text": "Zamanla bakteri üreterek bozulması"
+                },
+                {
+                  "id": "c",
+                  "text": "Renginin değişmesi"
+                },
+                {
+                  "id": "d",
+                  "text": "Sertleşmesi"
+                },
+                {
+                  "id": "e",
+                  "text": "Miktarının az olması"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-018",
+              "order": 18,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Olay yerinde çıplak gözle görülemeyen kan veya meni lekelerini tespit etmek için hangi yöntem kullanılır?",
+              "correctOptionId": "b",
+              "explanation": "Karartılmış ortamda UV ışık taraması",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Büyüteçle bakma"
+                },
+                {
+                  "id": "b",
+                  "text": "Karartılmış ortamda UV ışık taraması"
+                },
+                {
+                  "id": "c",
+                  "text": "Sıcak hava üfleme"
+                },
+                {
+                  "id": "d",
+                  "text": "X-Ray cihazı"
+                },
+                {
+                  "id": "e",
+                  "text": "Asit dökme"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-019",
+              "order": 19,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi kimyasal bulgu çeşitleri arasında yer almaz?",
+              "correctOptionId": "d",
+              "explanation": "Parmak izi - Fiziksel/İz bulgusudur.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Atış artıkları"
+                },
+                {
+                  "id": "b",
+                  "text": "Patlayıcı maddeler"
+                },
+                {
+                  "id": "c",
+                  "text": "Narkotik maddeler"
+                },
+                {
+                  "id": "d",
+                  "text": "Parmak izi"
+                },
+                {
+                  "id": "e",
+                  "text": "Toprak"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-020",
+              "order": 20,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Ateşli silah kullanılan bir intihar olayında, tetiğin ayakla çekildiğinden şüpheleniliyorsa öncelikle nereden svap alınmalıdır?",
+              "correctOptionId": "c",
+              "explanation": "Ayak, çorap ve alt elbise diz altı bölgesinden",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Şahsın ellerinden"
+                },
+                {
+                  "id": "b",
+                  "text": "Şahsın baş bölgesinden"
+                },
+                {
+                  "id": "c",
+                  "text": "Ayak, çorap ve alt elbise diz altı bölgesinden"
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece silahtan"
+                },
+                {
+                  "id": "e",
+                  "text": "Olay yerindeki duvarlardan"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-021",
+              "order": 21,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Olay yerinde bulunan cam kırıklarının paketlenmesiyle ilgili en doğru yöntem aşağıdakilerden hangisidir?",
+              "correctOptionId": "b",
+              "explanation": "Keskin uçları köpüklerle desteklenmiş karton kutulara konulmalıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Tüm parçalar bir torbaya doldurulup ağzı bağlanmalıdır."
+                },
+                {
+                  "id": "b",
+                  "text": "Keskin uçları köpüklerle desteklenmiş karton kutulara konulmalıdır."
+                },
+                {
+                  "id": "c",
+                  "text": "Camlar birbirine bantlanarak sabitlenmelidir."
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece en büyük parça paketlenmeli, küçükler atılmalıdır."
+                },
+                {
+                  "id": "e",
+                  "text": "Cam parçaları nemlendirilerek naylon poşete konmalıdır."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-022",
+              "order": 22,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi lif (fiber) bulgularının toplanmasında kullanılabilen materyallerden biri değildir?",
+              "correctOptionId": "d",
+              "explanation": "Mıknatıslı çubuk",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kâğıt poşet"
+                },
+                {
+                  "id": "b",
+                  "text": "Cam tüp veya kaplar"
+                },
+                {
+                  "id": "c",
+                  "text": "Naylon poşet"
+                },
+                {
+                  "id": "d",
+                  "text": "Mıknatıslı çubuk"
+                },
+                {
+                  "id": "e",
+                  "text": "Temiz eldiven veya pens"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-023",
+              "order": 23,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Boya tabakalarının karşılaştırılmasında kriminal laboratuvarlar için en kıymetli bilgi aşağıdakilerden hangisidir?",
+              "correctOptionId": "b",
+              "explanation": "Tabaka sayısı ve renk dizilimi",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Boyanın parlaklık oranı"
+                },
+                {
+                  "id": "b",
+                  "text": "Tabaka sayısı ve renk dizilimi"
+                },
+                {
+                  "id": "c",
+                  "text": "Boyanın kuruma süresi"
+                },
+                {
+                  "id": "d",
+                  "text": "Boyanın markası"
+                },
+                {
+                  "id": "e",
+                  "text": "Boyanın sürüldüğü fırçanın tipi"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-024",
+              "order": 24,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Barut gazının içinde bulunan 'Baryum' maddesinin temel kaynağı silahın hangi parçasıdır?",
+              "correctOptionId": "c",
+              "explanation": "Kapsül ateşleyicisi",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Namludaki yiv ve setler"
+                },
+                {
+                  "id": "b",
+                  "text": "Mermi çekirdeğinin gömleği"
+                },
+                {
+                  "id": "c",
+                  "text": "Kapsül ateşleyicisi"
+                },
+                {
+                  "id": "d",
+                  "text": "Şarjör yayı"
+                },
+                {
+                  "id": "e",
+                  "text": "Silahın sürgüsü"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-025",
+              "order": 25,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Sıvı haldeki kan örneklerinin olay yerinden toplanmasıyla ilgili hangisi doğrudur?",
+              "correctOptionId": "c",
+              "explanation": "Steril gazlı bez veya pamuklu çubukla emdirilmelidir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Şırınga ile çekilerek hava almayan tüpe konulmalıdır."
+                },
+                {
+                  "id": "b",
+                  "text": "Güneş altında kuruması beklenmelidir."
+                },
+                {
+                  "id": "c",
+                  "text": "Steril gazlı bez veya pamuklu çubukla emdirilmelidir."
+                },
+                {
+                  "id": "d",
+                  "text": "Üzerine koruyucu kimyasal dökülmelidir."
+                },
+                {
+                  "id": "e",
+                  "text": "Sıvı kan doğrudan naylon poşete dökülmelidir."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-026",
+              "order": 26,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Toprak numunesi alınırken olay yeri merkezinden başka nerelerden örnek alınmalıdır?",
+              "correctOptionId": "b",
+              "explanation": "Merkezden 5, 10 ve 20 metre uzaklıktaki farklı yönlerden",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece şüphelinin evinden"
+                },
+                {
+                  "id": "b",
+                  "text": "Merkezden 5, 10 ve 20 metre uzaklıktaki farklı yönlerden"
+                },
+                {
+                  "id": "c",
+                  "text": "En yakın şehir merkezinden"
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece asfaltın bittiği yerden"
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece maktulün ayakkabı altından"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-027",
+              "order": 27,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Tükürük örneği DNA analizi için neden önemlidir?",
+              "correctOptionId": "b",
+              "explanation": "İçindeki yanak mukozası (epitel",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Tükürükteki sindirim enzimlerini ölçmek için"
+                },
+                {
+                  "id": "b",
+                  "text": "İçindeki yanak mukozası (epitel) hücreleri sayesinde"
+                },
+                {
+                  "id": "c",
+                  "text": "Kişinin ne yediğini anlamak için"
+                },
+                {
+                  "id": "d",
+                  "text": "Tükürüğün pH değerini belirlemek için"
+                },
+                {
+                  "id": "e",
+                  "text": "Tükürükteki su oranını saptamak için"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-028",
+              "order": 28,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Patlayıcı madde incelemesinde 'Svap' alma işlemi neyi ifade eder?",
+              "correctOptionId": "b",
+              "explanation": "Yüzeydeki gözle görülmeyen kimyasal kalıntıların transferini",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Patlamamış mühimmatı etkisiz hale getirmeyi"
+                },
+                {
+                  "id": "b",
+                  "text": "Yüzeydeki gözle görülmeyen kimyasal kalıntıların transferini"
+                },
+                {
+                  "id": "c",
+                  "text": "Patlamanın şiddetini ölçmeyi"
+                },
+                {
+                  "id": "d",
+                  "text": "Barutun yanma hızını belirlemeyi"
+                },
+                {
+                  "id": "e",
+                  "text": "Bomba düzeneğinin şemasını çizmeyi"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-029",
+              "order": 29,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi olay yeri inceleme raporunda mutlaka bulunması gereken bilgilerden değildir?",
+              "correctOptionId": "c",
+              "explanation": "Şüphelinin çocukluk anıları",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Olayın meydana geldiği tarih ve saat"
+                },
+                {
+                  "id": "b",
+                  "text": "Hava durumu ve aydınlatma koşulları"
+                },
+                {
+                  "id": "c",
+                  "text": "Şüphelinin çocukluk anıları"
+                },
+                {
+                  "id": "d",
+                  "text": "Kullanılan teknik ekipmanlar"
+                },
+                {
+                  "id": "e",
+                  "text": "İncelemeyi yapan personelin kimlik bilgileri"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-030",
+              "order": 30,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Cinsel saldırı olaylarında çarşaf veya giysiler üzerindeki meni lekeleri nasıl paketlenmelidir?",
+              "correctOptionId": "a",
+              "explanation": "Leke üzerine kağıt konularak rulo yapılmalı ve kağıt torbaya konmalıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Leke üzerine kağıt konularak rulo yapılmalı ve kağıt torbaya konmalıdır."
+                },
+                {
+                  "id": "b",
+                  "text": "Lekeli kısım kesilip alkol içine atılmalıdır."
+                },
+                {
+                  "id": "c",
+                  "text": "Hızla ütülenerek kurutulmalıdır."
+                },
+                {
+                  "id": "d",
+                  "text": "Koku yapmaması için deterjanlı poşete konmalıdır."
+                },
+                {
+                  "id": "e",
+                  "text": "Doğrudan buzdolabına poşetsiz konmalıdır."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-031",
+              "order": 31,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Olay yerinde karşılaşılan 'Şüpheli Paket' durumunda olay yeri inceleme uzmanının ilk yapması gereken nedir?",
+              "correctOptionId": "b",
+              "explanation": "Güvenli çevre emniyeti alıp bomba imha uzmanını beklemek",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Paketi sarsmadan açıp içine bakmak"
+                },
+                {
+                  "id": "b",
+                  "text": "Güvenli çevre emniyeti alıp bomba imha uzmanını beklemek"
+                },
+                {
+                  "id": "c",
+                  "text": "Paketi daha güvenli bir yere taşımak"
+                },
+                {
+                  "id": "d",
+                  "text": "Üzerine su dökerek etkisiz hale getirmek"
+                },
+                {
+                  "id": "e",
+                  "text": "Paketi röntgen cihazına götürmek"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-032",
+              "order": 32,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Ateşli silahla gerçekleşen bir olayda, kovanların konumu ne hakkında en net bilgiyi verir?",
+              "correctOptionId": "b",
+              "explanation": "Atıcının duruş yeri ve silahın tutuluş açısı",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Merminin kaç metre hıza ulaştığı"
+                },
+                {
+                  "id": "b",
+                  "text": "Atıcının duruş yeri ve silahın tutuluş açısı"
+                },
+                {
+                  "id": "c",
+                  "text": "Silahın markasının ne olduğu"
+                },
+                {
+                  "id": "d",
+                  "text": "Merminin çekirdek ağırlığı"
+                },
+                {
+                  "id": "e",
+                  "text": "Silahın ruhsatlı olup olmadığı"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-033",
+              "order": 33,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Kriminalistik biliminde 'İndis' (Index) delil neyi ifade eder?",
+              "correctOptionId": "d",
+              "explanation": "Doğrudan suçu ispatlamayan ama bir yöne işaret eden bulguları",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Suçun işlenme nedenini"
+                },
+                {
+                  "id": "b",
+                  "text": "Fiziksel olarak bütünleşebilen delil parçalarını"
+                },
+                {
+                  "id": "c",
+                  "text": "Laboratuvar arşivindeki kayıtlı verileri"
+                },
+                {
+                  "id": "d",
+                  "text": "Doğrudan suçu ispatlamayan ama bir yöne işaret eden bulguları"
+                },
+                {
+                  "id": "e",
+                  "text": "Delilin mahkemedeki ağırlığını"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-034",
+              "order": 34,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Olay yerindeki kan damlalarının 'kuyruklu' (gözyaşı damlası) şeklinde olması neyi gösterir?",
+              "correctOptionId": "b",
+              "explanation": "Kanın belirli bir açıyla ve hareket halindeyken düştüğünü",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kanın çok yüksekten düştüğünü"
+                },
+                {
+                  "id": "b",
+                  "text": "Kanın belirli bir açıyla ve hareket halindeyken düştüğünü"
+                },
+                {
+                  "id": "c",
+                  "text": "Şahsın kan grubunu"
+                },
+                {
+                  "id": "d",
+                  "text": "Kanın bir hayvana ait olduğunu"
+                },
+                {
+                  "id": "e",
+                  "text": "Kanın pıhtılaşma süresini"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-035",
+              "order": 35,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Aşağıdaki delil türlerinden hangisi 'geçici delil' sınıfına girer?",
+              "correctOptionId": "b",
+              "explanation": "Olay yerindeki yoğun sigara dumanı ve koku",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Mermi çekirdeği"
+                },
+                {
+                  "id": "b",
+                  "text": "Olay yerindeki yoğun sigara dumanı ve koku"
+                },
+                {
+                  "id": "c",
+                  "text": "Ayakkabı izi"
+                },
+                {
+                  "id": "d",
+                  "text": "Kan lekesi"
+                },
+                {
+                  "id": "e",
+                  "text": "Kırık cam parçası"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-036",
+              "order": 36,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Narkotik bulguların (uyuşturucu maddeler) paketlenmesinde 'Çift Mühür' sistemi neden kullanılır?",
+              "correctOptionId": "b",
+              "explanation": "Zincirleme muhafaza ve suiistimalleri engellemek için",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Maddenin hava alıp bozulmasını önlemek için"
+                },
+                {
+                  "id": "b",
+                  "text": "Zincirleme muhafaza ve suiistimalleri engellemek için"
+                },
+                {
+                  "id": "c",
+                  "text": "Maddenin kokusunun dışarı çıkmasını engellemek için"
+                },
+                {
+                  "id": "d",
+                  "text": "Daha ağır görünmesi için"
+                },
+                {
+                  "id": "e",
+                  "text": "Maddenin saflık derecesini korumak için"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-037",
+              "order": 37,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Resmi yazışmalarda 'ACELE' ibaresi belgenin neresine yazılır?",
+              "correctOptionId": "c",
+              "explanation": "Sağ üst köşeye, kırmızı renkle ve büyük harflerle",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Belgenin en sonuna"
+                },
+                {
+                  "id": "b",
+                  "text": "Sayfa ortasına filigran olarak"
+                },
+                {
+                  "id": "c",
+                  "text": "Sağ üst köşeye, kırmızı renkle ve büyük harflerle"
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece zarfın üzerine"
+                },
+                {
+                  "id": "e",
+                  "text": "İmza bölümünün hemen altına"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-038",
+              "order": 38,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Bir suç aleti üzerinde hem parmak izi hem de kan lekesi varsa, öncelik hangi incelemeye verilir?",
+              "correctOptionId": "b",
+              "explanation": "Biyolojik (DNA",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Parmak izi geliştirmeye"
+                },
+                {
+                  "id": "b",
+                  "text": "Biyolojik (DNA) incelemeye"
+                },
+                {
+                  "id": "c",
+                  "text": "Aletin paslanmasını önlemeye"
+                },
+                {
+                  "id": "d",
+                  "text": "Aletin markasını sorgulamaya"
+                },
+                {
+                  "id": "e",
+                  "text": "Seri numarası tespitine"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-039",
+              "order": 39,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Ateşli silahla yaralanmalarda 'Bitişik Atış'ın en belirgin kanıtı nedir?",
+              "correctOptionId": "b",
+              "explanation": "Namlu ağzı baskı izi ve deri altı dokularda madeni artıklar",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece barut yanığı olması"
+                },
+                {
+                  "id": "b",
+                  "text": "Namlu ağzı baskı izi (Hortum İzi) ve deri altı dokularda madeni artıklar"
+                },
+                {
+                  "id": "c",
+                  "text": "Kovanın çok uzağa düşmesi"
+                },
+                {
+                  "id": "d",
+                  "text": "Giriş deliğinin çok küçük olması"
+                },
+                {
+                  "id": "e",
+                  "text": "Çekirdeğin vücuttan çıkmamış olması"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-040",
+              "order": 40,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Olay yeri fotoğraflandırmasında 'Genel Plan' çekimlerin amacı nedir?",
+              "correctOptionId": "b",
+              "explanation": "Olay yerinin çevresiyle olan ilişkisini ve giriş-çıkış noktalarını göstermek",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece delilin seri numarasını göstermek"
+                },
+                {
+                  "id": "b",
+                  "text": "Olay yerinin çevresiyle olan ilişkisini ve giriş-çıkış noktalarını göstermek"
+                },
+                {
+                  "id": "c",
+                  "text": "Şüphelinin yüzünü netleştirmek"
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece kan lekelerini saymak"
+                },
+                {
+                  "id": "e",
+                  "text": "Delilin tam boyutunu ölçmek"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-041",
+              "order": 41,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Ateşli silah kullanılan olaylarda mermi çekirdeklerinin paketlenmesiyle ilgili en doğru yöntem nedir?",
+              "correctOptionId": "c",
+              "explanation": "Yumuşak kağıt veya pamuğa sarılarak küçük kutulara konmalıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Çekirdekler doğrudan plastik poşete konmalıdır."
+                },
+                {
+                  "id": "b",
+                  "text": "Çekirdek üzerine kazıma yapılarak işaretlenmelidir."
+                },
+                {
+                  "id": "c",
+                  "text": "Yumuşak kağıt veya pamuğa sarılarak küçük kutulara konmalıdır."
+                },
+                {
+                  "id": "d",
+                  "text": "Metal bir kap içinde muhafaza edilmelidir."
+                },
+                {
+                  "id": "e",
+                  "text": "Çekirdek üzerindeki kanlar silinerek paketlenmelidir."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-042",
+              "order": 42,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Olay yerindeki 'İz Bulguları' (parmak izi, ayak izi vb.) hangi ana delil grubu içinde sınıflandırılır?",
+              "correctOptionId": "c",
+              "explanation": "Fiziksel Bulgular",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Biyolojik Bulgular"
+                },
+                {
+                  "id": "b",
+                  "text": "Kimyasal Bulgular"
+                },
+                {
+                  "id": "c",
+                  "text": "Fiziksel Bulgular"
+                },
+                {
+                  "id": "d",
+                  "text": "Psikolojik Bulgular"
+                },
+                {
+                  "id": "e",
+                  "text": "Elektronik Bulgular"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-043",
+              "order": 43,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Olay yerinde bulunan uyuşturucu maddeler tartılırken hangi ölçüm birimi esas alınır?",
+              "correctOptionId": "a",
+              "explanation": "Olay yerinde kaba ölçüm olarak Brüt Ağırlık alınır, laboratuvarda netleşir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Brüt Ağırlık"
+                },
+                {
+                  "id": "b",
+                  "text": "Net Ağırlık"
+                },
+                {
+                  "id": "c",
+                  "text": "Dara Ağırlığı"
+                },
+                {
+                  "id": "d",
+                  "text": "Tahmini Ağırlık"
+                },
+                {
+                  "id": "e",
+                  "text": "Hacimsel Ölçüm"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-044",
+              "order": 44,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Resmi yazışmalarda belgenin 'Gizlilik Derecesi' belgenin neresinde belirtilir?",
+              "correctOptionId": "b",
+              "explanation": "Sayfanın üst ve alt ortasında, büyük harflerle ve kırmızı renkle",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece en alt kısımda"
+                },
+                {
+                  "id": "b",
+                  "text": "Sayfanın üst ve alt ortasında, büyük harflerle ve kırmızı renkle"
+                },
+                {
+                  "id": "c",
+                  "text": "Sadece imza bölümünün üstünde"
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece zarfın sağ köşesinde"
+                },
+                {
+                  "id": "e",
+                  "text": "Belgenin sol kenar boşluğunda"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-045",
+              "order": 45,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Islak haldeki biyolojik bulgular (kanlı gömlek vb.) laboratuvara gönderilmeden önce nasıl bir işlemden geçirilmelidir?",
+              "correctOptionId": "c",
+              "explanation": "Oda sıcaklığında, doğrudan güneş görmeyen bir yerde kurutulmalıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Hemen dondurulmalıdır."
+                },
+                {
+                  "id": "b",
+                  "text": "Naylon poşete konup ağzı sıkıca kapatılmalıdır."
+                },
+                {
+                  "id": "c",
+                  "text": "Oda sıcaklığında, doğrudan güneş görmeyen bir yerde kurutulmalıdır."
+                },
+                {
+                  "id": "d",
+                  "text": "Saç kurutma makinesi ile hızlıca kurutulmalıdır."
+                },
+                {
+                  "id": "e",
+                  "text": "Üzerine tuz dökülerek nemi alınmalıdır."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-046",
+              "order": 46,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi bir 'Olay Yeri Girilemez' şeridinin (emniyet şeridi) çekilmesinin temel amacıdır?",
+              "correctOptionId": "b",
+              "explanation": "Delillerin bozulmasını ve kirlenmesini önlemek",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Olayın gizli kalmasını sağlamak"
+                },
+                {
+                  "id": "b",
+                  "text": "Delillerin bozulmasını ve kirlenmesini önlemek"
+                },
+                {
+                  "id": "c",
+                  "text": "Şüphelinin kaçmasını engellemek"
+                },
+                {
+                  "id": "d",
+                  "text": "Meraklı vatandaşları eğlendirmek"
+                },
+                {
+                  "id": "e",
+                  "text": "Trafiği tamamen durdurmak"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-047",
+              "order": 47,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Boğulma olaylarında boyun bölgesindeki izlerin (telem) fotoğraflanması hangi çekim ölçeğinde yapılmalıdır?",
+              "correctOptionId": "c",
+              "explanation": "Yakın plan / Detay çekim",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Genel çekim"
+                },
+                {
+                  "id": "b",
+                  "text": "Orta ölçekli çekim"
+                },
+                {
+                  "id": "c",
+                  "text": "Yakın plan (Detay) çekim"
+                },
+                {
+                  "id": "d",
+                  "text": "Panoramik çekim"
+                },
+                {
+                  "id": "e",
+                  "text": "Uzaktan çekim"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-048",
+              "order": 48,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Silahlı bir olayda, şahsın elinde barut artığı bulunmaması ne anlama gelebilir?",
+              "correctOptionId": "b",
+              "explanation": "Şahıs ateş etmiş olabilir ancak ellerini yıkamış veya eldiven kullanmış olabilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Şahıs kesinlikle ateş etmemiştir."
+                },
+                {
+                  "id": "b",
+                  "text": "Şahıs ateş etmiş olabilir ancak ellerini yıkamış veya eldiven kullanmış olabilir."
+                },
+                {
+                  "id": "c",
+                  "text": "Silah arızalıdır."
+                },
+                {
+                  "id": "d",
+                  "text": "Barut kalitesizdir."
+                },
+                {
+                  "id": "e",
+                  "text": "Olay kapalı alanda gerçekleşmiştir."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-049",
+              "order": 49,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Yangın olay yerlerinde 'Hızlandırıcı' (benzin, tiner vb.) şüphesi varsa numune nasıl toplanmalıdır?",
+              "correctOptionId": "b",
+              "explanation": "Hava sızdırmaz cam kavanoz veya özel metal kutularda - Uçucu maddeleri korumak için",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Pamuğa emdirilerek açık kapta"
+                },
+                {
+                  "id": "b",
+                  "text": "Hava sızdırmaz cam kavanoz veya özel metal kutularda"
+                },
+                {
+                  "id": "c",
+                  "text": "Kağıt torbalarda"
+                },
+                {
+                  "id": "d",
+                  "text": "Plastik şırınga içinde"
+                },
+                {
+                  "id": "e",
+                  "text": "Toprağa dökerek"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-050",
+              "order": 50,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Ayakkabı izi kalıbı alırken kullanılan 'Alçı' (Dental Taş) karışımı ne kadar süre bekletilmelidir?",
+              "correctOptionId": "c",
+              "explanation": "Sertleşene kadar / 30-45 dakika",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "5 dakika"
+                },
+                {
+                  "id": "b",
+                  "text": "10-15 dakika"
+                },
+                {
+                  "id": "c",
+                  "text": "Sertleşene kadar (genellikle 30-45 dakika)"
+                },
+                {
+                  "id": "d",
+                  "text": "24 saat"
+                },
+                {
+                  "id": "e",
+                  "text": "Hiç beklenmeden sökülmelidir."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-051",
+              "order": 51,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Aşağıdakilerden hangisi biyolojik delil zincirini bozan bir kullanıcı hatasıdır?",
+              "correctOptionId": "c",
+              "explanation": "Delilin üzerine konuşmak veya hapşırmak - Kontaminasyon riski",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Eldiven kullanmak"
+                },
+                {
+                  "id": "b",
+                  "text": "Maske takmak"
+                },
+                {
+                  "id": "c",
+                  "text": "Delilin üzerine konuşmak veya hapşırmak"
+                },
+                {
+                  "id": "d",
+                  "text": "Steril tüp kullanmak"
+                },
+                {
+                  "id": "e",
+                  "text": "Delili gölgede kurutmak"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-052",
+              "order": 52,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Resmi belgelerde 'Kayıt Numarası' (Sayı) bölümü belgenin neresinde yer alır?",
+              "correctOptionId": "b",
+              "explanation": "Sol üst köşede, başlığın hemen altında",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sağ alt köşe"
+                },
+                {
+                  "id": "b",
+                  "text": "Sol üst köşede, başlığın hemen altında"
+                },
+                {
+                  "id": "c",
+                  "text": "Belgenin tam ortasında"
+                },
+                {
+                  "id": "d",
+                  "text": "İmzanın yanında"
+                },
+                {
+                  "id": "e",
+                  "text": "Ekler bölümünde"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-053",
+              "order": 53,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Saç ve kıl örneklerinin karşılaştırılması için şüpheliden alınacak numuneler nasıl olmalıdır?",
+              "correctOptionId": "b",
+              "explanation": "Vücudun farklı bölgelerinden köklü şekilde alınmalıdır.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece tek bir kıl yeterlidir."
+                },
+                {
+                  "id": "b",
+                  "text": "Vücudun farklı bölgelerinden (baş, göğüs vb.) yeterli miktarda (yolunarak) alınmalıdır."
+                },
+                {
+                  "id": "c",
+                  "text": "Sadece makasla kesilmelidir."
+                },
+                {
+                  "id": "d",
+                  "text": "Saç fırçasından toplanmalıdır."
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece dökülen kıllar alınmalıdır."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-054",
+              "order": 54,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Olay yerinde bulunan bir bilgisayar veya telefon (dijital delil) nasıl taşınmalıdır?",
+              "correctOptionId": "b",
+              "explanation": "Statik elektrik oluşturmayan torbalarda",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Mıknatıslı kutularda"
+                },
+                {
+                  "id": "b",
+                  "text": "Statik elektrik oluşturmayan (Antistatik) torbalarda"
+                },
+                {
+                  "id": "c",
+                  "text": "Su dolu kaplarda"
+                },
+                {
+                  "id": "d",
+                  "text": "Metal zincirlere bağlı olarak"
+                },
+                {
+                  "id": "e",
+                  "text": "Açık halde, ekranı görünecek şekilde"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-055",
+              "order": 55,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Diş izi (Isırık izi) analizinin en önemli özelliği nedir?",
+              "correctOptionId": "c",
+              "explanation": "Kişiye özel karakteristik özellikler taşıyabilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece kişinin yaşını verir."
+                },
+                {
+                  "id": "b",
+                  "text": "Kişinin cinsiyetini kesin belirler."
+                },
+                {
+                  "id": "c",
+                  "text": "Parmak izi gibi kişiye özel karakteristik özellikler taşıyabilir."
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece hangi yemeği yediğini gösterir."
+                },
+                {
+                  "id": "e",
+                  "text": "Kan grubunu belirlemede kullanılır."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-056",
+              "order": 56,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "'Maddi Suç Delili' kavramı aşağıdakilerden hangisini kapsamaz?",
+              "correctOptionId": "c",
+              "explanation": "Görgü tanığının ifadesi 'Sözlü Delil'dir, maddi delil değildir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Parmak izi"
+                },
+                {
+                  "id": "b",
+                  "text": "Kovan"
+                },
+                {
+                  "id": "c",
+                  "text": "Görgü tanığının ifadesi"
+                },
+                {
+                  "id": "d",
+                  "text": "Kan lekesi"
+                },
+                {
+                  "id": "e",
+                  "text": "Kırık cam parçası"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-057",
+              "order": 57,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Barut artıklarının elden toplanmasında kullanılan yapışkan flasterler hangi bölgeye uygulanmaz?",
+              "correctOptionId": "d",
+              "explanation": "Genellikle el sırtı ve parmak araları önceliklidir, tırnak uçları standart svap bölgeleri arasında değildir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Başparmak ile işaret parmağı arasına"
+                },
+                {
+                  "id": "b",
+                  "text": "El ayasına (avuç içi)"
+                },
+                {
+                  "id": "c",
+                  "text": "El sırtına"
+                },
+                {
+                  "id": "d",
+                  "text": "Tırnak uçlarına"
+                },
+                {
+                  "id": "e",
+                  "text": "Avuç içi ve parmak boğumlarına"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-058",
+              "order": 58,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Olay yeri krokisi çizilirken 'Kuzey' yönü nasıl belirtilir?",
+              "correctOptionId": "b",
+              "explanation": "Ok işareti ve 'K' harfi ile gösterilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Belirtilmesine gerek yoktur."
+                },
+                {
+                  "id": "b",
+                  "text": "Krokide bir ok işareti ve 'K' harfi ile gösterilir."
+                },
+                {
+                  "id": "c",
+                  "text": "Sayfanın altına yazılır."
+                },
+                {
+                  "id": "d",
+                  "text": "Renkli kalemle boyanır."
+                },
+                {
+                  "id": "e",
+                  "text": "Sadece raporda yazılır."
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-059",
+              "order": 59,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "Bir araçta yapılan incelemede direksiyon simidinden ne tür bir delil beklenir?",
+              "correctOptionId": "b",
+              "explanation": "Parmak izi ve dokunma DNA'sı",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece boya kalıntısı"
+                },
+                {
+                  "id": "b",
+                  "text": "Parmak izi ve dokunma (Touch) DNA'sı"
+                },
+                {
+                  "id": "c",
+                  "text": "Sadece barut artığı"
+                },
+                {
+                  "id": "d",
+                  "text": "Sadece toprak"
+                },
+                {
+                  "id": "e",
+                  "text": "Cam kırığı"
+                }
+              ]
+            },
+            {
+              "id": "olayyeri-060",
+              "order": 60,
+              "topic": "Olay Yeri İnceleme",
+              "difficulty": "Orta",
+              "text": "'Zincirleme Muhafaza' (Chain of Custody) bozulursa ne olur?",
+              "correctOptionId": "b",
+              "explanation": "Delilin mahkemede reddedilmesine neden olabilir.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Delil daha değerli hale gelir."
+                },
+                {
+                  "id": "b",
+                  "text": "Delilin mahkemede 'hukuka aykırı delil' sayılmasına veya reddedilmesine neden olabilir."
+                },
+                {
+                  "id": "c",
+                  "text": "Sadece polis memuru ceza alır."
+                },
+                {
+                  "id": "d",
+                  "text": "Laboratuvar inceleme yapmayı reddeder."
+                },
+                {
+                  "id": "e",
+                  "text": "Hiçbir şey olmaz."
+                }
+              ]
+            }
+          ],
           "expectedQuestionCount": 11,
           "questionShare": "11 soru"
         },
