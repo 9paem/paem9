@@ -17,38 +17,48 @@
           "id": "olay-yeri-inceleme-ilk-ekip",
           "title": "Olay Yeri",
           "order": 1,
-          "questions": []
+          "questions": [],
+          "expectedQuestionCount": 11,
+          "questionShare": "11 soru"
         },
         {
           "id": "narkotik-maddeler",
           "title": "Narkotik",
           "order": 2,
-          "questions": []
+          "questions": [],
+          "expectedQuestionCount": 3,
+          "questionShare": "3 soru"
         },
         {
           "id": "tesis-koruma",
           "title": "Terörizme Karşı Koyma",
           "order": 3,
-          "questions": []
+          "questions": [],
+          "expectedQuestionCount": 5,
+          "questionShare": "5 soru"
         },
         {
           "id": "kom-suc-turleri",
           "title": "KOM Başkanlığı",
           "order": 4,
-          "questions": []
+          "questions": [],
+          "expectedQuestionCount": 3,
+          "questionShare": "3 soru"
         },
         {
           "id": "polis-merkezi",
           "title": "Polis Merkezi Amirliği",
           "order": 5,
-          "questions": []
+          "questions": [],
+          "expectedQuestionCount": 10,
+          "questionShare": "10 soru"
         },
         {
           "id": "ceza-hukuku-genel",
           "title": "Ceza Hukuku",
           "order": 6,
-          "questionShare": "30 soru",
-          "expectedQuestionCount": 30,
+          "questionShare": "5 soru",
+          "expectedQuestionCount": 5,
           "questions": [
             {
               "id": "cmk-ceza-001",
@@ -986,8 +996,8 @@
           "id": "iletişim",
           "title": "İletişim",
           "order": 7,
-          "questionShare": "40 soru",
-          "expectedQuestionCount": 40,
+          "questionShare": "5 soru",
+          "expectedQuestionCount": 5,
           "questions": [
             {
               "id": "iletişim-001",
@@ -2247,13 +2257,17 @@
           "id": "adli-tip",
           "title": "Adli Tıp Uygulamaları Eğitimi",
           "order": 1,
-          "questions": []
+          "questions": [],
+          "expectedQuestionCount": 10,
+          "questionShare": "10 soru"
         },
         {
           "id": "toplumsal-olay-mudahale",
           "title": "Toplumsal Olaylara Müdahale Esasları Eğitimi",
           "order": 2,
-          "questions": []
+          "questions": [],
+          "expectedQuestionCount": 30,
+          "questionShare": "30 soru"
         }
       ]
     }
