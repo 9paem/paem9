@@ -68,6 +68,13 @@ const els = {
   profileEmail:      $("profileEmail"),
   profileCreatedAt:  $("profileCreatedAt"),
   profileAvatarBig:  $("profileAvatarBig"),
+
+  leaderboardButton:     $("leaderboardButton"),
+  leaderboardBackButton: $("leaderboardBackButton"),
+  leaderboardList:       $("leaderboardList"),
+  leaderboardMyScore:    $("leaderboardMyScore"),
+  leaderboardMyRank:     $("leaderboardMyRank"),
+  screenLeaderboard:     $("screenLeaderboard"),
 };
 
 const letters = ["A","B","C","D","E"];
@@ -91,21 +98,28 @@ function bindEvents() {
   els.profileBackButton.addEventListener("click", () => navigate("home"));
   els.coursesBackButton.addEventListener("click", () => navigate("home"));
   els.questionsBackButton.addEventListener("click", () => navigate("courses"));
+  els.leaderboardButton?.addEventListener("click", () => navigate("leaderboard"));
+  els.leaderboardBackButton?.addEventListener("click", () => navigate("home"));
 }
 
 // ── Navigation ──
 function navigate(screen) {
-  const all = [els.screenAuth, els.screenHome, els.screenCourses, els.screenQuestions, els.screenProfile];
+  const all = [
+    els.screenAuth, els.screenHome, els.screenCourses,
+    els.screenQuestions, els.screenProfile, els.screenLeaderboard
+  ];
   all.forEach(s => s?.classList.add("hidden"));
   const map = {
-    auth:      els.screenAuth,
-    home:      els.screenHome,
-    courses:   els.screenCourses,
-    questions: els.screenQuestions,
-    profile:   els.screenProfile,
+    auth:        els.screenAuth,
+    home:        els.screenHome,
+    courses:     els.screenCourses,
+    questions:   els.screenQuestions,
+    profile:     els.screenProfile,
+    leaderboard: els.screenLeaderboard,
   };
   map[screen]?.classList.remove("hidden");
   if (screen === "profile") renderProfile();
+  if (screen === "leaderboard") loadLeaderboard();
   window.scrollTo(0, 0);
 }
 
@@ -505,10 +519,108 @@ function renderQuestionControls(questions) {
   els.questionControlsMobile.append(resetBtn, prevBtn, nextBtn);
 }
 
+// ── Score saving (delta-based leaderboard) ──
+async function saveScoreIfImproved(courseId, newCorrect) {
+  if (!Firebase.ready || state.demoMode || state.rememberedMode) return;
+  const uid = state.user?.uid;
+  if (!uid) return;
+
+  try {
+    const { doc, getDoc, setDoc, increment, serverTimestamp } = Firebase.modules;
+
+    // Get previous best for this course
+    const courseScoreRef = doc(Firebase.db, "users", uid, "courseScores", courseId);
+    const courseSnap = await getDoc(courseScoreRef);
+    const prevBest = courseSnap.exists() ? (courseSnap.data().best || 0) : 0;
+
+    const delta = newCorrect - prevBest;
+
+    // Update course best
+    await setDoc(courseScoreRef, { best: Math.max(prevBest, newCorrect), updatedAt: serverTimestamp() }, { merge: true });
+
+    if (delta > 0) {
+      // Add delta to user's total points
+      const userRef = doc(Firebase.db, "users", uid);
+      const displayName = state.user?.displayName || state.user?.email?.split("@")[0] || "Anonim";
+      await setDoc(userRef, {
+        displayName,
+        email: state.user?.email || "",
+        totalPoints: increment(delta),
+        updatedAt: serverTimestamp(),
+      }, { merge: true });
+    }
+  } catch (e) {
+    console.warn("Score save error:", e);
+  }
+}
+
+// ── Leaderboard ──
+async function loadLeaderboard() {
+  if (!Firebase.ready) return;
+  if (els.leaderboardList) els.leaderboardList.innerHTML = "<p style='color:#7f8fa4;text-align:center;padding:32px;'>Yükleniyor...</p>";
+
+  try {
+    const { collection, getDocs, query, orderBy, limit, doc, getDoc } = Firebase.modules;
+    const q = query(collection(Firebase.db, "users"), orderBy("totalPoints", "desc"), limit(50));
+    const snap = await getDocs(q);
+    const users = snap.docs.map(d => ({ uid: d.id, ...d.data() }));
+
+    // Find my rank
+    const myUid = state.user?.uid;
+    const myIdx = users.findIndex(u => u.uid === myUid);
+    const myPoints = myIdx >= 0 ? (users[myIdx].totalPoints || 0) : 0;
+
+    if (els.leaderboardMyRank) {
+      els.leaderboardMyRank.textContent = myIdx >= 0 ? `#${myIdx + 1}` : "-";
+    }
+
+    if (els.leaderboardMyScore) {
+      els.leaderboardMyScore.innerHTML = `
+        <div class="lb-my-card">
+          <span class="lb-my-label">Toplam Puanın</span>
+          <span class="lb-my-points">${myPoints}</span>
+          <span class="lb-my-rank">${myIdx >= 0 ? `${myIdx + 1}. sırada` : "Henüz puan yok"}</span>
+        </div>
+      `;
+    }
+
+    if (!users.length) {
+      els.leaderboardList.innerHTML = "<p style='color:#7f8fa4;text-align:center;padding:32px;'>Henüz skor yok.</p>";
+      return;
+    }
+
+    const medalMap = { 0: "🥇", 1: "🥈", 2: "🥉" };
+
+    els.leaderboardList.innerHTML = users.map((u, i) => {
+      const isMe = u.uid === myUid;
+      const medal = medalMap[i] || "";
+      const name = u.displayName || u.email?.split("@")[0] || "Anonim";
+      const pts = u.totalPoints || 0;
+      return `
+        <div class="lb-row ${isMe ? "lb-row-me" : "}">
+          <div class="lb-rank">${medal || (i + 1)}</div>
+          <div class="lb-info">
+            <span class="lb-name">${escapeHtml(name)}</span>
+            ${isMe ? "<span class='lb-you'>(Sen)</span>" : ""}
+          </div>
+          <div class="lb-pts">${pts} <span>puan</span></div>
+        </div>
+      `;
+    }).join("");
+  } catch (e) {
+    if (els.leaderboardList) els.leaderboardList.innerHTML = "<p style='color:#f87171;text-align:center;padding:32px;'>Yüklenemedi.</p>";
+    console.warn("Leaderboard error:", e);
+  }
+}
+
 function renderResultScreen(questions) {
   const correct = countCorrect(questions);
   const wrong   = questions.length - correct;
   const pct     = questions.length ? Math.round((correct / questions.length) * 100) : 0;
+
+  // Save score (delta-based)
+  const course = getActiveCourse();
+  if (course) saveScoreIfImproved(course.id, correct);
 
   els.questionProgressWrap.innerHTML = "";
   els.questionAreaMobile.innerHTML = `
@@ -525,7 +637,7 @@ function renderResultScreen(questions) {
       </div>
     </div>
     <div class="result-promo">
-      <img src="./assets/misyon-akademi-logo.jpg" alt="Misyon Akademi" class="result-promo-logo" onerror="this.style.display='none'" />
+      <img src="./assets/logo.png" alt="Misyon Akademi" class="result-promo-logo" onerror="this.style.display='none'" />
       <div class="result-promo-body">
         <p class="result-promo-title">Misyon Akademi Uygulaması 📱</p>
         <p class="result-promo-sub">Komiserlik ve Misyon Koruma sınavları için tam kapsamlı hazırlık!</p>

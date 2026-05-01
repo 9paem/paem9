@@ -24,16 +24,19 @@ service cloud.firestore {
       }
     }
 
-    match /users/{userId}/answers/{answerId} {
-      allow read, write: if signedIn() && request.auth.uid == userId;
-    }
-
-    match /leaderboards/{leaderboardId}/entries/{userId} {
+    match /users/{userId} {
+      // Anyone signed in can read user profiles (for leaderboard)
       allow read: if signedIn();
-      allow create: if signedIn()
-        && request.auth.uid == userId
-        && request.resource.data.uid == request.auth.uid;
-      allow update, delete: if false;
+      // Only the owner can write their own document
+      allow write: if signedIn() && request.auth.uid == userId;
+
+      match /answers/{answerId} {
+        allow read, write: if signedIn() && request.auth.uid == userId;
+      }
+
+      match /courseScores/{courseId} {
+        allow read, write: if signedIn() && request.auth.uid == userId;
+      }
     }
   }
 }
