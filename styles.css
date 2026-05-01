@@ -354,6 +354,45 @@ a { text-decoration: none; }
 }
 
 /* Session cards */
+.home-info-panel {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+}
+.info-panel-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+.info-panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.info-panel-session h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gold-main);
+  margin-bottom: 6px;
+}
+.info-panel-session ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.info-panel-session li {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 4px 0;
+  border-bottom: 1px dashed var(--border);
+}
+.info-panel-session li:last-child {
+  border-bottom: none;
+}
+
 .home-sessions {
   display: flex;
   flex-direction: column;

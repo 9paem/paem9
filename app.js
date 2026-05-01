@@ -48,6 +48,7 @@ const els = {
 
   homeUserName:       $("homeUserName"),
   homeSessionList:    $("homeSessionList"),
+  homeInfoPanel:      $("homeInfoPanel"),
 
   coursesBackButton:    $("coursesBackButton"),
   coursesProfileButton: $("coursesProfileButton"),
@@ -389,10 +390,30 @@ function showHome() {
 
 function renderHomeSessionCards() {
   els.homeSessionList.innerHTML = "";
+  if (els.homeInfoPanel) els.homeInfoPanel.innerHTML = "";
+  
   if (!state.sessions.length) {
     els.homeSessionList.innerHTML = `<p style="color:#7f8fa4;text-align:center;padding:24px;">Yükleniyor...</p>`;
     return;
   }
+  
+  // Render Info Panel
+  if (els.homeInfoPanel) {
+    let infoHtml = `<h3 class="info-panel-title">📚 Sınav İçeriği</h3><div class="info-panel-content">`;
+    state.sessions.forEach((session, idx) => {
+      infoHtml += `
+        <div class="info-panel-session">
+          <h4>${idx + 1}. Oturum Konuları</h4>
+          <ul>
+            ${(session.courses || []).map(c => `<li>${escapeHtml(c.title)}</li>`).join("")}
+          </ul>
+        </div>
+      `;
+    });
+    infoHtml += `</div>`;
+    els.homeInfoPanel.innerHTML = infoHtml;
+  }
+
   state.sessions.forEach((session, idx) => {
     const totalQ = session.courses?.reduce((s, c) => s + (c.questions?.length || 0), 0) || 0;
     const answeredQ = session.courses?.reduce((s, c) => s + (c.questions?.filter(q => state.answers[q.id]).length || 0), 0) || 0;
