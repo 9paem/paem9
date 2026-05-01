@@ -274,6 +274,22 @@ a { text-decoration: none; }
   font-size: .85rem;
 }
 
+.session-card-meta {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+.session-card-countdown {
+  display: inline-block;
+  margin-top: 8px;
+  background: rgba(201,154,46,0.15);
+  color: var(--gold-main);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
 .btn-link {
   width: 100%;
   padding: 8px;

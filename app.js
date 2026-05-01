@@ -396,6 +396,7 @@ function renderHomeSessionCards() {
   state.sessions.forEach((session, idx) => {
     const totalQ = session.courses?.reduce((s, c) => s + (c.questions?.length || 0), 0) || 0;
     const answeredQ = session.courses?.reduce((s, c) => s + (c.questions?.filter(q => state.answers[q.id]).length || 0), 0) || 0;
+    let examDateStr = session.examDate && session.startsAt ? `${session.examDate}T${session.startsAt}:00` : "";
     const card = document.createElement("button");
     card.type = "button";
     card.className = "session-card";
@@ -403,10 +404,33 @@ function renderHomeSessionCards() {
       <div class="session-card-label">Oturum ${idx + 1}</div>
       <div class="session-card-title">${escapeHtml(session.title)}</div>
       <div class="session-card-meta">${session.courses?.length || 0} ders · ${totalQ} soru · ${answeredQ} çözüldü</div>
+      ${examDateStr ? `<div class="session-card-countdown" data-exam-date="${examDateStr}">00:00:00</div>` : ""}
       <span class="session-card-arrow">›</span>
     `;
     card.addEventListener("click", () => openSession(session.id));
     els.homeSessionList.append(card);
+  });
+  updateCountdowns();
+  if (!window.countdownInterval) {
+    window.countdownInterval = setInterval(updateCountdowns, 1000);
+  }
+}
+
+function updateCountdowns() {
+  document.querySelectorAll(".session-card-countdown").forEach(el => {
+    const target = new Date(el.dataset.examDate).getTime();
+    if (isNaN(target)) return;
+    const diff = target - Date.now();
+    if (diff <= 0) {
+      el.textContent = "00:00:00";
+    } else {
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((diff % (1000 * 60)) / 1000);
+      const dayStr = d > 0 ? `${d} gün ` : "";
+      el.textContent = `${dayStr}${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    }
   });
 }
 
