@@ -2532,7 +2532,385 @@
           "id": "polis-merkezi",
           "title": "Polis Merkezi Amirliği",
           "order": 5,
-          "questions": [],
+          "questions": [
+            {
+              "id": "26874f5e-67b6-45e9-9b7a-7d4a4dd7ee7a",
+              "text": "Emniyet Genel Müdürlüğü uygulamasına göre aşağıdakilerden hangisi 'Asayiş Suçu' kapsamına giren bir suçtur?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Terör Suçları"
+                },
+                {
+                  "id": "b",
+                  "text": "Narkotik Suçları"
+                },
+                {
+                  "id": "c",
+                  "text": "KOM Suçları"
+                },
+                {
+                  "id": "d",
+                  "text": "Cinayet"
+                },
+                {
+                  "id": "e",
+                  "text": "Trafik Kazaları"
+                }
+              ],
+              "correctOptionId": "d",
+              "explanation": "EGM sınıflandırmasına göre cinayet asayiş suçu kapsamındadır. Terör, narkotik ve KOM suçları ayrı birimler tarafından takip edilir.",
+              "order": 1
+            },
+            {
+              "id": "bc94ce49-4918-46e9-8eca-829dc504dbf8",
+              "text": "POLNET sisteminde yetkili olmadığı halde hukuka aykırı sorgulama yapmanın disiplin yönünden cezası nedir?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Uyarma"
+                },
+                {
+                  "id": "b",
+                  "text": "Kınama"
+                },
+                {
+                  "id": "c",
+                  "text": "Maaş Kesimi"
+                },
+                {
+                  "id": "d",
+                  "text": "Meslekten Çıkarma"
+                },
+                {
+                  "id": "e",
+                  "text": "Kademe İlerlemesinin Durdurulması"
+                }
+              ],
+              "correctOptionId": "e",
+              "explanation": "POLNET üzerinde yetkisiz sorgulama yapmak, Emniyet Teşkilatı Disiplin Tüzüğü kapsamında kademe ilerlemesinin durdurulması cezasını gerektirir.",
+              "order": 2
+            },
+            {
+              "id": "2d711a8a-d261-4df9-867d-48ced328e15d",
+              "text": "Adli makamlarca aranan şahıslara ait araçların akaryakıt alması durumunda uyarı veren modül hangisidir?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "PTS"
+                },
+                {
+                  "id": "b",
+                  "text": "EKİP"
+                },
+                {
+                  "id": "c",
+                  "text": "Akaryakıt Takip Uyarı Modülü"
+                },
+                {
+                  "id": "d",
+                  "text": "UYAP"
+                },
+                {
+                  "id": "e",
+                  "text": "HKS"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "Akaryakıt Takip Uyarı Modülü; adli makamlarca aranan şahıslara ait araçların akaryakıt alması halinde ilgili birimleri otomatik olarak uyarır.",
+              "order": 3
+            },
+            {
+              "id": "e6f3bed9-506b-439b-ac99-b73495201234",
+              "text": "Karayolunda seyreden araçların plakasını okuyarak konum belirlemeye imkan sağlayan sistem hangisidir?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "POLNET"
+                },
+                {
+                  "id": "b",
+                  "text": "EKİP"
+                },
+                {
+                  "id": "c",
+                  "text": "PTS (Plaka Tanıma Sistemi)"
+                },
+                {
+                  "id": "d",
+                  "text": "UYAP"
+                },
+                {
+                  "id": "e",
+                  "text": "HKS"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "PTS (Plaka Tanıma Sistemi), karayollarındaki kameralarla araç plakalarını otomatik okuyarak konum ve hareket takibi yapar.",
+              "order": 4
+            },
+            {
+              "id": "71c54688-271f-4d39-a2d2-98ea20249c94",
+              "text": "Adalet Bakanlığı tarafından geliştirilen, yargı birimlerinin elektronik ortamda birbirine bağlandığı sistem hangisidir?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "POLNET"
+                },
+                {
+                  "id": "b",
+                  "text": "EKİP"
+                },
+                {
+                  "id": "c",
+                  "text": "UYAP"
+                },
+                {
+                  "id": "d",
+                  "text": "PTS"
+                },
+                {
+                  "id": "e",
+                  "text": "KABİS"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "UYAP (Ulusal Yargı Ağı Projesi), Adalet Bakanlığı'nca geliştirilen ve tüm yargı birimlerini elektronik ortamda birbirine bağlayan sistemdir.",
+              "order": 5
+            },
+            {
+              "id": "9e5c4550-4ed7-4fb9-99b8-5588f45090de",
+              "text": "Kimlik Bildirme Kanunu'na göre sorumlu işleticinin değişmesi halinde bu durum kaç saat içinde bildirilmelidir?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "12 saat"
+                },
+                {
+                  "id": "b",
+                  "text": "24 saat"
+                },
+                {
+                  "id": "c",
+                  "text": "48 saat"
+                },
+                {
+                  "id": "d",
+                  "text": "72 saat"
+                },
+                {
+                  "id": "e",
+                  "text": "1 hafta"
+                }
+              ],
+              "correctOptionId": "b",
+              "explanation": "2559 sayılı Kimlik Bildirme Kanunu'na göre sorumlu işleticinin değişmesi halinde bu durum 24 saat içinde kolluğa bildirilmelidir.",
+              "order": 6
+            },
+            {
+              "id": "a3f366a7-d575-41e6-b5b7-0b814e8a1dd6",
+              "text": "Geçici yer değiştirmelerde konutlarda kaç günden fazla kalacak misafirler için bildirim zorunludur?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "7 gün"
+                },
+                {
+                  "id": "b",
+                  "text": "15 gün"
+                },
+                {
+                  "id": "c",
+                  "text": "20 gün"
+                },
+                {
+                  "id": "d",
+                  "text": "30 gün"
+                },
+                {
+                  "id": "e",
+                  "text": "45 gün"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "Kimlik Bildirme Kanunu'na göre konutlarda 20 günden fazla kalacak misafirler için kolluğa bildirim zorunludur.",
+              "order": 7
+            },
+            {
+              "id": "6e948e80-e16e-4864-b574-59ee01facd27",
+              "text": "KABİS sistemi hangi amaçla kullanılır?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Konut kiralama"
+                },
+                {
+                  "id": "b",
+                  "text": "Otel konaklama"
+                },
+                {
+                  "id": "c",
+                  "text": "Kiralık Araç Bildirim Sistemi"
+                },
+                {
+                  "id": "d",
+                  "text": "Silah ruhsatı takibi"
+                },
+                {
+                  "id": "e",
+                  "text": "Kayıp şahıs araması"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "KABİS (Kiralık Araç Bildirim Sistemi), kiralık araç işletmelerinin araç kiralama bilgilerini polise bildirmesini sağlayan sistemdir.",
+              "order": 8
+            },
+            {
+              "id": "f9fe987d-a7d7-40eb-a90f-c6f67911335f",
+              "text": "Kayıp şahısların eşkal ve fotoğraflarının bölgedeki telefonlara SMS/MMS ile gönderildiği proje hangisidir?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kayıp Alarmı Projesi"
+                },
+                {
+                  "id": "b",
+                  "text": "EKİP Kayıp Modülü"
+                },
+                {
+                  "id": "c",
+                  "text": "PTS Takip"
+                },
+                {
+                  "id": "d",
+                  "text": "POLNET Kayıp"
+                },
+                {
+                  "id": "e",
+                  "text": "GBT Sorgu"
+                }
+              ],
+              "correctOptionId": "a",
+              "explanation": "Kayıp Alarmı Projesi; kayıp şahısların eşkal bilgileri ve fotoğraflarını bölgedeki GSM kullanıcılarına SMS/MMS yoluyla ileterek arama sürecini hızlandırır.",
+              "order": 9
+            },
+            {
+              "id": "7e84977f-dc39-41cf-93c0-2ca1b54bba60",
+              "text": "Hudut Kontrol Sistemi (HKS) hangi ana sistemin içerisinde yer alan bir modüldür?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "UYAP"
+                },
+                {
+                  "id": "b",
+                  "text": "EKİP"
+                },
+                {
+                  "id": "c",
+                  "text": "POLNET 5"
+                },
+                {
+                  "id": "d",
+                  "text": "PTS"
+                },
+                {
+                  "id": "e",
+                  "text": "KABİS"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "HKS (Hudut Kontrol Sistemi), POLNET 5 altyapısı içerisinde yer alan ve sınır kapılarında kişi/araç kontrolü yapan bir modüldür.",
+              "order": 10
+            },
+            {
+              "id": "92375431-958b-4c34-b384-5f91ec7b7c40",
+              "text": "Kat mülkiyetine tabi taşınmazlarda şüpheli durumları kolluğa bildirmekle kim yükümlüdür?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sadece mal sahibi"
+                },
+                {
+                  "id": "b",
+                  "text": "Belediye başkanı"
+                },
+                {
+                  "id": "c",
+                  "text": "Yönetici ve kapıcılar"
+                },
+                {
+                  "id": "d",
+                  "text": "Mahalle muhtarı"
+                },
+                {
+                  "id": "e",
+                  "text": "Vergi dairesi"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "Kimlik Bildirme Kanunu kapsamında kat mülkiyetine tabi yerlerde yönetici ve kapıcılar şüpheli durumları kolluğa bildirmekle yükümlüdür.",
+              "order": 11
+            },
+            {
+              "id": "eaf52d01-45bf-4624-821e-ce951010db9f",
+              "text": "5395 sayılı Çocuk Koruma Kanunu'na göre onbeş yaşını doldurmamış çocuklar için hangi durumda tutuklama kararı verilemez?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Üst sınırı 2 yılı aşmayan suçlarda"
+                },
+                {
+                  "id": "b",
+                  "text": "Üst sınırı 3 yılı aşmayan suçlarda"
+                },
+                {
+                  "id": "c",
+                  "text": "Üst sınırı 5 yılı aşmayan suçlarda"
+                },
+                {
+                  "id": "d",
+                  "text": "Üst sınırı 10 yılı aşmayan suçlarda"
+                },
+                {
+                  "id": "e",
+                  "text": "Hiçbir suçta tutuklanamaz"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "5395 sayılı Çocuk Koruma Kanunu'na göre 15 yaşını doldurmamış çocuklar hakkında üst sınırı 5 yılı aşmayan suçlarda tutuklama kararı verilemez.",
+              "order": 12
+            },
+            {
+              "id": "02b3b44c-7d78-4146-a852-e1194f870c54",
+              "text": "Suça sürüklenen çocukların ifadesi alınırken aşağıdakilerden hangisinin bulunması zorunludur?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anne ve Baba"
+                },
+                {
+                  "id": "b",
+                  "text": "Okul Müdürü"
+                },
+                {
+                  "id": "c",
+                  "text": "Müdafi (Avukat)"
+                },
+                {
+                  "id": "d",
+                  "text": "Sosyal Çalışmacı"
+                },
+                {
+                  "id": "e",
+                  "text": "Mahalle Muhtarı"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "CMK ve Çocuk Koruma Kanunu'na göre suça sürüklenen çocukların ifadesi alınırken müdafi (avukat) bulunması zorunludur.",
+              "order": 13
+            }
+          ],
           "expectedQuestionCount": 10,
           "questionShare": "10 soru"
         },
@@ -3472,6 +3850,267 @@
                   "text": "B'nin rızası bulunduğu kabul edilmelidir."
                 }
               ]
+            },
+            {
+              "id": "6f1c8795-90c8-49fa-8bce-2ad46a94f393",
+              "text": "Türk Ceza Kanunu'na göre 'soykırım' ve 'göçmen kaçakçılığı' hangi suç kategorisi altında yer almaktadır?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kişilere Karşı Suçlar"
+                },
+                {
+                  "id": "b",
+                  "text": "Uluslararası Suçlar"
+                },
+                {
+                  "id": "c",
+                  "text": "Topluma Karşı Suçlar"
+                },
+                {
+                  "id": "d",
+                  "text": "Millete ve Devlete Karşı Suçlar"
+                },
+                {
+                  "id": "e",
+                  "text": "Mülkiyet Suçları"
+                }
+              ],
+              "correctOptionId": "b",
+              "explanation": "TCK'da soykırım (Madde 76) ve göçmen kaçakçılığı (Madde 79) 'Uluslararası Suçlar' başlığı altında düzenlenmiştir.",
+              "order": 31
+            },
+            {
+              "id": "4b058ade-5187-4085-9842-482c380bc8bc",
+              "text": "Ceza Muhakemesi Kanunu'na (CMK) göre, suç şüphesinin öğrenilmesinden iddianamenin kabulüne kadar geçen evreye ne ad verilir?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kovuşturma"
+                },
+                {
+                  "id": "b",
+                  "text": "Tahkikat"
+                },
+                {
+                  "id": "c",
+                  "text": "Soruşturma"
+                },
+                {
+                  "id": "d",
+                  "text": "İnzibat"
+                },
+                {
+                  "id": "e",
+                  "text": "İlam"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "CMK Madde 2'ye göre soruşturma evresi; suç şüphesinin öğrenilmesinden iddianamenin kabulüne kadar geçen süreçtir.",
+              "order": 32
+            },
+            {
+              "id": "1ac69844-6925-4489-8c5c-603ed313b315",
+              "text": "6698 sayılı KVKK'ya göre kişilerin ırkı, siyasi düşüncesi, dini, mezhebi gibi veriler hangi tür veri olarak kabul edilir?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Genel Veri"
+                },
+                {
+                  "id": "b",
+                  "text": "Özel Nitelikli Kişisel Veri"
+                },
+                {
+                  "id": "c",
+                  "text": "Kamusal Veri"
+                },
+                {
+                  "id": "d",
+                  "text": "Anonim Veri"
+                },
+                {
+                  "id": "e",
+                  "text": "Ticari Veri"
+                }
+              ],
+              "correctOptionId": "b",
+              "explanation": "KVKK Madde 6'ya göre ırk, etnik köken, siyasi düşünce, felsefi inanç, din, mezhep verileri özel nitelikli kişisel veridir.",
+              "order": 33
+            },
+            {
+              "id": "79e1cf57-e7f0-4e15-9eae-ff857d394fdb",
+              "text": "TCK Madde 134'e göre, kişilerin özel hayatının gizliliğini ihlal eden kimse ne kadar hapis cezası ile cezalandırılır?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "6 aydan 1 yıla kadar"
+                },
+                {
+                  "id": "b",
+                  "text": "1 yıldan 3 yıla kadar"
+                },
+                {
+                  "id": "c",
+                  "text": "2 yıldan 5 yıla kadar"
+                },
+                {
+                  "id": "d",
+                  "text": "3 yıldan 6 yıla kadar"
+                },
+                {
+                  "id": "e",
+                  "text": "5 yıldan 10 yıla kadar"
+                }
+              ],
+              "correctOptionId": "b",
+              "explanation": "TCK Madde 134/1: Kişilerin özel hayatının gizliliğini ihlal eden kimse, 1 yıldan 3 yıla kadar hapis cezası ile cezalandırılır.",
+              "order": 34
+            },
+            {
+              "id": "dee76c79-bf22-46f4-806e-acb98cceee5f",
+              "text": "TCK Madde 136'ya göre kişisel verileri hukuka aykırı olarak yayan kişi ne kadar ceza alır?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "1-2 yıl"
+                },
+                {
+                  "id": "b",
+                  "text": "2-4 yıl"
+                },
+                {
+                  "id": "c",
+                  "text": "3-5 yıl"
+                },
+                {
+                  "id": "d",
+                  "text": "4-6 yıl"
+                },
+                {
+                  "id": "e",
+                  "text": "5-8 yıl"
+                }
+              ],
+              "correctOptionId": "b",
+              "explanation": "TCK Madde 136: Kişisel verileri hukuka aykırı olarak ele geçiren veya yayan kişi 2 yıldan 4 yıla kadar hapis cezasıyla cezalandırılır.",
+              "order": 35
+            },
+            {
+              "id": "2e317be8-53f2-4cfc-bf61-54091100603f",
+              "text": "5395 sayılı Çocuk Koruma Kanunu'na göre onbeş yaşını doldurmamış çocuklar için hangi durumda tutuklama kararı verilemez?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Üst sınırı 2 yılı aşmayan suçlarda"
+                },
+                {
+                  "id": "b",
+                  "text": "Üst sınırı 3 yılı aşmayan suçlarda"
+                },
+                {
+                  "id": "c",
+                  "text": "Üst sınırı 5 yılı aşmayan suçlarda"
+                },
+                {
+                  "id": "d",
+                  "text": "Üst sınırı 10 yılı aşmayan suçlarda"
+                },
+                {
+                  "id": "e",
+                  "text": "Hiçbir suçta tutuklanamaz"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "5395 sayılı Çocuk Koruma Kanunu'na göre 15 yaşını doldurmamış çocuklar hakkında üst sınırı 5 yılı aşmayan suçlarda tutuklama kararı verilemez.",
+              "order": 36
+            },
+            {
+              "id": "6af52778-d0ca-4e55-ba8e-0efeb6f691b6",
+              "text": "Suça sürüklenen çocukların ifadesi alınırken aşağıdakilerden hangisinin bulunması zorunludur?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anne ve Baba"
+                },
+                {
+                  "id": "b",
+                  "text": "Okul Müdürü"
+                },
+                {
+                  "id": "c",
+                  "text": "Müdafi (Avukat)"
+                },
+                {
+                  "id": "d",
+                  "text": "Sosyal Çalışmacı"
+                },
+                {
+                  "id": "e",
+                  "text": "Mahalle Muhtarı"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "CMK ve Çocuk Koruma Kanunu'na göre suça sürüklenen çocukların ifadesi alınırken müdafi (avukat) bulunması zorunludur.",
+              "order": 37
+            },
+            {
+              "id": "9ffbce4b-d05e-4cef-a105-e6ff840359d3",
+              "text": "Dolandırıcılık suçunda failin kendini polis veya savcı olarak tanıtması hangi tür dolandırıcılıktır?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Kurumsal"
+                },
+                {
+                  "id": "b",
+                  "text": "Telefon Yalanı ile"
+                },
+                {
+                  "id": "c",
+                  "text": "Sigorta"
+                },
+                {
+                  "id": "d",
+                  "text": "Kredi Kartı"
+                },
+                {
+                  "id": "e",
+                  "text": "E-Ticaret"
+                }
+              ],
+              "correctOptionId": "b",
+              "explanation": "Failin polis/savcı kimliğine bürünerek gerçekleştirdiği dolandırıcılık 'Telefon Yalanı ile Dolandırıcılık' kapsamında değerlendirilir.",
+              "order": 38
+            },
+            {
+              "id": "a19ea93f-6a9a-4e40-88e0-f253b531b074",
+              "text": "Yağma (Gasp) suçu için TCK'da öngörülen temel hapis cezası aralığı nedir?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "2-5 yıl"
+                },
+                {
+                  "id": "b",
+                  "text": "3-7 yıl"
+                },
+                {
+                  "id": "c",
+                  "text": "6-10 yıl"
+                },
+                {
+                  "id": "d",
+                  "text": "10-15 yıl"
+                },
+                {
+                  "id": "e",
+                  "text": "Müebbet"
+                }
+              ],
+              "correctOptionId": "c",
+              "explanation": "TCK Madde 148/1: Yağma suçunun temel şekli 6 yıldan 10 yıla kadar hapis cezasını gerektirmektedir.",
+              "order": 39
             }
           ]
         },
