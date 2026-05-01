@@ -66,6 +66,7 @@ const els = {
   profileBackButton: $("profileBackButton"),
   logoutButton:      $("logoutButton"),
   profileEmail:      $("profileEmail"),
+  profileName:       $("profileName"),
   profileCreatedAt:  $("profileCreatedAt"),
   profileAvatarBig:  $("profileAvatarBig"),
 
@@ -882,12 +883,13 @@ function firebaseErrorMessage(error) {
 
 // Profile rendering
 function renderProfile() {
+  const name = state.user?.displayName || state.user?.email?.split("@")[0] || "Öğrenci";
+  if (els.profileName)      els.profileName.textContent      = name;
   if (els.profileEmail)     els.profileEmail.textContent     = state.user?.email || "-";
   if (els.profileCreatedAt) {
     const ct = state.user?.metadata?.creationTime;
     els.profileCreatedAt.textContent = ct ? new Date(ct).toLocaleDateString("tr-TR", { day:"numeric", month:"long", year:"numeric" }) : "-";
   }
-  const name = state.user?.displayName || state.user?.email?.split("@")[0] || "P";
   if (els.profileAvatarBig) els.profileAvatarBig.textContent = name[0]?.toUpperCase() || "P";
 }
 
