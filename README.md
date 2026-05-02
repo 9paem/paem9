@@ -6,7 +6,7 @@ GitHub Pages üzerinde yayınlanabilecek statik sınav hazırlık uygulaması.
 
 - `index.html`: Giriş ve soru çözme ekranı
 - `styles.css`: Responsive arayüz stilleri
-- `app.js`: Firebase Auth, Firestore okuma ve cevap kaydetme akışı
+- `app.js`: Firebase Auth, statik soru bankası okuma, yerel cevap cache'i ve seyrek skor kaydı akışı
 - `firebase-config.js`: Firebase proje ayarları
 - `data/sample-questions.js`: Firebase bağlanmadan çalışmak için demo veri
 - `data/firestore-seed.json`: Firestore'a girilecek oturum ve ders başlangıç verisi
@@ -40,12 +40,17 @@ sessions/{sessionId}/courses/{courseId}/questions/{questionId}
     { id: "e", text: "..." }
   ]
 
-users/{uid}/answers/{questionId}
-  questionId: "..."
-  selectedOptionId: "b"
-  isCorrect: true
-  answeredAt: serverTimestamp()
+users/{uid}/courseScores/{courseId}
+  best: 12
+  updatedAt: serverTimestamp()
+
+users/{uid}
+  displayName: "..."
+  email: "..."
+  totalPoints: 120
 ```
+
+Not: Soru cevapları Firestore'a soru başına yazılmaz; tarayıcıdaki yerel cache'te tutulur. Soru bankası önce `data/firestore-seed.json` statik dosyasından yüklenir, Firestore içerik okuması yalnızca bu dosya yüklenemezse yedek olarak kullanılır. Sunucu maliyetini düşük tutmak için Firestore'a yalnızca test bitince yerel en iyi skor iyileşirse skor yazılır.
 
 ## Kurulum
 

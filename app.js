@@ -12,12 +12,19 @@ const state = {
   activeQuestionIndex: 0,
   showResultScreen: false,
   answers: {},
+  courseScores: {},
 };
 
 const CACHE_KEYS = {
   sessions: "paem9:sessions:v2",
   userStatePrefix: "paem9:user-state:v2:",
   rememberedUser: "paem9:remembered-user:v1",
+  profileSyncPrefix: "paem9:profile-sync:v1:",
+};
+
+const CACHE_TTL = {
+  sessions: 24 * 60 * 60 * 1000,
+  profileSync: 24 * 60 * 60 * 1000,
 };
 
 // ── DOM refs ──
@@ -250,26 +257,9 @@ async function openMainForUser(user) {
     console.warn("loadFirestoreData hatası:", e);
     state.sessions = [];
     state.answers  = {};
+    state.courseScores = {};
   }
-  // Sync user info to Firestore (ayrı try-catch — veri yüklemesini engellemesin)
-  if (user && Firebase.db) {
-    try {
-      const { doc, getDoc, setDoc, serverTimestamp } = Firebase.modules;
-      const userRef = doc(Firebase.db, "users", user.uid);
-      const snap = await getDoc(userRef);
-      const extra = snap.exists() ? {} : { createdAt: serverTimestamp() };
-      await setDoc(userRef, {
-        uid: user.uid,
-        email: user.email || "",
-        displayName: user.displayName || user.email?.split("@")[0] || "Anonim",
-        lastSeen: serverTimestamp(),
-        ...extra,
-      }, { merge: true });
-      console.log("✅ Kullanıcı Firestore'a yazıldı:", user.uid);
-    } catch (e) {
-      console.error("❌ Firestore kullanıcı yazma hatası:", e.code, e.message);
-    }
-  }
+  await syncUserProfileIfNeeded(user);
   showHome();
   if (!sessionStorage.getItem("promoShown")) {
     sessionStorage.setItem("promoShown", "1");
@@ -303,6 +293,26 @@ async function openMainFromRememberedUser(user) {
   showHome();
 }
 
+async function syncUserProfileIfNeeded(user, options = {}) {
+  if (!user || !Firebase.db || state.demoMode || state.rememberedMode) return;
+  if (!options.force && isProfileSyncFresh(user.uid)) return;
+
+  try {
+    const { doc, setDoc, serverTimestamp } = Firebase.modules;
+    const profile = {
+      uid: user.uid,
+      email: user.email || "",
+      displayName: user.displayName || user.email?.split("@")[0] || "Anonim",
+      lastSeen: serverTimestamp(),
+    };
+    if (options.create) profile.createdAt = serverTimestamp();
+    await setDoc(doc(Firebase.db, "users", user.uid), profile, { merge: true });
+    markProfileSynced(user.uid);
+  } catch (e) {
+    console.error("Firestore kullanıcı yazma hatası:", e.code, e.message);
+  }
+}
+
 async function handleLogin(e) {
   e.preventDefault();
   setLoading(true);
@@ -325,8 +335,7 @@ async function handleSignupForm(e) {
   try {
     const r = await Firebase.modules.createUserWithEmailAndPassword(Firebase.auth, email, password);
     await Firebase.modules.updateProfile(r.user, { displayName: name });
-    const { doc, setDoc, serverTimestamp } = Firebase.modules;
-    await setDoc(doc(Firebase.db, "users", r.user.uid), { uid: r.user.uid, email, displayName: name, createdAt: serverTimestamp() });
+    await syncUserProfileIfNeeded(r.user, { force: true, create: true });
     await openMainForUser(r.user);
   } catch (err) {
     els.signupAuthMessage.textContent = firebaseErrorMessage(err);
@@ -370,6 +379,7 @@ async function handleLogout() {
   state.user = null;
   state.sessions = [];
   state.answers  = {};
+  state.courseScores = {};
   if (Firebase.ready) {
     try { await Firebase.modules.signOut(Firebase.auth); } catch {}
   }
@@ -664,30 +674,26 @@ async function saveScoreIfImproved(courseId, newCorrect) {
   const uid = state.user?.uid;
   if (!uid) return;
 
+  const prevBest = state.courseScores?.[courseId]?.best || 0;
+  const best = Math.max(prevBest, newCorrect);
+  const delta = best - prevBest;
+  if (delta <= 0) return;
+
+  state.courseScores[courseId] = { best, updatedAt: new Date().toISOString() };
+  persistUserStateToCache();
+
   try {
-    const { doc, getDoc, setDoc, increment, serverTimestamp } = Firebase.modules;
+    const { doc, setDoc, serverTimestamp } = Firebase.modules;
+    await setDoc(doc(Firebase.db, "users", uid, "courseScores", courseId), { best, updatedAt: serverTimestamp() }, { merge: true });
 
-    // Get previous best for this course
-    const courseScoreRef = doc(Firebase.db, "users", uid, "courseScores", courseId);
-    const courseSnap = await getDoc(courseScoreRef);
-    const prevBest = courseSnap.exists() ? (courseSnap.data().best || 0) : 0;
-
-    const delta = newCorrect - prevBest;
-
-    // Update course best
-    await setDoc(courseScoreRef, { best: Math.max(prevBest, newCorrect), updatedAt: serverTimestamp() }, { merge: true });
-
-    if (delta > 0) {
-      // Add delta to user's total points
-      const userRef = doc(Firebase.db, "users", uid);
-      const displayName = state.user?.displayName || state.user?.email?.split("@")[0] || "Anonim";
-      await setDoc(userRef, {
-        displayName,
-        email: state.user?.email || "",
-        totalPoints: increment(delta),
-        updatedAt: serverTimestamp(),
-      }, { merge: true });
-    }
+    const displayName = state.user?.displayName || state.user?.email?.split("@")[0] || "Anonim";
+    const totalPoints = Object.values(state.courseScores).reduce((sum, score) => sum + (score.best || 0), 0);
+    await setDoc(doc(Firebase.db, "users", uid), {
+      displayName,
+      email: state.user?.email || "",
+      totalPoints,
+      updatedAt: serverTimestamp(),
+    }, { merge: true });
   } catch (e) {
     console.warn("Score save error:", e);
   }
@@ -699,7 +705,7 @@ async function loadLeaderboard() {
   if (els.leaderboardList) els.leaderboardList.innerHTML = "<p style='color:#7f8fa4;text-align:center;padding:32px;'>Yükleniyor...</p>";
 
   try {
-    const { collection, getDocs, query, orderBy, limit, doc, getDoc } = Firebase.modules;
+    const { collection, getDocs, query, orderBy, limit } = Firebase.modules;
     const q = query(collection(Firebase.db, "users"), orderBy("totalPoints", "desc"), limit(50));
     const snap = await getDocs(q);
     const users = snap.docs.map(d => ({ uid: d.id, ...d.data() }));
@@ -815,19 +821,29 @@ async function saveAnswer(question, selectedOptionId) {
   state.answers[question.id] = { questionId: question.id, selectedOptionId, isCorrect, answeredAt: new Date().toISOString() };
   persistUserStateToCache();
 
-  if (Firebase.ready && !state.demoMode && !state.rememberedMode && Firebase.auth?.currentUser?.uid === state.user?.uid) {
-    try {
-      const { doc, setDoc } = Firebase.modules;
-      await setDoc(doc(Firebase.db, "users", state.user.uid, "answers", question.id), state.answers[question.id]);
-    } catch {}
-  }
-
   renderQuestions();
 }
 
 // ── Firestore ──
 async function loadFirestoreData() {
   if (!Firebase.ready) return;
+
+  const cached = loadSessionsCache();
+  if (cached && Date.now() - cached.ts <= CACHE_TTL.sessions) {
+    state.sessions = cached.sessions;
+    return;
+  }
+
+  try {
+    const staticBank = await loadStaticQuestionBank();
+    if (staticBank?.sessions?.length) {
+      state.sessions = staticBank.sessions;
+      saveSessionsCache(staticBank.sessions, staticBank.version);
+      return;
+    }
+  } catch (e) {
+    console.warn("Statik soru bankası yüklenemedi, Firestore deneniyor:", e);
+  }
 
   // Check version
   let remoteVersion = null;
@@ -837,9 +853,9 @@ async function loadFirestoreData() {
     if (snap.exists()) remoteVersion = snap.data()?.questionBankVersion || null;
   } catch {}
 
-  const cached = loadSessionsCache();
   if (cached && cached.version === remoteVersion && remoteVersion) {
     state.sessions = cached.sessions;
+    saveSessionsCache(cached.sessions, remoteVersion);
     return;
   }
 
@@ -861,12 +877,21 @@ async function loadFirestoreData() {
   saveSessionsCache(sessions, remoteVersion);
 }
 
+async function loadStaticQuestionBank() {
+  const res = await fetch("./data/firestore-seed.json", { cache: "force-cache" });
+  if (!res.ok) throw new Error(`Soru bankası yüklenemedi: ${res.status}`);
+  const data = await res.json();
+  return {
+    sessions: Array.isArray(data.sessions) ? data.sessions : [],
+    version: data.metadata?.questionBankVersion || "static",
+  };
+}
+
 function loadSessionsCache() {
   try {
     const raw = localStorage.getItem(CACHE_KEYS.sessions);
     if (!raw) return null;
     const parsed = JSON.parse(raw);
-    if (Date.now() - parsed.ts > 15 * 60 * 1000) return null;
     return parsed;
   } catch { return null; }
 }
@@ -887,6 +912,7 @@ function restoreUserStateFromCache() {
     if (!raw) return;
     const d = JSON.parse(raw);
     state.answers             = d.answers || {};
+    state.courseScores        = d.courseScores || {};
     state.activeSessionId     = d.activeSessionId || "";
     state.activeCourseId      = d.activeCourseId  || "";
     state.activeQuestionIndex = d.activeQuestionIndex || 0;
@@ -898,6 +924,7 @@ function persistUserStateToCache(overrides = {}) {
   try {
     const payload = {
       answers: state.answers,
+      courseScores: state.courseScores,
       activeSessionId: state.activeSessionId,
       activeCourseId:  state.activeCourseId,
       activeQuestionIndex: state.activeQuestionIndex,
@@ -917,6 +944,23 @@ function loadRememberedUser() {
 }
 function clearRememberedUser() {
   try { localStorage.removeItem(CACHE_KEYS.rememberedUser); } catch {}
+}
+
+function getProfileSyncKey(uid) {
+  return CACHE_KEYS.profileSyncPrefix + uid;
+}
+
+function isProfileSyncFresh(uid) {
+  try {
+    const ts = Number(localStorage.getItem(getProfileSyncKey(uid)) || 0);
+    return Date.now() - ts < CACHE_TTL.profileSync;
+  } catch {
+    return false;
+  }
+}
+
+function markProfileSynced(uid) {
+  try { localStorage.setItem(getProfileSyncKey(uid), String(Date.now())); } catch {}
 }
 
 // ── UI Helpers ──
@@ -960,4 +1004,3 @@ function renderProfile() {
   }
   if (els.profileAvatarBig) els.profileAvatarBig.textContent = name[0]?.toUpperCase() || "P";
 }
-
