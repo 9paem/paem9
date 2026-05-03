@@ -16,7 +16,7 @@ const state = {
 };
 
 const CACHE_KEYS = {
-  sessions: "paem9:sessions:v2",
+  sessions: "paem9:sessions:v3",
   userStatePrefix: "paem9:user-state:v2:",
   rememberedUser: "paem9:remembered-user:v1",
   profileSyncPrefix: "paem9:profile-sync:v1:",
@@ -829,14 +829,14 @@ async function loadFirestoreData() {
   if (!Firebase.ready) return;
 
   const cached = loadSessionsCache();
-  if (cached && Date.now() - cached.ts <= CACHE_TTL.sessions) {
+  if (cached && Date.now() - cached.ts <= CACHE_TTL.sessions && hasCompleteQuestionData(cached.sessions)) {
     state.sessions = cached.sessions;
     return;
   }
 
   try {
     const staticBank = await loadStaticQuestionBank();
-    if (staticBank?.sessions?.length) {
+    if (staticBank?.sessions?.length && hasCompleteQuestionData(staticBank.sessions)) {
       state.sessions = staticBank.sessions;
       saveSessionsCache(staticBank.sessions, staticBank.version);
       return;
@@ -853,7 +853,7 @@ async function loadFirestoreData() {
     if (snap.exists()) remoteVersion = snap.data()?.questionBankVersion || null;
   } catch {}
 
-  if (cached && cached.version === remoteVersion && remoteVersion) {
+  if (cached && cached.version === remoteVersion && remoteVersion && hasCompleteQuestionData(cached.sessions)) {
     state.sessions = cached.sessions;
     saveSessionsCache(cached.sessions, remoteVersion);
     return;
@@ -885,6 +885,13 @@ async function loadStaticQuestionBank() {
     sessions: Array.isArray(data.sessions) ? data.sessions : [],
     version: data.metadata?.questionBankVersion || "static",
   };
+}
+
+function hasCompleteQuestionData(sessions = []) {
+  return sessions.every(session => (session.courses || []).every(course => {
+    const expected = course.expectedQuestionCount || 0;
+    return expected <= 0 || (course.questions || []).length > 0;
+  }));
 }
 
 function loadSessionsCache() {
